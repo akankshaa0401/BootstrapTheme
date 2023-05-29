@@ -1,0 +1,23 @@
+.#{$prefix}avatar {
+    &-38 {
+        @include size(inRem(38px));
+    }
+
+    &-87 {
+        @include size(inRem(87px));
+    }
+
+    &-103 {
+        @include size(inRem(103px));
+    }
+
+    &-circle {
+        @extend %flex-center;
+        border-radius: $br-full;
+    }
+    &-badge{
+        line-height: 0;
+        padding: inRem(1px);
+        border: inRem(2px) solid $white;
+    }
+}

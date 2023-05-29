@@ -1,0 +1,23 @@
+.#{$prefix}tabs {
+
+    .#{$prefix}link {
+        padding-bottom: $s-14;
+        color: $gray-deactivate;
+        border-bottom: inRem(2px) solid $transparent;
+
+        &.active,
+        &:hover {
+            color: $black;
+            @include path($black);
+        }
+
+        &.active {
+            background-color: $transparent;
+            border-color: $primary;
+        }
+
+        &:hover {
+            border-color: $gray-deactivate;
+        }
+    }
+}

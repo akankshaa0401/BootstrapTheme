@@ -1,0 +1,16 @@
+.#{$prefix}footer {
+    &-navbar {
+        &-nav {
+            flex-direction: row;
+
+            >*+* {
+                padding-left: $s-12;
+                margin-left: $s-12;
+                border-left: 1px solid $gray-border;
+            }
+            .#{$prefix}link{
+                padding: 0;
+            }
+        }
+    }
+}

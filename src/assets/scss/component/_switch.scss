@@ -1,0 +1,48 @@
+.#{$prefix}form {
+    &-switch {
+        &-input {
+            height: inRem(20px);
+            border-color: $gray-border;
+
+            &:checked {
+                background-color: $primary;
+
+                &:hover {
+                    background-color: $primary-hover;
+                    border-color: $primary-hover;
+                }
+
+                &:active {
+                    background-color: $primary-clicked;
+                    border-color: $primary-clicked;
+                }
+
+                &:disabled {
+                    background: {
+                        color: $gray-deactivate;
+                        image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='4' fill='%23ffffff'/%3E%3C/svg%3E");
+                    }
+
+                    border-color: $gray-deactivate;
+                }
+            }
+
+            &:hover {
+                border-color: $gray-deactivate;
+            }
+
+            &:active {
+                border-color: $black;
+            }
+
+            // &:focus{
+            //     border-color: $gray-border;
+            // }
+
+            &:disabled {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='4' fill='%237A7A7A'/%3E%3C/svg%3E");
+                opacity: 1;
+            }
+        }
+    }
+}

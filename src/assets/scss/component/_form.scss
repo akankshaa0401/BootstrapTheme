@@ -1,0 +1,20 @@
+.form {
+
+    &-control {
+        line-height: $lh;
+        padding-block: $s-7;
+
+        &:hover {
+            border-color: $gray-deactivate;
+        }
+
+        &:active,
+        &:focus {
+            border-color: $black;
+        }
+
+        &:disabled {
+            border-color: $gray-border;
+        }
+    }
+}

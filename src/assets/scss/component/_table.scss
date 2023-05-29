@@ -1,0 +1,78 @@
+.#{$prefix}table {
+    &-head {
+        color: $gray-deactivate;
+
+        > :not(caption)>* {
+            background-color: $transparent;
+            border: 0;
+            box-shadow: none;
+        }
+    }
+
+    &-body {
+        border-radius: $br-8;
+        box-shadow: $box-shadow-2;
+
+        tr {
+            &:first-child {
+                td {
+                    &:first-child {
+                        border-top-left-radius: $br-8;
+                        .#{$prefix}btn-dropdown{
+                            border-top-left-radius: $br-8;
+                        }
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: $br-8;
+                        .#{$prefix}btn-dropdown{
+                            border-top-right-radius: $br-8;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                td {
+                    border: 0;
+
+                    &:first-child {
+                        border-bottom-left-radius: $br-8;
+                        .#{$prefix}btn-dropdown{
+                            border-bottom-left-radius: $br-8;
+                        }
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: $br-8;
+                        .#{$prefix}btn-dropdown{
+                            border-bottom-right-radius: $br-8;
+                        }
+                    }
+                }
+            }
+        }
+
+        td {
+            background-color: $white;
+        }
+
+        .#{$prefix}table-dropdown {
+            padding: 0;
+
+            .#{$prefix}btn-dropdown {
+                justify-content: flex-start;
+                height: inRem(70px);
+                width: 100%;
+                text-align: left;
+                padding: $s-16;
+                border: 0;
+                border-radius: 0;
+
+                &:hover {
+                    background-color: $gray-hover;
+                }
+            }
+        }
+    }
+}

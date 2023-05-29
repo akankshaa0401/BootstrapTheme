@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+html {
+    font-size: $main-size;
+    scroll-behavior: smooth;
+
+    @include devices(desktop-small) {
+        font-size: calc($main-size + 2px);
+    }
+
+    // @extend %no-scrollbar;
+}
+
+body {
+    margin: 0;
+    font-size: $fs-16;
+    line-height: $lh;
+    font-weight: 600;
+    font-family: $font-family;
+    color: $black;
+    background-color: $body-bg;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+    transition: $transition;
+    cursor: pointer;
+}
+
+a:hover {
+    color: $primary-hover;
+}
+
+a:active,
+a:focus {
+    color: $primary-clicked;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: $lh;
+    color: $black;
+}
+
+svg {
+    path {
+        transition: $transition;
+    }
+}

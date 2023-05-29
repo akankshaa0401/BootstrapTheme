@@ -1,0 +1,12 @@
+.#{$prefix}link {
+
+    &:focus,
+    &:active {
+        color: $primary-clicked;
+    }
+
+    &.disabled{
+        color: $gray-deactivate;
+        pointer-events: none;
+    }
+}

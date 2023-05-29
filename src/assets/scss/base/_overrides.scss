@@ -1,0 +1,226 @@
+$prefix: th-;
+
+// Colors
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $gray-deactivate,
+    "success": $green,
+    "warning": $orange,
+    "danger": $red,
+    "light": $white,
+    "dark": $black,
+    "gray": $gray-border
+);
+
+// Box shadows
+
+$box-shadow: $box-shadow;
+$box-shadow-sm: $box-shadow-2;
+
+// Spacings
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .125,
+    // 2px
+    2: $spacer * .25,
+    // 4px
+    3: $spacer * .5,
+    // 8px
+    4: $spacer,
+    // 16px
+    5: $spacer * 1.5,
+    // 24px
+    6: $spacer * 2.25,
+    // 36px
+    7: $spacer * 3,
+    // 48px
+);
+
+// Negative Margin
+$enable-negative-margins: true;
+
+$font-size: 1rem;
+$font-sizes: (
+    1: $font-size * .625,
+    2: $font-size * .75,
+    3: $font-size * .875,
+    4: $font-size,
+    5: $font-size * 1.125,
+    6: $font-size * 1.25,
+    7: $font-size * 1.5,
+    8: $font-size * 1.75,
+    9: $font-size * 2,
+);
+
+$utilities: (
+    "font-size": (property: font-size,
+        class: fs,
+        values: ($font-sizes))
+);
+
+
+// Heading
+
+$headings-color: $black;
+$headings-font-weight: 600;
+$headings-font-family: $font-family;
+$h1-font-size: $fs-32;
+$h2-font-size: $fs-28;
+$h3-font-size: $fs-24;
+$h4-font-size: $fs-20;
+$h5-font-size: $fs-18;
+$h6-font-size: $fs-16;
+
+// Badge
+$badge-font-weight: 600;
+$badge-font-size: $fs-16;
+$badge-color: $black;
+$badge-padding-y: 0.25rem;
+$badge-padding-x: 0.5rem;
+$badge-border-radius: $br-8;
+
+// Navbar
+
+$navbar-brand-padding-y: 0;
+$navbar-brand-margin-end: 0;
+$navbar-padding-y: 0;
+$navbar-nav-link-padding-x: 1rem;
+$nav-link-padding-y: 1rem;
+
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-focus-width: 0;
+
+$nav-pills-border-radius: 0;
+$nav-pills-link-active-color: $primary;
+$nav-pills-link-active-bg: $primary-bg;
+
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M17.5 3.75H2.5V5H17.5V3.75Z' fill='%23161616'/%3E%3Cpath d='M17.5 15H2.5V16.25H17.5V15Z' fill='%23161616'/%3E%3Cpath d='M17.5 7.5H2.5V8.75H17.5V7.5Z' fill='%23161616'/%3E%3Cpath d='M17.5 11.25H2.5V12.5H17.5V11.25Z' fill='%23161616'/%3E%3C/svg%3E");
+
+// Form Input Button
+
+$font-weight-base: 600;
+$input-color: $black;
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 1rem;
+$input-bg: $white;
+$input-border-color: $gray-border;
+$input-border-radius: $br-8;
+$input-placeholder-color: $gray-deactivate;
+$input-focus-border-color: $black;
+$input-focus-box-shadow: none;
+$input-disabled-color: $black;
+$input-disabled-bg: $gray-border;
+$input-disabled-border-color: $gray-border;
+$input-transition: $transition;
+
+// Input Group
+
+$input-group-addon-font-weight: 400;
+$input-group-addon-color: $gray-deactivate;
+$input-group-addon-bg: $gray-border;
+$input-group-addon-padding-y: 0;
+$input-group-addon-padding-x: 0;
+
+// Button
+
+$btn-font-weight: 600;
+$btn-border-width: 0;
+$btn-border-radius: $br-8;
+$btn-disabled-opacity: 1;
+
+// Validation
+
+$form-feedback-margin-top: 0.5rem;
+$form-feedback-font-size: $fs-14;
+
+// Progress Bar
+
+$progress-height: 0.25rem;
+$progress-bg: $gray-deactivate;
+$progress-border-radius: 0;
+
+// Accordion
+
+$accordion-padding-y: 0;
+$accordion-padding-x: 0;
+$accordion-body-padding-y: 1rem;
+$accordion-body-padding-x: 0 1rem $accordion-btn; //icons-width + margin-right = 33px + 8px
+$accordion-border-width: 1px;
+$accordion-button-active-color: $black;
+$accordion-button-active-bg: $transparent;
+$accordion-icon-width: 2.0625rem; //33px
+$accordion-icon-transform: rotate(0deg);
+$accordion-button-focus-border-color: $transparent;
+$accordion-button-focus-box-shadow: $transparent;
+$accordion-icon-color: $gray-deactivate;
+$accordion-icon-active-color: $primary;
+$accordion-button-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' viewBox='0 0 33 33' fill='none'%3E%3Cpath d='M12.375 8.25L22.6875 16.5L12.375 24.75V8.25Z' fill='#{$accordion-icon-color}'/%3E%3C/svg%3E");
+$accordion-button-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' viewBox='0 0 33 33' fill='none'%3E%3Cpath d='M24.75 12.375L16.5 22.6875L8.25 12.375H24.75Z' fill='#{$accordion-icon-active-color}'/%3E%3C/svg%3E");
+
+// Checkboxes
+
+$form-check-input-border-radius: 0;
+
+// Radio Buttons
+
+$form-check-input-width: 1.375rem;
+$form-check-min-height: 1px;
+$form-check-padding-start: 0;
+$form-check-margin-bottom: 0;
+$form-check-label-color: $gray-deactivate;
+$form-check-input-active-filter: none;
+$form-check-input-checked-bg-color: $white;
+$form-check-input-border: 1px solid $gray-deactivate;
+$form-check-input-focus-border: $gray-deactivate;
+$form-check-input-checked-border-color: $primary;
+$form-check-input-focus-box-shadow: none;
+$form-check-input-checked-color: $primary;
+$form-check-input-border-radius: 2px;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='square' stroke-width='2' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>");
+$form-check-label-cursor: pointer;
+$form-check-transition: $transition;
+$form-text-margin-top: 0.5rem;
+$form-text-color: $gray-deactivate;
+$form-text-font-weight: 400;
+
+// Switch
+
+$form-switch-color: $black;
+$form-switch-checked-color: $white;
+$form-switch-focus-color: $black;
+$form-switch-width: 2.5rem;
+$form-switch-padding-start: 0;
+$form-switch-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='4' fill='#{$form-switch-color}'/%3E%3C/svg%3E");
+$form-switch-focus-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='4' fill='#{$form-switch-focus-color}'/%3E%3C/svg%3E");
+$form-switch-checked-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='4' fill='#{$form-switch-checked-color}'/%3E%3C/svg%3E");
+$form-switch-transition: $transition;
+
+// Dropdown
+
+$dropdown-bg: $white;
+$dropdown-link-color: $gray-deactivate;
+$dropdown-link-hover-color: $black;
+$dropdown-link-hover-bg: $gray-border;
+
+$dropdown-padding-y: 0;
+$dropdown-min-width: 13.875rem;
+$dropdown-border-width: 0;
+$dropdown-border-radius: $br-8;
+$dropdown-inner-border-radius: $br-8;
+$dropdown-divider-margin-y: 0;
+$dropdown-divider-bg: $gray-border;
+$dropdown-box-shadow: $box-shadow-2;
+
+// Border radius
+// $border-radius: $br-8;
+
+// Table
+$table-cell-padding-y: 1rem;
+$table-cell-padding-x: 1rem;
+$table-cell-vertical-align: middle;
+$table-border-color: $gray-border;
+$table-hover-bg: $gray-hover;

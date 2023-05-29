@@ -1,0 +1,18 @@
+@use "sass:math";
+
+@function get-vw($target){
+  $vw-context: $vw-viewport * 0.01 * 1px;
+  @return calc($target / $vw-context) * 1vw;
+  @return $target;
+}
+
+// example
+// .font20{
+//     font-size: get-vw(20px);
+// }
+
+@function inRem($sizeInPx) {
+    $intoRem: calc(($sizeInPx)/$main-font-size);
+    @return #{$intoRem}rem;
+}
+

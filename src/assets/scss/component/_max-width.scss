@@ -1,0 +1,14 @@
+.#{$prefix}max-w {
+    &-341 {
+        @include max-w(341px);
+    }
+
+    &-287 {
+        @include max-w(287px);
+    }
+
+    &-238 {
+        @include max-w(238px);
+    }
+
+}

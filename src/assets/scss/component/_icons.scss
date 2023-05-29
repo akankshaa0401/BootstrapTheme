@@ -1,0 +1,21 @@
+.#{$prefix}icon {
+    &-10 {
+        @include size($icon-10);
+    }
+
+    &-19 {
+        @include size($icon-19);
+    }
+
+    &-22 {
+        @include size($icon-22);
+    }
+
+    &-33 {
+        @include size($icon-33);
+    }
+
+    &-55 {
+        @include size($icon-55);
+    }
+}

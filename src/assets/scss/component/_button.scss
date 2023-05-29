@@ -1,0 +1,106 @@
+.btn {
+    line-height: $lh;
+}
+
+.#{$prefix}btn {
+
+    &-dropdown,
+    &-outline {
+        padding-block: $s-7;
+        border-width: 1px;
+    }
+
+    &-dropdown {
+        @include button-variant($white,
+            $gray-border,
+            $color: $gray-deactivate,
+            $hover-color: $gray-deactivate,
+            $hover-border: $gray-deactivate,
+        );
+
+        &:first-child {
+            &:active {
+                color: $gray-deactivate;
+            }
+        }
+
+        &:active,
+        &:focus {
+            color: $gray-deactivate;
+        }
+    }
+
+    &-primary {
+        @include button-variant($primary, //background
+            $primary, //border
+            $white, //color
+            $hover-background: $primary-hover, //hover-background
+            $hover-border: $primary-hover, //hover-border
+            $active-color: $white, //active-color
+            $active-background: $primary-clicked, //active-background
+            $active-border: $primary-clicked, //active-border
+            $disabled-background: $gray-deactivate, //disabled-background
+            $disabled-border: $gray-deactivate // disabled-border
+        );
+
+        &:focus {
+            color: $white;
+        }
+    }
+
+    &-outline {
+
+        &-secondary {
+            @include button-outline-variant($gray-border,
+                $color-hover: $black,
+                $active-background: $gray-border,
+                $active-border: $gray-deactivate,
+                $active-color: $black);
+        }
+
+        color: $gray-deactivate;
+
+        &:hover {
+            color: $black;
+            background-color: $transparent;
+            border-color: $gray-deactivate;
+
+            path {
+                fill: $black;
+            }
+        }
+
+        &:active {
+            path {
+                fill: $black;
+            }
+        }
+    }
+
+    &-disabled {
+        @include button-variant($gray-deactivate, //background
+            $gray-deactivate, //border
+            $white, //color
+            $disabled-background: $gray-deactivate, //disabled-background
+            $disabled-border: $gray-deactivate // disabled-border
+        );
+
+        path {
+            fill: $white;
+        }
+    }
+
+    &-icon {
+        @include flex(center, center, $inline: true);
+
+        &-hover {
+            &:hover {
+                @include path($black);
+            }
+
+            &:active {
+                @include path($primary);
+            }
+        }
+    }
+}

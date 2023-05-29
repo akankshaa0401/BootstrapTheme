@@ -1,0 +1,33 @@
+.#{$prefix}aside {
+    .#{$prefix}link {
+        @include flex(center);
+        font-weight: 400;
+        color: $gray-deactivate;
+
+        &:hover {
+            color: $black;
+            @include path($black);
+        }
+
+        &.active {
+            border-right: inRem(5px) solid $primary;
+
+            &:hover {
+                color: $primary;
+            }
+            
+            @include path($primary);
+        }
+    }
+
+    &-logo {
+        width: 100%;
+        max-width: inRem(100px);
+    }
+
+    &-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

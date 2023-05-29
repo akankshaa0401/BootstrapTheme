@@ -1,0 +1,44 @@
+@import 'utils/functions';
+@import 'utils/variables';
+@import 'base/colors';
+
+// Bootstrap
+@import './base/overrides';
+@import '../vendors/bootstrap/scss/bootstrap.scss'; //5.2.3v
+
+@import 'utils/mixins';
+
+@import 'base/reset';
+@import 'base/font';
+@import 'base/typography';
+
+// Component
+
+@import './component/accordion';
+@import './component/avatar';
+@import './component/button';
+@import './component/form';
+@import './component/checkbox';
+@import './component/switch';
+@import './component/dropdown';
+@import './component/icons';
+@import './component/input';
+@import './component/links';
+@import './component/validation';
+@import './component/searchbar';
+@import './component/max-width';
+@import './component/tabs';
+@import './component/label';
+@import './component/table';
+@import './component/chips';
+@import './component/border';
+
+// Layout
+
+@import './layout/container';
+@import './layout/sidebar';
+@import './layout/footer';
+
+// Pages
+
+@import 'utils/helper'; //Helper SCSS file will be at end of this file

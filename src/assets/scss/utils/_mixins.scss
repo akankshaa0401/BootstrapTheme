@@ -1,0 +1,66 @@
+@mixin devices ($breakpoint) {
+
+  @if $breakpoint ==wide-screen {
+    @media only screen and (min-width: $wide-screen) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==desktop-mid {
+    @media only screen and (max-width: $desktop-mid) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==desktop-small {
+    @media only screen and (max-width: $desktop-small) {
+      @content;
+    }
+  }
+}
+
+@mixin fwc($font-size, $font-weight: null, $color: null) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin position($position: static, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin flex($align: null, $justify: null, $direction: null, $inline: false) {
+  @if($inline ==true) {
+    display: inline-flex;
+  }
+
+  @else {
+    display: flex;
+  }
+
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin max-w($mx-w) {
+  width: 100%;
+  max-width: inRem($mx-w);
+}
+
+@mixin path($fill) {
+  svg {
+    path {
+      fill: $fill;
+    }
+  }
+}

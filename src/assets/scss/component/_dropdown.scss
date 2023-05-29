@@ -1,0 +1,83 @@
+.dropdown {
+    &-toggle {
+        &:hover {
+            &::after {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M11 15.1251L4.125 8.2501L5.0875 7.2876L11 13.2001L16.9125 7.2876L17.875 8.2501L11 15.1251Z' fill='%23000000'/%3E%3C/svg%3E");
+            }
+        }
+
+        &::after {
+            @include size(inRem(22px));
+            vertical-align: middle;
+            margin-left: auto;
+
+            background: {
+                image: $dropdown-chevron;
+                repeat: no-repeat;
+                size: contain;
+            }
+
+            border: none;
+            transition: $transition;
+        }
+
+        &.show {
+            border-color: $black;
+
+            &::after {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M11 15.1251L4.125 8.2501L5.0875 7.2876L11 13.2001L16.9125 7.2876L17.875 8.2501L11 15.1251Z' fill='%23000000'/%3E%3C/svg%3E");
+                transform: rotate(-180deg);
+            }
+        }
+
+        &.btn-th-dropdown {
+
+            &:hover,
+            &.show {
+                &::after {
+                    background-image: $dropdown-chevron-black;
+                }
+            }
+
+            &.show {
+                color: $gray-deactivate;
+                border-color: $black;
+            }
+        }
+    }
+
+    &-nocaret {
+        &::after {
+            content: none;
+        }
+    }
+}
+
+.#{$prefix}dropdown {
+    &-item {
+        @include flex(center);
+        padding: $s-16;
+
+        &:hover {
+            @include path($black);
+        }
+
+        &:focus {
+            color: $white;
+            background-color: $primary;
+        }
+
+        &:active,
+        &:focus {
+            @include path($white);
+        }
+    }
+
+    &-menu {
+        box-shadow: var(--#{$prefix}dropdown-box-shadow);
+    }
+
+    &-divider {
+        margin-inline: $s-46 $s-16;
+    }
+}

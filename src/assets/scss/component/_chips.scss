@@ -1,0 +1,12 @@
+.#{$prefix}chip {
+    @include flex(center, space-between);
+    padding: $s-4 $s-8;
+    background-color: $gray-border;
+    border-radius: $br-8;
+   
+    &-primary{
+        color: $white;
+        background-color: $primary;
+        @include path($white);
+    }
+}

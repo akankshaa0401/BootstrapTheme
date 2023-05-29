@@ -1,0 +1,71 @@
+$vw-viewport: 1920;
+$html-size: 14px;
+$main-font-size: 16px;
+$main-size: calc(get-vw($html-size) + 2px);
+
+$full-h: 100vh;
+
+// Container
+$container-w: 1236px;
+
+$lh: normal;
+$font-family: 'Manrope', sans-serif;
+
+// Font-sizes
+
+$fs-10: inRem(10px);
+$fs-12: inRem(12px);
+$fs-14: inRem(14px);
+$fs-16: inRem(16px);
+$fs-18: inRem(18px);
+$fs-20: inRem(20px);
+$fs-24: inRem(24px);
+$fs-28: inRem(28px);
+$fs-32: inRem(32px);
+
+// Spacings
+
+$s-2: inRem(2px);
+$s-4: inRem(4px);
+$s-7: inRem(7px); //Used for border elements
+$s-8: inRem(8px);
+$s-12: inRem(12px); //User in footer link seperators
+$s-14: inRem(14px); //Used in tabs bottom padding
+$s-15: inRem(15px); //Used in label for file
+$s-16: inRem(16px);
+$s-24: inRem(24px);
+$s-30: inRem(30px); //Used for space between OTP code input field
+$s-32: inRem(32px); //Used in for container inline paddings 
+$s-36: inRem(36px);
+$s-46: inRem(46px); //Used for dropdown divider
+$s-48: inRem(48px);
+
+// Icons sizes
+
+$icon-10: inRem(10px);
+$icon-19: inRem(19px);
+$icon-22: inRem(22px);
+$icon-33: inRem(33px);
+$icon-55: inRem(55px);
+
+$accordion-btn: inRem(41px);
+
+// Border-radius
+
+$br-8: inRem(8px);
+$br-full: 100vw;
+
+// Transition
+
+$transition: all 0.3s ease-out;
+
+// Screen-sizes
+
+$main-screen: 1920px;
+$desktop-mid: 1440px;
+$desktop-small: 1024px;
+
+// Chevron Icons
+
+$dropdown-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M11 15.1251L4.125 8.2501L5.0875 7.2876L11 13.2001L16.9125 7.2876L17.875 8.2501L11 15.1251Z' fill='%237A7A7A'/%3E%3C/svg%3E");
+$dropdown-chevron-black: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cpath d='M11 15.1251L4.125 8.2501L5.0875 7.2876L11 13.2001L16.9125 7.2876L17.875 8.2501L11 15.1251Z' fill='%23201F1E'/%3E%3C/svg%3E")

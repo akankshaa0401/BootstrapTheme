@@ -1,0 +1,45 @@
+%flex-align-center {
+    @include flex($align: center);
+}
+
+%flex-between {
+    @include flex($justify: space-between);
+}
+
+%flex-center-between {
+    @include flex($align: center, $justify: space-between);
+}
+
+%flex-center {
+    @include flex($align: center, $justify: center);
+}
+
+%flex-center-start {
+    @include flex($align: center, $justify: flex-start);
+}
+
+%flex-center-end {
+    @include flex($align: center, $justify: flex-end);
+}
+
+%flex-start {
+    @extend %flex-align-center;
+    justify-content: flex-start;
+}
+
+%flex-end {
+    @extend %flex-align-center;
+    justify-content: flex-end;
+}
+
+%no-scrollbar {
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    // IE and Edge
+    scrollbar-width: none;
+
+    // Firefox 
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
