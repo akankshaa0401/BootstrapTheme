@@ -96,6 +96,7 @@ input {
         }
 
         &-main {
+            color: $gray-deactivate;
             align-items: center;
             background-color: $white;
             border: 1px solid $gray-border;

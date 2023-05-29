@@ -64,3 +64,9 @@
     }
   }
 }
+
+@mixin icon($color) {
+  .#{$prefix}icon {
+    color: $color;
+  }
+}

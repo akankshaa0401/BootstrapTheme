@@ -1,6 +1,10 @@
-.#{$prefix}label{
-    &-file{
+.#{$prefix}label {
+    &-file {
         padding: $s-15;
-        border-style: dashed;
+
+        border: {
+            width: 1px;
+            style: dashed;
+        }
     }
 }

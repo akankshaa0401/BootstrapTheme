@@ -1,21 +1,11680 @@
 .#{$prefix}icon {
-    &-10 {
-        @include size($icon-10);
+    /* use !important to prevent issues with browser extensions that change fonts */
+
+    font: {
+        // size: $fs-22;
+        family: '#{$icomoon-font-family}' !important;
+        style: normal;
+        weight: normal;
+        variant: normal;
     }
 
-    &-19 {
-        @include size($icon-19);
-    }
+    text-transform: none;
+    line-height: normal;
 
-    &-22 {
-        @include size($icon-22);
-    }
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-    &-33 {
-        @include size($icon-33);
+.#{$prefix}d-cursor--alt {
+    &:before {
+        content: $th-d-cursor--alt;
     }
+}
 
-    &-55 {
-        @include size($icon-55);
+.#{$prefix}d-cursor {
+    &:before {
+        content: $th-d-cursor;
+    }
+}
+
+.#{$prefix}d-curve--auto-colon {
+    &:before {
+        content: $th-d-curve--auto-colon;
+    }
+}
+
+.#{$prefix}d-curve--auto-vessels {
+    &:before {
+        content: $th-d-curve--auto-vessels;
+    }
+}
+
+.#{$prefix}d-curve--manual {
+    &:before {
+        content: $th-d-curve--manual;
+    }
+}
+
+.#{$prefix}d-ica {
+    &:before {
+        content: $th-d-ica;
+    }
+}
+
+.#{$prefix}d-mpr-toggle {
+    &:before {
+        content: $th-d-mpr-toggle;
+    }
+}
+
+.#{$prefix}d-print-mesh {
+    &:before {
+        content: $th-d-print-mesh;
+    }
+}
+
+.#{$prefix}d-software {
+    &:before {
+        content: $th-d-software;
+    }
+}
+
+.#{$prefix}rd-party-connected {
+    &:before {
+        content: $th-rd-party-connected;
+    }
+}
+
+.#{$prefix}k--filled {
+    &:before {
+        content: $th-k--filled;
+    }
+}
+
+.#{$prefix}k {
+    &:before {
+        content: $th-k;
+    }
+}
+
+.#{$prefix}Accessibility--alt {
+    &:before {
+        content: $th-Accessibility--alt;
+    }
+}
+
+.#{$prefix}Accessibility--color--filled {
+    &:before {
+        content: $th-Accessibility--color--filled;
+    }
+}
+
+.#{$prefix}Accessibility--color {
+    &:before {
+        content: $th-Accessibility--color;
+    }
+}
+
+.#{$prefix}Accessibility {
+    &:before {
+        content: $th-Accessibility;
+    }
+}
+
+.#{$prefix}Account {
+    &:before {
+        content: $th-Account;
+    }
+}
+
+.#{$prefix}Accumulation--ice {
+    &:before {
+        content: $th-Accumulation--ice;
+    }
+}
+
+.#{$prefix}Accumulation--precipitation {
+    &:before {
+        content: $th-Accumulation--precipitation;
+    }
+}
+
+.#{$prefix}Accumulation--rain {
+    &:before {
+        content: $th-Accumulation--rain;
+    }
+}
+
+.#{$prefix}Accumulation--snow {
+    &:before {
+        content: $th-Accumulation--snow;
+    }
+}
+
+.#{$prefix}Activity {
+    &:before {
+        content: $th-Activity;
+    }
+}
+
+.#{$prefix}Add--alt {
+    &:before {
+        content: $th-Add--alt;
+    }
+}
+
+.#{$prefix}Add--filled {
+    &:before {
+        content: $th-Add--filled;
+    }
+}
+
+.#{$prefix}Add-comment {
+    &:before {
+        content: $th-Add-comment;
+    }
+}
+
+.#{$prefix}Add {
+    &:before {
+        content: $th-Add;
+    }
+}
+
+.#{$prefix}Agriculture-analytics {
+    &:before {
+        content: $th-Agriculture-analytics;
+    }
+}
+
+.#{$prefix}Ai-results--high {
+    &:before {
+        content: $th-Ai-results--high;
+    }
+}
+
+.#{$prefix}Ai-results--low {
+    &:before {
+        content: $th-Ai-results--low;
+    }
+}
+
+.#{$prefix}Ai-results--medium {
+    &:before {
+        content: $th-Ai-results--medium;
+    }
+}
+
+.#{$prefix}Ai-results--urgent {
+    &:before {
+        content: $th-Ai-results--urgent;
+    }
+}
+
+.#{$prefix}Ai-results--very-high {
+    &:before {
+        content: $th-Ai-results--very-high;
+    }
+}
+
+.#{$prefix}Ai-results {
+    &:before {
+        content: $th-Ai-results;
+    }
+}
+
+.#{$prefix}Ai-status--complete {
+    &:before {
+        content: $th-Ai-status--complete;
+    }
+}
+
+.#{$prefix}Ai-status--failed {
+    &:before {
+        content: $th-Ai-status--failed;
+    }
+}
+
+.#{$prefix}Ai-status--in-progress {
+    &:before {
+        content: $th-Ai-status--in-progress;
+    }
+}
+
+.#{$prefix}Ai-status--queued {
+    &:before {
+        content: $th-Ai-status--queued;
+    }
+}
+
+.#{$prefix}Ai-status--rejected {
+    &:before {
+        content: $th-Ai-status--rejected;
+    }
+}
+
+.#{$prefix}Ai-status {
+    &:before {
+        content: $th-Ai-status;
+    }
+}
+
+.#{$prefix}Airline--digital-gate {
+    &:before {
+        content: $th-Airline--digital-gate;
+    }
+}
+
+.#{$prefix}Airline--manage-gates {
+    &:before {
+        content: $th-Airline--manage-gates;
+    }
+}
+
+.#{$prefix}Airline--passenger-care {
+    &:before {
+        content: $th-Airline--passenger-care;
+    }
+}
+
+.#{$prefix}Airline--rapid-board {
+    &:before {
+        content: $th-Airline--rapid-board;
+    }
+}
+
+.#{$prefix}Airplay--filled {
+    &:before {
+        content: $th-Airplay--filled;
+    }
+}
+
+.#{$prefix}Airplay {
+    &:before {
+        content: $th-Airplay;
+    }
+}
+
+.#{$prefix}Airport--01 {
+    &:before {
+        content: $th-Airport--01;
+    }
+}
+
+.#{$prefix}Airport--02 {
+    &:before {
+        content: $th-Airport--02;
+    }
+}
+
+.#{$prefix}Airport-location {
+    &:before {
+        content: $th-Airport-location;
+    }
+}
+
+.#{$prefix}Alarm--add {
+    &:before {
+        content: $th-Alarm--add;
+    }
+}
+
+.#{$prefix}Alarm--subtract {
+    &:before {
+        content: $th-Alarm--subtract;
+    }
+}
+
+.#{$prefix}Alarm {
+    &:before {
+        content: $th-Alarm;
+    }
+}
+
+.#{$prefix}Align--horizontal-center {
+    &:before {
+        content: $th-Align--horizontal-center;
+    }
+}
+
+.#{$prefix}Align--horizontal-left {
+    &:before {
+        content: $th-Align--horizontal-left;
+    }
+}
+
+.#{$prefix}Align--horizontal-right {
+    &:before {
+        content: $th-Align--horizontal-right;
+    }
+}
+
+.#{$prefix}Align--vertical-bottom {
+    &:before {
+        content: $th-Align--vertical-bottom;
+    }
+}
+
+.#{$prefix}Align--vertical-center {
+    &:before {
+        content: $th-Align--vertical-center;
+    }
+}
+
+.#{$prefix}Align--vertical-top {
+    &:before {
+        content: $th-Align--vertical-top;
+    }
+}
+
+.#{$prefix}Align-box--bottom-center {
+    &:before {
+        content: $th-Align-box--bottom-center;
+    }
+}
+
+.#{$prefix}Align-box--bottom-left {
+    &:before {
+        content: $th-Align-box--bottom-left;
+    }
+}
+
+.#{$prefix}Align-box--bottom-right {
+    &:before {
+        content: $th-Align-box--bottom-right;
+    }
+}
+
+.#{$prefix}Align-box--middle-center {
+    &:before {
+        content: $th-Align-box--middle-center;
+    }
+}
+
+.#{$prefix}Align-box--middle-left {
+    &:before {
+        content: $th-Align-box--middle-left;
+    }
+}
+
+.#{$prefix}Align-box--middle-right {
+    &:before {
+        content: $th-Align-box--middle-right;
+    }
+}
+
+.#{$prefix}Align-box--top-center {
+    &:before {
+        content: $th-Align-box--top-center;
+    }
+}
+
+.#{$prefix}Align-box--top-left {
+    &:before {
+        content: $th-Align-box--top-left;
+    }
+}
+
+.#{$prefix}Align-box--top-right {
+    &:before {
+        content: $th-Align-box--top-right;
+    }
+}
+
+.#{$prefix}Analytics--custom {
+    &:before {
+        content: $th-Analytics--custom;
+    }
+}
+
+.#{$prefix}Analytics--reference {
+    &:before {
+        content: $th-Analytics--reference;
+    }
+}
+
+.#{$prefix}Analytics {
+    &:before {
+        content: $th-Analytics;
+    }
+}
+
+.#{$prefix}Angle {
+    &:before {
+        content: $th-Angle;
+    }
+}
+
+.#{$prefix}Annotation-visibility {
+    &:before {
+        content: $th-Annotation-visibility;
+    }
+}
+
+.#{$prefix}Aperture {
+    &:before {
+        content: $th-Aperture;
+    }
+}
+
+.#{$prefix}Api--1 {
+    &:before {
+        content: $th-Api--1;
+    }
+}
+
+.#{$prefix}Api {
+    &:before {
+        content: $th-Api;
+    }
+}
+
+.#{$prefix}App-connectivity {
+    &:before {
+        content: $th-App-connectivity;
+    }
+}
+
+.#{$prefix}App {
+    &:before {
+        content: $th-App;
+    }
+}
+
+.#{$prefix}Apple {
+    &:before {
+        content: $th-Apple;
+    }
+}
+
+.#{$prefix}Application--mobile {
+    &:before {
+        content: $th-Application--mobile;
+    }
+}
+
+.#{$prefix}Application--virtual {
+    &:before {
+        content: $th-Application--virtual;
+    }
+}
+
+.#{$prefix}Application--web {
+    &:before {
+        content: $th-Application--web;
+    }
+}
+
+.#{$prefix}Application {
+    &:before {
+        content: $th-Application;
+    }
+}
+
+.#{$prefix}Apps {
+    &:before {
+        content: $th-Apps;
+    }
+}
+
+.#{$prefix}Archive {
+    &:before {
+        content: $th-Archive;
+    }
+}
+
+.#{$prefix}Area--custom {
+    &:before {
+        content: $th-Area--custom;
+    }
+}
+
+.#{$prefix}Area {
+    &:before {
+        content: $th-Area;
+    }
+}
+
+.#{$prefix}Arrival {
+    &:before {
+        content: $th-Arrival;
+    }
+}
+
+.#{$prefix}Arrow--annotation {
+    &:before {
+        content: $th-Arrow--annotation;
+    }
+}
+
+.#{$prefix}Arrow--down-left {
+    &:before {
+        content: $th-Arrow--down-left;
+    }
+}
+
+.#{$prefix}Arrow--down-right {
+    &:before {
+        content: $th-Arrow--down-right;
+    }
+}
+
+.#{$prefix}Arrow--down {
+    &:before {
+        content: $th-Arrow--down;
+    }
+}
+
+.#{$prefix}Arrow--left {
+    &:before {
+        content: $th-Arrow--left;
+    }
+}
+
+.#{$prefix}Arrow--right {
+    &:before {
+        content: $th-Arrow--right;
+    }
+}
+
+.#{$prefix}Arrow--up-left {
+    &:before {
+        content: $th-Arrow--up-left;
+    }
+}
+
+.#{$prefix}Arrow--up-right {
+    &:before {
+        content: $th-Arrow--up-right;
+    }
+}
+
+.#{$prefix}Arrow--up {
+    &:before {
+        content: $th-Arrow--up;
+    }
+}
+
+.#{$prefix}Arrow-shift-down {
+    &:before {
+        content: $th-Arrow-shift-down;
+    }
+}
+
+.#{$prefix}Arrows--horizontal {
+    &:before {
+        content: $th-Arrows--horizontal;
+    }
+}
+
+.#{$prefix}Arrows--vertical {
+    &:before {
+        content: $th-Arrows--vertical;
+    }
+}
+
+.#{$prefix}Asleep--filled {
+    &:before {
+        content: $th-Asleep--filled;
+    }
+}
+
+.#{$prefix}Asleep {
+    &:before {
+        content: $th-Asleep;
+    }
+}
+
+.#{$prefix}Assembly--cluster {
+    &:before {
+        content: $th-Assembly--cluster;
+    }
+}
+
+.#{$prefix}Assembly--reference {
+    &:before {
+        content: $th-Assembly--reference;
+    }
+}
+
+.#{$prefix}Assembly {
+    &:before {
+        content: $th-Assembly;
+    }
+}
+
+.#{$prefix}Asset--confirm {
+    &:before {
+        content: $th-Asset--confirm;
+    }
+}
+
+.#{$prefix}Asset--digital-twin {
+    &:before {
+        content: $th-Asset--digital-twin;
+    }
+}
+
+.#{$prefix}Asset--view {
+    &:before {
+        content: $th-Asset--view;
+    }
+}
+
+.#{$prefix}Asset {
+    &:before {
+        content: $th-Asset;
+    }
+}
+
+.#{$prefix}Asterisk {
+    &:before {
+        content: $th-Asterisk;
+    }
+}
+
+.#{$prefix}At {
+    &:before {
+        content: $th-At;
+    }
+}
+
+.#{$prefix}Attachment {
+    &:before {
+        content: $th-Attachment;
+    }
+}
+
+.#{$prefix}Audio-console {
+    &:before {
+        content: $th-Audio-console;
+    }
+}
+
+.#{$prefix}Augmented-reality {
+    &:before {
+        content: $th-Augmented-reality;
+    }
+}
+
+.#{$prefix}Auto-scroll {
+    &:before {
+        content: $th-Auto-scroll;
+    }
+}
+
+.#{$prefix}Automatic {
+    &:before {
+        content: $th-Automatic;
+    }
+}
+
+.#{$prefix}Autoscaling {
+    &:before {
+        content: $th-Autoscaling;
+    }
+}
+
+.#{$prefix}Awake {
+    &:before {
+        content: $th-Awake;
+    }
+}
+
+.#{$prefix}Badge {
+    &:before {
+        content: $th-Badge;
+    }
+}
+
+.#{$prefix}Baggage-claim {
+    &:before {
+        content: $th-Baggage-claim;
+    }
+}
+
+.#{$prefix}Bar {
+    &:before {
+        content: $th-Bar;
+    }
+}
+
+.#{$prefix}Barcode {
+    &:before {
+        content: $th-Barcode;
+    }
+}
+
+.#{$prefix}Bare-metal-server--01 {
+    &:before {
+        content: $th-Bare-metal-server--01;
+    }
+}
+
+.#{$prefix}Bare-metal-server--02 {
+    &:before {
+        content: $th-Bare-metal-server--02;
+    }
+}
+
+.#{$prefix}Bare-metal-server {
+    &:before {
+        content: $th-Bare-metal-server;
+    }
+}
+
+.#{$prefix}Barrier {
+    &:before {
+        content: $th-Barrier;
+    }
+}
+
+.#{$prefix}Basketball {
+    &:before {
+        content: $th-Basketball;
+    }
+}
+
+.#{$prefix}Bastion-host {
+    &:before {
+        content: $th-Bastion-host;
+    }
+}
+
+.#{$prefix}Bat {
+    &:before {
+        content: $th-Bat;
+    }
+}
+
+.#{$prefix}Battery--charging {
+    &:before {
+        content: $th-Battery--charging;
+    }
+}
+
+.#{$prefix}Battery--empty {
+    &:before {
+        content: $th-Battery--empty;
+    }
+}
+
+.#{$prefix}Battery--full {
+    &:before {
+        content: $th-Battery--full;
+    }
+}
+
+.#{$prefix}Battery--half {
+    &:before {
+        content: $th-Battery--half;
+    }
+}
+
+.#{$prefix}Battery--low {
+    &:before {
+        content: $th-Battery--low;
+    }
+}
+
+.#{$prefix}Battery--quarter {
+    &:before {
+        content: $th-Battery--quarter;
+    }
+}
+
+.#{$prefix}Bee-bat {
+    &:before {
+        content: $th-Bee-bat;
+    }
+}
+
+.#{$prefix}Bee {
+    &:before {
+        content: $th-Bee;
+    }
+}
+
+.#{$prefix}Beta {
+    &:before {
+        content: $th-Beta;
+    }
+}
+
+.#{$prefix}Bicycle {
+    &:before {
+        content: $th-Bicycle;
+    }
+}
+
+.#{$prefix}Binoculars {
+    &:before {
+        content: $th-Binoculars;
+    }
+}
+
+.#{$prefix}Bloch-sphere {
+    &:before {
+        content: $th-Bloch-sphere;
+    }
+}
+
+.#{$prefix}Block-storage--alt {
+    &:before {
+        content: $th-Block-storage--alt;
+    }
+}
+
+.#{$prefix}Block-storage {
+    &:before {
+        content: $th-Block-storage;
+    }
+}
+
+.#{$prefix}Blockchain {
+    &:before {
+        content: $th-Blockchain;
+    }
+}
+
+.#{$prefix}Blog {
+    &:before {
+        content: $th-Blog;
+    }
+}
+
+.#{$prefix}Bluetooth--off {
+    &:before {
+        content: $th-Bluetooth--off;
+    }
+}
+
+.#{$prefix}Bluetooth {
+    &:before {
+        content: $th-Bluetooth;
+    }
+}
+
+.#{$prefix}Book {
+    &:before {
+        content: $th-Book;
+    }
+}
+
+.#{$prefix}Bookmark--add {
+    &:before {
+        content: $th-Bookmark--add;
+    }
+}
+
+.#{$prefix}Bookmark--filled {
+    &:before {
+        content: $th-Bookmark--filled;
+    }
+}
+
+.#{$prefix}Bookmark {
+    &:before {
+        content: $th-Bookmark;
+    }
+}
+
+.#{$prefix}Boolean {
+    &:before {
+        content: $th-Boolean;
+    }
+}
+
+.#{$prefix}Boot {
+    &:before {
+        content: $th-Boot;
+    }
+}
+
+.#{$prefix}Border--bottom {
+    &:before {
+        content: $th-Border--bottom;
+    }
+}
+
+.#{$prefix}Border--full {
+    &:before {
+        content: $th-Border--full;
+    }
+}
+
+.#{$prefix}Border--left {
+    &:before {
+        content: $th-Border--left;
+    }
+}
+
+.#{$prefix}Border--none {
+    &:before {
+        content: $th-Border--none;
+    }
+}
+
+.#{$prefix}Border--right {
+    &:before {
+        content: $th-Border--right;
+    }
+}
+
+.#{$prefix}Border--top {
+    &:before {
+        content: $th-Border--top;
+    }
+}
+
+.#{$prefix}Bot {
+    &:before {
+        content: $th-Bot;
+    }
+}
+
+.#{$prefix}Box--extra-large {
+    &:before {
+        content: $th-Box--extra-large;
+    }
+}
+
+.#{$prefix}Box--large {
+    &:before {
+        content: $th-Box--large;
+    }
+}
+
+.#{$prefix}Box--medium {
+    &:before {
+        content: $th-Box--medium;
+    }
+}
+
+.#{$prefix}Box--small {
+    &:before {
+        content: $th-Box--small;
+    }
+}
+
+.#{$prefix}Box-plot {
+    &:before {
+        content: $th-Box-plot;
+    }
+}
+
+.#{$prefix}Box {
+    &:before {
+        content: $th-Box;
+    }
+}
+
+.#{$prefix}Branch {
+    &:before {
+        content: $th-Branch;
+    }
+}
+
+.#{$prefix}Breaking-change {
+    &:before {
+        content: $th-Breaking-change;
+    }
+}
+
+.#{$prefix}Brightness-contrast {
+    &:before {
+        content: $th-Brightness-contrast;
+    }
+}
+
+.#{$prefix}Bring-forward {
+    &:before {
+        content: $th-Bring-forward;
+    }
+}
+
+.#{$prefix}Bring-to-front {
+    &:before {
+        content: $th-Bring-to-front;
+    }
+}
+
+.#{$prefix}Brush-freehand {
+    &:before {
+        content: $th-Brush-freehand;
+    }
+}
+
+.#{$prefix}Brush-polygon {
+    &:before {
+        content: $th-Brush-polygon;
+    }
+}
+
+.#{$prefix}Building--insights-1 {
+    &:before {
+        content: $th-Building--insights-1;
+    }
+}
+
+.#{$prefix}Building--insights-2 {
+    &:before {
+        content: $th-Building--insights-2;
+    }
+}
+
+.#{$prefix}Building--insights-3 {
+    &:before {
+        content: $th-Building--insights-3;
+    }
+}
+
+.#{$prefix}Building {
+    &:before {
+        content: $th-Building;
+    }
+}
+
+.#{$prefix}Bullhorn {
+    &:before {
+        content: $th-Bullhorn;
+    }
+}
+
+.#{$prefix}Buoy {
+    &:before {
+        content: $th-Buoy;
+    }
+}
+
+.#{$prefix}Bus {
+    &:before {
+        content: $th-Bus;
+    }
+}
+
+.#{$prefix}Button--centered {
+    &:before {
+        content: $th-Button--centered;
+    }
+}
+
+.#{$prefix}Button--flush-left {
+    &:before {
+        content: $th-Button--flush-left;
+    }
+}
+
+.#{$prefix}Cabin-care--alert {
+    &:before {
+        content: $th-Cabin-care--alert;
+    }
+}
+
+.#{$prefix}Cabin-care--alt {
+    &:before {
+        content: $th-Cabin-care--alt;
+    }
+}
+
+.#{$prefix}Cabin-care {
+    &:before {
+        content: $th-Cabin-care;
+    }
+}
+
+.#{$prefix}Cad {
+    &:before {
+        content: $th-Cad;
+    }
+}
+
+.#{$prefix}Cafe {
+    &:before {
+        content: $th-Cafe;
+    }
+}
+
+.#{$prefix}Calculation--alt {
+    &:before {
+        content: $th-Calculation--alt;
+    }
+}
+
+.#{$prefix}Calculation {
+    &:before {
+        content: $th-Calculation;
+    }
+}
+
+.#{$prefix}Calculator--check {
+    &:before {
+        content: $th-Calculator--check;
+    }
+}
+
+.#{$prefix}Calculator {
+    &:before {
+        content: $th-Calculator;
+    }
+}
+
+.#{$prefix}Calendar--add--alt {
+    &:before {
+        content: $th-Calendar--add--alt;
+    }
+}
+
+.#{$prefix}Calendar--add {
+    &:before {
+        content: $th-Calendar--add;
+    }
+}
+
+.#{$prefix}Calendar--heat-map {
+    &:before {
+        content: $th-Calendar--heat-map;
+    }
+}
+
+.#{$prefix}Calendar--settings {
+    &:before {
+        content: $th-Calendar--settings;
+    }
+}
+
+.#{$prefix}Calendar--tools {
+    &:before {
+        content: $th-Calendar--tools;
+    }
+}
+
+.#{$prefix}Calendar {
+    &:before {
+        content: $th-Calendar;
+    }
+}
+
+.#{$prefix}Calibrate {
+    &:before {
+        content: $th-Calibrate;
+    }
+}
+
+.#{$prefix}Camera--action {
+    &:before {
+        content: $th-Camera--action;
+    }
+}
+
+.#{$prefix}Camera {
+    &:before {
+        content: $th-Camera;
+    }
+}
+
+.#{$prefix}Campsite {
+    &:before {
+        content: $th-Campsite;
+    }
+}
+
+.#{$prefix}Car--front {
+    &:before {
+        content: $th-Car--front;
+    }
+}
+
+.#{$prefix}Car {
+    &:before {
+        content: $th-Car;
+    }
+}
+
+.#{$prefix}Carbon-accounting {
+    &:before {
+        content: $th-Carbon-accounting;
+    }
+}
+
+.#{$prefix}Carbon-for-ibm-dotcom {
+    &:before {
+        content: $th-Carbon-for-ibm-dotcom;
+    }
+}
+
+.#{$prefix}Carbon-for-ibm-product {
+    &:before {
+        content: $th-Carbon-for-ibm-product;
+    }
+}
+
+.#{$prefix}Carbon {
+    &:before {
+        content: $th-Carbon;
+    }
+}
+
+.#{$prefix}Caret--down {
+    &:before {
+        content: $th-Caret--down;
+    }
+}
+
+.#{$prefix}Caret--left {
+    &:before {
+        content: $th-Caret--left;
+    }
+}
+
+.#{$prefix}Caret--right {
+    &:before {
+        content: $th-Caret--right;
+    }
+}
+
+.#{$prefix}Caret--sort--down {
+    &:before {
+        content: $th-Caret--sort--down;
+    }
+}
+
+.#{$prefix}Caret--sort--up {
+    &:before {
+        content: $th-Caret--sort--up;
+    }
+}
+
+.#{$prefix}Caret--sort {
+    &:before {
+        content: $th-Caret--sort;
+    }
+}
+
+.#{$prefix}Caret--up {
+    &:before {
+        content: $th-Caret--up;
+    }
+}
+
+.#{$prefix}Carousel--horizontal {
+    &:before {
+        content: $th-Carousel--horizontal;
+    }
+}
+
+.#{$prefix}Carousel--vertical {
+    &:before {
+        content: $th-Carousel--vertical;
+    }
+}
+
+.#{$prefix}Catalog {
+    &:before {
+        content: $th-Catalog;
+    }
+}
+
+.#{$prefix}Categories {
+    &:before {
+        content: $th-Categories;
+    }
+}
+
+.#{$prefix}Category--add {
+    &:before {
+        content: $th-Category--add;
+    }
+}
+
+.#{$prefix}Category--and {
+    &:before {
+        content: $th-Category--and;
+    }
+}
+
+.#{$prefix}Category--new-each {
+    &:before {
+        content: $th-Category--new-each;
+    }
+}
+
+.#{$prefix}Category--new {
+    &:before {
+        content: $th-Category--new;
+    }
+}
+
+.#{$prefix}Category {
+    &:before {
+        content: $th-Category;
+    }
+}
+
+.#{$prefix}Caution-inverted {
+    &:before {
+        content: $th-Caution-inverted;
+    }
+}
+
+.#{$prefix}Caution {
+    &:before {
+        content: $th-Caution;
+    }
+}
+
+.#{$prefix}Ccx {
+    &:before {
+        content: $th-Ccx;
+    }
+}
+
+.#{$prefix}Cd--archive {
+    &:before {
+        content: $th-Cd--archive;
+    }
+}
+
+.#{$prefix}Cd--create-archive {
+    &:before {
+        content: $th-Cd--create-archive;
+    }
+}
+
+.#{$prefix}Cd--create-exchange {
+    &:before {
+        content: $th-Cd--create-exchange;
+    }
+}
+
+.#{$prefix}Cda {
+    &:before {
+        content: $th-Cda;
+    }
+}
+
+.#{$prefix}Cell-tower {
+    &:before {
+        content: $th-Cell-tower;
+    }
+}
+
+.#{$prefix}Center--circle {
+    &:before {
+        content: $th-Center--circle;
+    }
+}
+
+.#{$prefix}Center--square {
+    &:before {
+        content: $th-Center--square;
+    }
+}
+
+.#{$prefix}Center-to-fit {
+    &:before {
+        content: $th-Center-to-fit;
+    }
+}
+
+.#{$prefix}Certificate--check {
+    &:before {
+        content: $th-Certificate--check;
+    }
+}
+
+.#{$prefix}Certificate {
+    &:before {
+        content: $th-Certificate;
+    }
+}
+
+.#{$prefix}Change-catalog {
+    &:before {
+        content: $th-Change-catalog;
+    }
+}
+
+.#{$prefix}Character--decimal {
+    &:before {
+        content: $th-Character--decimal;
+    }
+}
+
+.#{$prefix}Character--fraction {
+    &:before {
+        content: $th-Character--fraction;
+    }
+}
+
+.#{$prefix}Character--integer {
+    &:before {
+        content: $th-Character--integer;
+    }
+}
+
+.#{$prefix}Character--lower-case {
+    &:before {
+        content: $th-Character--lower-case;
+    }
+}
+
+.#{$prefix}Character--negative-number {
+    &:before {
+        content: $th-Character--negative-number;
+    }
+}
+
+.#{$prefix}Character--sentence-case {
+    &:before {
+        content: $th-Character--sentence-case;
+    }
+}
+
+.#{$prefix}Character--upper-case {
+    &:before {
+        content: $th-Character--upper-case;
+    }
+}
+
+.#{$prefix}Character--whole-number {
+    &:before {
+        content: $th-Character--whole-number;
+    }
+}
+
+.#{$prefix}Character-patterns {
+    &:before {
+        content: $th-Character-patterns;
+    }
+}
+
+.#{$prefix}Charging-station--filled {
+    &:before {
+        content: $th-Charging-station--filled;
+    }
+}
+
+.#{$prefix}Charging-station {
+    &:before {
+        content: $th-Charging-station;
+    }
+}
+
+.#{$prefix}Chart--3d {
+    &:before {
+        content: $th-Chart--3d;
+    }
+}
+
+.#{$prefix}Chart--area-smooth {
+    &:before {
+        content: $th-Chart--area-smooth;
+    }
+}
+
+.#{$prefix}Chart--area-stepper {
+    &:before {
+        content: $th-Chart--area-stepper;
+    }
+}
+
+.#{$prefix}Chart--area {
+    &:before {
+        content: $th-Chart--area;
+    }
+}
+
+.#{$prefix}Chart--average {
+    &:before {
+        content: $th-Chart--average;
+    }
+}
+
+.#{$prefix}Chart--bar-floating {
+    &:before {
+        content: $th-Chart--bar-floating;
+    }
+}
+
+.#{$prefix}Chart--bar-overlay {
+    &:before {
+        content: $th-Chart--bar-overlay;
+    }
+}
+
+.#{$prefix}Chart--bar-stacked {
+    &:before {
+        content: $th-Chart--bar-stacked;
+    }
+}
+
+.#{$prefix}Chart--bar-target {
+    &:before {
+        content: $th-Chart--bar-target;
+    }
+}
+
+.#{$prefix}Chart--bar {
+    &:before {
+        content: $th-Chart--bar;
+    }
+}
+
+.#{$prefix}Chart--bubble-packed {
+    &:before {
+        content: $th-Chart--bubble-packed;
+    }
+}
+
+.#{$prefix}Chart--bubble {
+    &:before {
+        content: $th-Chart--bubble;
+    }
+}
+
+.#{$prefix}Chart--bullet {
+    &:before {
+        content: $th-Chart--bullet;
+    }
+}
+
+.#{$prefix}Chart--candlestick {
+    &:before {
+        content: $th-Chart--candlestick;
+    }
+}
+
+.#{$prefix}Chart--cluster-bar {
+    &:before {
+        content: $th-Chart--cluster-bar;
+    }
+}
+
+.#{$prefix}Chart--column-floating {
+    &:before {
+        content: $th-Chart--column-floating;
+    }
+}
+
+.#{$prefix}Chart--column-target {
+    &:before {
+        content: $th-Chart--column-target;
+    }
+}
+
+.#{$prefix}Chart--column {
+    &:before {
+        content: $th-Chart--column;
+    }
+}
+
+.#{$prefix}Chart--combo-stacked {
+    &:before {
+        content: $th-Chart--combo-stacked;
+    }
+}
+
+.#{$prefix}Chart--combo {
+    &:before {
+        content: $th-Chart--combo;
+    }
+}
+
+.#{$prefix}Chart--custom {
+    &:before {
+        content: $th-Chart--custom;
+    }
+}
+
+.#{$prefix}Chart--error-bar--alt {
+    &:before {
+        content: $th-Chart--error-bar--alt;
+    }
+}
+
+.#{$prefix}Chart--error-bar {
+    &:before {
+        content: $th-Chart--error-bar;
+    }
+}
+
+.#{$prefix}Chart--evaluation {
+    &:before {
+        content: $th-Chart--evaluation;
+    }
+}
+
+.#{$prefix}Chart--high-low {
+    &:before {
+        content: $th-Chart--high-low;
+    }
+}
+
+.#{$prefix}Chart--histogram {
+    &:before {
+        content: $th-Chart--histogram;
+    }
+}
+
+.#{$prefix}Chart--line--data {
+    &:before {
+        content: $th-Chart--line--data;
+    }
+}
+
+.#{$prefix}Chart--line-smooth {
+    &:before {
+        content: $th-Chart--line-smooth;
+    }
+}
+
+.#{$prefix}Chart--line {
+    &:before {
+        content: $th-Chart--line;
+    }
+}
+
+.#{$prefix}Chart--marimekko {
+    &:before {
+        content: $th-Chart--marimekko;
+    }
+}
+
+.#{$prefix}Chart--maximum {
+    &:before {
+        content: $th-Chart--maximum;
+    }
+}
+
+.#{$prefix}Chart--median {
+    &:before {
+        content: $th-Chart--median;
+    }
+}
+
+.#{$prefix}Chart--minimum {
+    &:before {
+        content: $th-Chart--minimum;
+    }
+}
+
+.#{$prefix}Chart--multi-line {
+    &:before {
+        content: $th-Chart--multi-line;
+    }
+}
+
+.#{$prefix}Chart--multitype {
+    &:before {
+        content: $th-Chart--multitype;
+    }
+}
+
+.#{$prefix}Chart--network {
+    &:before {
+        content: $th-Chart--network;
+    }
+}
+
+.#{$prefix}Chart--parallel {
+    &:before {
+        content: $th-Chart--parallel;
+    }
+}
+
+.#{$prefix}Chart--pie {
+    &:before {
+        content: $th-Chart--pie;
+    }
+}
+
+.#{$prefix}Chart--point {
+    &:before {
+        content: $th-Chart--point;
+    }
+}
+
+.#{$prefix}Chart--population {
+    &:before {
+        content: $th-Chart--population;
+    }
+}
+
+.#{$prefix}Chart--radar {
+    &:before {
+        content: $th-Chart--radar;
+    }
+}
+
+.#{$prefix}Chart--radial {
+    &:before {
+        content: $th-Chart--radial;
+    }
+}
+
+.#{$prefix}Chart--relationship {
+    &:before {
+        content: $th-Chart--relationship;
+    }
+}
+
+.#{$prefix}Chart--ring {
+    &:before {
+        content: $th-Chart--ring;
+    }
+}
+
+.#{$prefix}Chart--river {
+    &:before {
+        content: $th-Chart--river;
+    }
+}
+
+.#{$prefix}Chart--rose {
+    &:before {
+        content: $th-Chart--rose;
+    }
+}
+
+.#{$prefix}Chart--scatter {
+    &:before {
+        content: $th-Chart--scatter;
+    }
+}
+
+.#{$prefix}Chart--spiral {
+    &:before {
+        content: $th-Chart--spiral;
+    }
+}
+
+.#{$prefix}Chart--stacked {
+    &:before {
+        content: $th-Chart--stacked;
+    }
+}
+
+.#{$prefix}Chart--stepper {
+    &:before {
+        content: $th-Chart--stepper;
+    }
+}
+
+.#{$prefix}Chart--sunburst {
+    &:before {
+        content: $th-Chart--sunburst;
+    }
+}
+
+.#{$prefix}Chart--t-sne {
+    &:before {
+        content: $th-Chart--t-sne;
+    }
+}
+
+.#{$prefix}Chart--treemap {
+    &:before {
+        content: $th-Chart--treemap;
+    }
+}
+
+.#{$prefix}Chart--venn-diagram {
+    &:before {
+        content: $th-Chart--venn-diagram;
+    }
+}
+
+.#{$prefix}Chart--violin-plot {
+    &:before {
+        content: $th-Chart--violin-plot;
+    }
+}
+
+.#{$prefix}Chart--waterfall {
+    &:before {
+        content: $th-Chart--waterfall;
+    }
+}
+
+.#{$prefix}Chart--win-loss {
+    &:before {
+        content: $th-Chart--win-loss;
+    }
+}
+
+.#{$prefix}Chat--launch {
+    &:before {
+        content: $th-Chat--launch;
+    }
+}
+
+.#{$prefix}Chat--off {
+    &:before {
+        content: $th-Chat--off;
+    }
+}
+
+.#{$prefix}Chat--operational {
+    &:before {
+        content: $th-Chat--operational;
+    }
+}
+
+.#{$prefix}Chat-bot {
+    &:before {
+        content: $th-Chat-bot;
+    }
+}
+
+.#{$prefix}Chat {
+    &:before {
+        content: $th-Chat;
+    }
+}
+
+.#{$prefix}Checkbox--checked--filled {
+    &:before {
+        content: $th-Checkbox--checked--filled;
+    }
+}
+
+.#{$prefix}Checkbox--checked {
+    &:before {
+        content: $th-Checkbox--checked;
+    }
+}
+
+.#{$prefix}Checkbox--indeterminate--filled {
+    &:before {
+        content: $th-Checkbox--indeterminate--filled;
+    }
+}
+
+.#{$prefix}Checkbox--indeterminate {
+    &:before {
+        content: $th-Checkbox--indeterminate;
+    }
+}
+
+.#{$prefix}Checkbox {
+    &:before {
+        content: $th-Checkbox;
+    }
+}
+
+.#{$prefix}Checkmark--filled--error {
+    &:before {
+        content: $th-Checkmark--filled--error;
+    }
+}
+
+.#{$prefix}Checkmark--filled--warning {
+    &:before {
+        content: $th-Checkmark--filled--warning;
+    }
+}
+
+.#{$prefix}Checkmark--filled {
+    &:before {
+        content: $th-Checkmark--filled;
+    }
+}
+
+.#{$prefix}Checkmark--outline--error {
+    &:before {
+        content: $th-Checkmark--outline--error;
+    }
+}
+
+.#{$prefix}Checkmark--outline--warning {
+    &:before {
+        content: $th-Checkmark--outline--warning;
+    }
+}
+
+.#{$prefix}Checkmark--outline {
+    &:before {
+        content: $th-Checkmark--outline;
+    }
+}
+
+.#{$prefix}Checkmark {
+    &:before {
+        content: $th-Checkmark;
+    }
+}
+
+.#{$prefix}Chemistry--reference {
+    &:before {
+        content: $th-Chemistry--reference;
+    }
+}
+
+.#{$prefix}Chemistry {
+    &:before {
+        content: $th-Chemistry;
+    }
+}
+
+.#{$prefix}Chevron--down {
+    &:before {
+        content: $th-Chevron--down;
+    }
+}
+
+.#{$prefix}Chevron--left {
+    &:before {
+        content: $th-Chevron--left;
+    }
+}
+
+.#{$prefix}Chevron--mini {
+    &:before {
+        content: $th-Chevron--mini;
+    }
+}
+
+.#{$prefix}Chevron--right {
+    &:before {
+        content: $th-Chevron--right;
+    }
+}
+
+.#{$prefix}Chevron--sort--down {
+    &:before {
+        content: $th-Chevron--sort--down;
+    }
+}
+
+.#{$prefix}Chevron--sort--up {
+    &:before {
+        content: $th-Chevron--sort--up;
+    }
+}
+
+.#{$prefix}Chevron--sort {
+    &:before {
+        content: $th-Chevron--sort;
+    }
+}
+
+.#{$prefix}Chevron--up {
+    &:before {
+        content: $th-Chevron--up;
+    }
+}
+
+.#{$prefix}Chip {
+    &:before {
+        content: $th-Chip;
+    }
+}
+
+.#{$prefix}Choices {
+    &:before {
+        content: $th-Choices;
+    }
+}
+
+.#{$prefix}Choose-item {
+    &:before {
+        content: $th-Choose-item;
+    }
+}
+
+.#{$prefix}Choropleth-map {
+    &:before {
+        content: $th-Choropleth-map;
+    }
+}
+
+.#{$prefix}Cics--cmas {
+    &:before {
+        content: $th-Cics--cmas;
+    }
+}
+
+.#{$prefix}Cics--explorer {
+    &:before {
+        content: $th-Cics--explorer;
+    }
+}
+
+.#{$prefix}Cics--system-group {
+    &:before {
+        content: $th-Cics--system-group;
+    }
+}
+
+.#{$prefix}Cics--wui-region {
+    &:before {
+        content: $th-Cics--wui-region;
+    }
+}
+
+.#{$prefix}Cics-region--routing {
+    &:before {
+        content: $th-Cics-region--routing;
+    }
+}
+
+.#{$prefix}Cics-region--target {
+    &:before {
+        content: $th-Cics-region--target;
+    }
+}
+
+.#{$prefix}Cics-region {
+    &:before {
+        content: $th-Cics-region;
+    }
+}
+
+.#{$prefix}Cicsplex {
+    &:before {
+        content: $th-Cicsplex;
+    }
+}
+
+.#{$prefix}Circle--filled {
+    &:before {
+        content: $th-Circle--filled;
+    }
+}
+
+.#{$prefix}Circle--solid {
+    &:before {
+        content: $th-Circle--solid;
+    }
+}
+
+.#{$prefix}Circle-dash {
+    &:before {
+        content: $th-Circle-dash;
+    }
+}
+
+.#{$prefix}Circle-fill {
+    &:before {
+        content: $th-Circle-fill;
+    }
+}
+
+.#{$prefix}Circle-measurement {
+    &:before {
+        content: $th-Circle-measurement;
+    }
+}
+
+.#{$prefix}Circle-packing {
+    &:before {
+        content: $th-Circle-packing;
+    }
+}
+
+.#{$prefix}Circle-stroke {
+    &:before {
+        content: $th-Circle-stroke;
+    }
+}
+
+.#{$prefix}Circuit-composer {
+    &:before {
+        content: $th-Circuit-composer;
+    }
+}
+
+.#{$prefix}Classification {
+    &:before {
+        content: $th-Classification;
+    }
+}
+
+.#{$prefix}Classifier--language {
+    &:before {
+        content: $th-Classifier--language;
+    }
+}
+
+.#{$prefix}Clean {
+    &:before {
+        content: $th-Clean;
+    }
+}
+
+.#{$prefix}Close--filled {
+    &:before {
+        content: $th-Close--filled;
+    }
+}
+
+.#{$prefix}Close--outline {
+    &:before {
+        content: $th-Close--outline;
+    }
+}
+
+.#{$prefix}Close {
+    &:before {
+        content: $th-Close;
+    }
+}
+
+.#{$prefix}Closed-caption--alt {
+    &:before {
+        content: $th-Closed-caption--alt;
+    }
+}
+
+.#{$prefix}Closed-caption--filled {
+    &:before {
+        content: $th-Closed-caption--filled;
+    }
+}
+
+.#{$prefix}Closed-caption {
+    &:before {
+        content: $th-Closed-caption;
+    }
+}
+
+.#{$prefix}Cloud--alerting {
+    &:before {
+        content: $th-Cloud--alerting;
+    }
+}
+
+.#{$prefix}Cloud--auditing {
+    &:before {
+        content: $th-Cloud--auditing;
+    }
+}
+
+.#{$prefix}Cloud--data-ops {
+    &:before {
+        content: $th-Cloud--data-ops;
+    }
+}
+
+.#{$prefix}Cloud--download {
+    &:before {
+        content: $th-Cloud--download;
+    }
+}
+
+.#{$prefix}Cloud--logging {
+    &:before {
+        content: $th-Cloud--logging;
+    }
+}
+
+.#{$prefix}Cloud--monitoring {
+    &:before {
+        content: $th-Cloud--monitoring;
+    }
+}
+
+.#{$prefix}Cloud--offline {
+    &:before {
+        content: $th-Cloud--offline;
+    }
+}
+
+.#{$prefix}Cloud--service-management {
+    &:before {
+        content: $th-Cloud--service-management;
+    }
+}
+
+.#{$prefix}Cloud--upload {
+    &:before {
+        content: $th-Cloud--upload;
+    }
+}
+
+.#{$prefix}Cloud-app {
+    &:before {
+        content: $th-Cloud-app;
+    }
+}
+
+.#{$prefix}Cloud-ceiling {
+    &:before {
+        content: $th-Cloud-ceiling;
+    }
+}
+
+.#{$prefix}Cloud-foundry--1 {
+    &:before {
+        content: $th-Cloud-foundry--1;
+    }
+}
+
+.#{$prefix}Cloud-foundry--2 {
+    &:before {
+        content: $th-Cloud-foundry--2;
+    }
+}
+
+.#{$prefix}Cloud-registry {
+    &:before {
+        content: $th-Cloud-registry;
+    }
+}
+
+.#{$prefix}Cloud-satellite--config {
+    &:before {
+        content: $th-Cloud-satellite--config;
+    }
+}
+
+.#{$prefix}Cloud-satellite--link {
+    &:before {
+        content: $th-Cloud-satellite--link;
+    }
+}
+
+.#{$prefix}Cloud-satellite--services {
+    &:before {
+        content: $th-Cloud-satellite--services;
+    }
+}
+
+.#{$prefix}Cloud-satellite {
+    &:before {
+        content: $th-Cloud-satellite;
+    }
+}
+
+.#{$prefix}Cloud-services {
+    &:before {
+        content: $th-Cloud-services;
+    }
+}
+
+.#{$prefix}Cloud {
+    &:before {
+        content: $th-Cloud;
+    }
+}
+
+.#{$prefix}Cloudy {
+    &:before {
+        content: $th-Cloudy;
+    }
+}
+
+.#{$prefix}Cobb-angle {
+    &:before {
+        content: $th-Cobb-angle;
+    }
+}
+
+.#{$prefix}Code--hide {
+    &:before {
+        content: $th-Code--hide;
+    }
+}
+
+.#{$prefix}Code--reference {
+    &:before {
+        content: $th-Code--reference;
+    }
+}
+
+.#{$prefix}Code-signing-service {
+    &:before {
+        content: $th-Code-signing-service;
+    }
+}
+
+.#{$prefix}Code {
+    &:before {
+        content: $th-Code;
+    }
+}
+
+.#{$prefix}Cognitive {
+    &:before {
+        content: $th-Cognitive;
+    }
+}
+
+.#{$prefix}Collaborate {
+    &:before {
+        content: $th-Collaborate;
+    }
+}
+
+.#{$prefix}Collapse-all {
+    &:before {
+        content: $th-Collapse-all;
+    }
+}
+
+.#{$prefix}Collapse-categories {
+    &:before {
+        content: $th-Collapse-categories;
+    }
+}
+
+.#{$prefix}Color-palette {
+    &:before {
+        content: $th-Color-palette;
+    }
+}
+
+.#{$prefix}Color-switch {
+    &:before {
+        content: $th-Color-switch;
+    }
+}
+
+.#{$prefix}Column--delete {
+    &:before {
+        content: $th-Column--delete;
+    }
+}
+
+.#{$prefix}Column--insert {
+    &:before {
+        content: $th-Column--insert;
+    }
+}
+
+.#{$prefix}Column-dependency {
+    &:before {
+        content: $th-Column-dependency;
+    }
+}
+
+.#{$prefix}Column {
+    &:before {
+        content: $th-Column;
+    }
+}
+
+.#{$prefix}Commit {
+    &:before {
+        content: $th-Commit;
+    }
+}
+
+.#{$prefix}Communication--unified {
+    &:before {
+        content: $th-Communication--unified;
+    }
+}
+
+.#{$prefix}Compare {
+    &:before {
+        content: $th-Compare;
+    }
+}
+
+.#{$prefix}Compass {
+    &:before {
+        content: $th-Compass;
+    }
+}
+
+.#{$prefix}Composer-edit {
+    &:before {
+        content: $th-Composer-edit;
+    }
+}
+
+.#{$prefix}Concept {
+    &:before {
+        content: $th-Concept;
+    }
+}
+
+.#{$prefix}Condition--point {
+    &:before {
+        content: $th-Condition--point;
+    }
+}
+
+.#{$prefix}Condition--wait-point {
+    &:before {
+        content: $th-Condition--wait-point;
+    }
+}
+
+.#{$prefix}Connect--recursive {
+    &:before {
+        content: $th-Connect--recursive;
+    }
+}
+
+.#{$prefix}Connect--source {
+    &:before {
+        content: $th-Connect--source;
+    }
+}
+
+.#{$prefix}Connect--target {
+    &:before {
+        content: $th-Connect--target;
+    }
+}
+
+.#{$prefix}Connect {
+    &:before {
+        content: $th-Connect;
+    }
+}
+
+.#{$prefix}Connection--receive {
+    &:before {
+        content: $th-Connection--receive;
+    }
+}
+
+.#{$prefix}Connection--send {
+    &:before {
+        content: $th-Connection--send;
+    }
+}
+
+.#{$prefix}Connection--two-way {
+    &:before {
+        content: $th-Connection--two-way;
+    }
+}
+
+.#{$prefix}Connection-signal--off {
+    &:before {
+        content: $th-Connection-signal--off;
+    }
+}
+
+.#{$prefix}Connection-signal {
+    &:before {
+        content: $th-Connection-signal;
+    }
+}
+
+.#{$prefix}Construction {
+    &:before {
+        content: $th-Construction;
+    }
+}
+
+.#{$prefix}Container-registry {
+    &:before {
+        content: $th-Container-registry;
+    }
+}
+
+.#{$prefix}Container-services {
+    &:before {
+        content: $th-Container-services;
+    }
+}
+
+.#{$prefix}Container-software {
+    &:before {
+        content: $th-Container-software;
+    }
+}
+
+.#{$prefix}Content-delivery-network {
+    &:before {
+        content: $th-Content-delivery-network;
+    }
+}
+
+.#{$prefix}Content-view {
+    &:before {
+        content: $th-Content-view;
+    }
+}
+
+.#{$prefix}Continue--filled {
+    &:before {
+        content: $th-Continue--filled;
+    }
+}
+
+.#{$prefix}Continue {
+    &:before {
+        content: $th-Continue;
+    }
+}
+
+.#{$prefix}Contour--draw {
+    &:before {
+        content: $th-Contour--draw;
+    }
+}
+
+.#{$prefix}Contour--edit {
+    &:before {
+        content: $th-Contour--edit;
+    }
+}
+
+.#{$prefix}Contour-finding {
+    &:before {
+        content: $th-Contour-finding;
+    }
+}
+
+.#{$prefix}Contrast {
+    &:before {
+        content: $th-Contrast;
+    }
+}
+
+.#{$prefix}Convert-to-cloud {
+    &:before {
+        content: $th-Convert-to-cloud;
+    }
+}
+
+.#{$prefix}Cookie {
+    &:before {
+        content: $th-Cookie;
+    }
+}
+
+.#{$prefix}Copy--file {
+    &:before {
+        content: $th-Copy--file;
+    }
+}
+
+.#{$prefix}Copy--link {
+    &:before {
+        content: $th-Copy--link;
+    }
+}
+
+.#{$prefix}Copy {
+    &:before {
+        content: $th-Copy;
+    }
+}
+
+.#{$prefix}Corn {
+    &:before {
+        content: $th-Corn;
+    }
+}
+
+.#{$prefix}Corner {
+    &:before {
+        content: $th-Corner;
+    }
+}
+
+.#{$prefix}Coronavirus {
+    &:before {
+        content: $th-Coronavirus;
+    }
+}
+
+.#{$prefix}Cost--total {
+    &:before {
+        content: $th-Cost--total;
+    }
+}
+
+.#{$prefix}Cost {
+    &:before {
+        content: $th-Cost;
+    }
+}
+
+.#{$prefix}Cough {
+    &:before {
+        content: $th-Cough;
+    }
+}
+
+.#{$prefix}Course {
+    &:before {
+        content: $th-Course;
+    }
+}
+
+.#{$prefix}Covariate {
+    &:before {
+        content: $th-Covariate;
+    }
+}
+
+.#{$prefix}Credentials {
+    &:before {
+        content: $th-Credentials;
+    }
+}
+
+.#{$prefix}Critical-severity {
+    &:before {
+        content: $th-Critical-severity;
+    }
+}
+
+.#{$prefix}Critical {
+    &:before {
+        content: $th-Critical;
+    }
+}
+
+.#{$prefix}Crop-growth {
+    &:before {
+        content: $th-Crop-growth;
+    }
+}
+
+.#{$prefix}Crop-health {
+    &:before {
+        content: $th-Crop-health;
+    }
+}
+
+.#{$prefix}Crop {
+    &:before {
+        content: $th-Crop;
+    }
+}
+
+.#{$prefix}Cross-reference {
+    &:before {
+        content: $th-Cross-reference;
+    }
+}
+
+.#{$prefix}Cross-tab {
+    &:before {
+        content: $th-Cross-tab;
+    }
+}
+
+.#{$prefix}Crossroads {
+    &:before {
+        content: $th-Crossroads;
+    }
+}
+
+.#{$prefix}Crowd-report--filled {
+    &:before {
+        content: $th-Crowd-report--filled;
+    }
+}
+
+.#{$prefix}Crowd-report {
+    &:before {
+        content: $th-Crowd-report;
+    }
+}
+
+.#{$prefix}Csv {
+    &:before {
+        content: $th-Csv;
+    }
+}
+
+.#{$prefix}Cu1 {
+    &:before {
+        content: $th-Cu1;
+    }
+}
+
+.#{$prefix}Cu3 {
+    &:before {
+        content: $th-Cu3;
+    }
+}
+
+.#{$prefix}Cube-view {
+    &:before {
+        content: $th-Cube-view;
+    }
+}
+
+.#{$prefix}Cube {
+    &:before {
+        content: $th-Cube;
+    }
+}
+
+.#{$prefix}Currency--baht {
+    &:before {
+        content: $th-Currency--baht;
+    }
+}
+
+.#{$prefix}Currency--dollar {
+    &:before {
+        content: $th-Currency--dollar;
+    }
+}
+
+.#{$prefix}Currency--euro {
+    &:before {
+        content: $th-Currency--euro;
+    }
+}
+
+.#{$prefix}Currency--lira {
+    &:before {
+        content: $th-Currency--lira;
+    }
+}
+
+.#{$prefix}Currency--pound {
+    &:before {
+        content: $th-Currency--pound;
+    }
+}
+
+.#{$prefix}Currency--ruble {
+    &:before {
+        content: $th-Currency--ruble;
+    }
+}
+
+.#{$prefix}Currency--rupee {
+    &:before {
+        content: $th-Currency--rupee;
+    }
+}
+
+.#{$prefix}Currency--shekel {
+    &:before {
+        content: $th-Currency--shekel;
+    }
+}
+
+.#{$prefix}Currency--won {
+    &:before {
+        content: $th-Currency--won;
+    }
+}
+
+.#{$prefix}Currency--yen {
+    &:before {
+        content: $th-Currency--yen;
+    }
+}
+
+.#{$prefix}Currency {
+    &:before {
+        content: $th-Currency;
+    }
+}
+
+.#{$prefix}Cursor--1 {
+    &:before {
+        content: $th-Cursor--1;
+    }
+}
+
+.#{$prefix}Cursor--2 {
+    &:before {
+        content: $th-Cursor--2;
+    }
+}
+
+.#{$prefix}Cut-in-half {
+    &:before {
+        content: $th-Cut-in-half;
+    }
+}
+
+.#{$prefix}Cut-out {
+    &:before {
+        content: $th-Cut-out;
+    }
+}
+
+.#{$prefix}Cut {
+    &:before {
+        content: $th-Cut;
+    }
+}
+
+.#{$prefix}Cy {
+    &:before {
+        content: $th-Cy;
+    }
+}
+
+.#{$prefix}Cyclist {
+    &:before {
+        content: $th-Cyclist;
+    }
+}
+
+.#{$prefix}Cz {
+    &:before {
+        content: $th-Cz;
+    }
+}
+
+.#{$prefix}Dashboard--reference {
+    &:before {
+        content: $th-Dashboard--reference;
+    }
+}
+
+.#{$prefix}Dashboard {
+    &:before {
+        content: $th-Dashboard;
+    }
+}
+
+.#{$prefix}Data--1 {
+    &:before {
+        content: $th-Data--1;
+    }
+}
+
+.#{$prefix}Data--2 {
+    &:before {
+        content: $th-Data--2;
+    }
+}
+
+.#{$prefix}Data--base--alt {
+    &:before {
+        content: $th-Data--base--alt;
+    }
+}
+
+.#{$prefix}Data--base {
+    &:before {
+        content: $th-Data--base;
+    }
+}
+
+.#{$prefix}Data--center {
+    &:before {
+        content: $th-Data--center;
+    }
+}
+
+.#{$prefix}Data--check {
+    &:before {
+        content: $th-Data--check;
+    }
+}
+
+.#{$prefix}Data--connected {
+    &:before {
+        content: $th-Data--connected;
+    }
+}
+
+.#{$prefix}Data--error {
+    &:before {
+        content: $th-Data--error;
+    }
+}
+
+.#{$prefix}Data--format {
+    &:before {
+        content: $th-Data--format;
+    }
+}
+
+.#{$prefix}Data--reference {
+    &:before {
+        content: $th-Data--reference;
+    }
+}
+
+.#{$prefix}Data--set {
+    &:before {
+        content: $th-Data--set;
+    }
+}
+
+.#{$prefix}Data--structured {
+    &:before {
+        content: $th-Data--structured;
+    }
+}
+
+.#{$prefix}Data--unstructured {
+    &:before {
+        content: $th-Data--unstructured;
+    }
+}
+
+.#{$prefix}Data--view--alt {
+    &:before {
+        content: $th-Data--view--alt;
+    }
+}
+
+.#{$prefix}Data--view {
+    &:before {
+        content: $th-Data--view;
+    }
+}
+
+.#{$prefix}Data-accessor {
+    &:before {
+        content: $th-Data-accessor;
+    }
+}
+
+.#{$prefix}Data-backup {
+    &:before {
+        content: $th-Data-backup;
+    }
+}
+
+.#{$prefix}Data-bin {
+    &:before {
+        content: $th-Data-bin;
+    }
+}
+
+.#{$prefix}Data-blob {
+    &:before {
+        content: $th-Data-blob;
+    }
+}
+
+.#{$prefix}Data-class {
+    &:before {
+        content: $th-Data-class;
+    }
+}
+
+.#{$prefix}Data-collection {
+    &:before {
+        content: $th-Data-collection;
+    }
+}
+
+.#{$prefix}Data-definition {
+    &:before {
+        content: $th-Data-definition;
+    }
+}
+
+.#{$prefix}Data-diode {
+    &:before {
+        content: $th-Data-diode;
+    }
+}
+
+.#{$prefix}Data-enrichment--add {
+    &:before {
+        content: $th-Data-enrichment--add;
+    }
+}
+
+.#{$prefix}Data-enrichment {
+    &:before {
+        content: $th-Data-enrichment;
+    }
+}
+
+.#{$prefix}Data-player {
+    &:before {
+        content: $th-Data-player;
+    }
+}
+
+.#{$prefix}Data-quality-definition {
+    &:before {
+        content: $th-Data-quality-definition;
+    }
+}
+
+.#{$prefix}Data-refinery--reference {
+    &:before {
+        content: $th-Data-refinery--reference;
+    }
+}
+
+.#{$prefix}Data-refinery {
+    &:before {
+        content: $th-Data-refinery;
+    }
+}
+
+.#{$prefix}Data-share {
+    &:before {
+        content: $th-Data-share;
+    }
+}
+
+.#{$prefix}Data-table--reference {
+    &:before {
+        content: $th-Data-table--reference;
+    }
+}
+
+.#{$prefix}Data-table {
+    &:before {
+        content: $th-Data-table;
+    }
+}
+
+.#{$prefix}Data-vis--1 {
+    &:before {
+        content: $th-Data-vis--1;
+    }
+}
+
+.#{$prefix}Data-vis--2 {
+    &:before {
+        content: $th-Data-vis--2;
+    }
+}
+
+.#{$prefix}Data-vis--3 {
+    &:before {
+        content: $th-Data-vis--3;
+    }
+}
+
+.#{$prefix}Data-vis--4 {
+    &:before {
+        content: $th-Data-vis--4;
+    }
+}
+
+.#{$prefix}Database--datastax {
+    &:before {
+        content: $th-Database--datastax;
+    }
+}
+
+.#{$prefix}Database--elastic {
+    &:before {
+        content: $th-Database--elastic;
+    }
+}
+
+.#{$prefix}Database--enterprise-db2 {
+    &:before {
+        content: $th-Database--enterprise-db2;
+    }
+}
+
+.#{$prefix}Database--etcd {
+    &:before {
+        content: $th-Database--etcd;
+    }
+}
+
+.#{$prefix}Database--mongodb {
+    &:before {
+        content: $th-Database--mongodb;
+    }
+}
+
+.#{$prefix}Database--postgresql {
+    &:before {
+        content: $th-Database--postgresql;
+    }
+}
+
+.#{$prefix}Database--rabbit {
+    &:before {
+        content: $th-Database--rabbit;
+    }
+}
+
+.#{$prefix}Database--redis {
+    &:before {
+        content: $th-Database--redis;
+    }
+}
+
+.#{$prefix}Datastore {
+    &:before {
+        content: $th-Datastore;
+    }
+}
+
+.#{$prefix}Debug {
+    &:before {
+        content: $th-Debug;
+    }
+}
+
+.#{$prefix}Decision-tree {
+    &:before {
+        content: $th-Decision-tree;
+    }
+}
+
+.#{$prefix}Delivery--add {
+    &:before {
+        content: $th-Delivery--add;
+    }
+}
+
+.#{$prefix}Delivery--parcel {
+    &:before {
+        content: $th-Delivery--parcel;
+    }
+}
+
+.#{$prefix}Delivery-truck {
+    &:before {
+        content: $th-Delivery-truck;
+    }
+}
+
+.#{$prefix}Delivery {
+    &:before {
+        content: $th-Delivery;
+    }
+}
+
+.#{$prefix}Denominate {
+    &:before {
+        content: $th-Denominate;
+    }
+}
+
+.#{$prefix}Departure {
+    &:before {
+        content: $th-Departure;
+    }
+}
+
+.#{$prefix}Deploy-rules {
+    &:before {
+        content: $th-Deploy-rules;
+    }
+}
+
+.#{$prefix}Deploy {
+    &:before {
+        content: $th-Deploy;
+    }
+}
+
+.#{$prefix}Deployment-pattern {
+    &:before {
+        content: $th-Deployment-pattern;
+    }
+}
+
+.#{$prefix}Deployment-policy {
+    &:before {
+        content: $th-Deployment-policy;
+    }
+}
+
+.#{$prefix}Deployment-unit--data {
+    &:before {
+        content: $th-Deployment-unit--data;
+    }
+}
+
+.#{$prefix}Deployment-unit--execution {
+    &:before {
+        content: $th-Deployment-unit--execution;
+    }
+}
+
+.#{$prefix}Deployment-unit--installation1 {
+    &:before {
+        content: $th-Deployment-unit--installation1;
+    }
+}
+
+.#{$prefix}Deployment-unit--presentation {
+    &:before {
+        content: $th-Deployment-unit--presentation;
+    }
+}
+
+.#{$prefix}Deployment-unit--technical--data {
+    &:before {
+        content: $th-Deployment-unit--technical--data;
+    }
+}
+
+.#{$prefix}Deployment-unit--technical--execution {
+    &:before {
+        content: $th-Deployment-unit--technical--execution;
+    }
+}
+
+.#{$prefix}Deployment-unit--technical--installation {
+    &:before {
+        content: $th-Deployment-unit--technical--installation;
+    }
+}
+
+.#{$prefix}Deployment-unit--technical--presentation {
+    &:before {
+        content: $th-Deployment-unit--technical--presentation;
+    }
+}
+
+.#{$prefix}Desk--adjustable {
+    &:before {
+        content: $th-Desk--adjustable;
+    }
+}
+
+.#{$prefix}Development {
+    &:before {
+        content: $th-Development;
+    }
+}
+
+.#{$prefix}Devices {
+    &:before {
+        content: $th-Devices;
+    }
+}
+
+.#{$prefix}Dew-point--filled {
+    &:before {
+        content: $th-Dew-point--filled;
+    }
+}
+
+.#{$prefix}Dew-point {
+    &:before {
+        content: $th-Dew-point;
+    }
+}
+
+.#{$prefix}Diagram--reference {
+    &:before {
+        content: $th-Diagram--reference;
+    }
+}
+
+.#{$prefix}Diagram {
+    &:before {
+        content: $th-Diagram;
+    }
+}
+
+.#{$prefix}Dicom--6000 {
+    &:before {
+        content: $th-Dicom--6000;
+    }
+}
+
+.#{$prefix}Dicom--overlay {
+    &:before {
+        content: $th-Dicom--overlay;
+    }
+}
+
+.#{$prefix}Direct-link {
+    &:before {
+        content: $th-Direct-link;
+    }
+}
+
+.#{$prefix}Direction--bear-right--01--filled {
+    &:before {
+        content: $th-Direction--bear-right--01--filled;
+    }
+}
+
+.#{$prefix}Direction--bear-right--01 {
+    &:before {
+        content: $th-Direction--bear-right--01;
+    }
+}
+
+.#{$prefix}Direction--bear-right--02--filled {
+    &:before {
+        content: $th-Direction--bear-right--02--filled;
+    }
+}
+
+.#{$prefix}Direction--bear-right--02 {
+    &:before {
+        content: $th-Direction--bear-right--02;
+    }
+}
+
+.#{$prefix}Direction--curve--filled {
+    &:before {
+        content: $th-Direction--curve--filled;
+    }
+}
+
+.#{$prefix}Direction--curve {
+    &:before {
+        content: $th-Direction--curve;
+    }
+}
+
+.#{$prefix}Direction--fork--filled {
+    &:before {
+        content: $th-Direction--fork--filled;
+    }
+}
+
+.#{$prefix}Direction--fork {
+    &:before {
+        content: $th-Direction--fork;
+    }
+}
+
+.#{$prefix}Direction--loop-left--filled {
+    &:before {
+        content: $th-Direction--loop-left--filled;
+    }
+}
+
+.#{$prefix}Direction--loop-left {
+    &:before {
+        content: $th-Direction--loop-left;
+    }
+}
+
+.#{$prefix}Direction--loop-right--filled {
+    &:before {
+        content: $th-Direction--loop-right--filled;
+    }
+}
+
+.#{$prefix}Direction--loop-right {
+    &:before {
+        content: $th-Direction--loop-right;
+    }
+}
+
+.#{$prefix}Direction--merge--filled {
+    &:before {
+        content: $th-Direction--merge--filled;
+    }
+}
+
+.#{$prefix}Direction--merge {
+    &:before {
+        content: $th-Direction--merge;
+    }
+}
+
+.#{$prefix}Direction--right--01--filled {
+    &:before {
+        content: $th-Direction--right--01--filled;
+    }
+}
+
+.#{$prefix}Direction--right--01 {
+    &:before {
+        content: $th-Direction--right--01;
+    }
+}
+
+.#{$prefix}Direction--right--02--filled {
+    &:before {
+        content: $th-Direction--right--02--filled;
+    }
+}
+
+.#{$prefix}Direction--right--02 {
+    &:before {
+        content: $th-Direction--right--02;
+    }
+}
+
+.#{$prefix}Direction--rotary--first-right--filled {
+    &:before {
+        content: $th-Direction--rotary--first-right--filled;
+    }
+}
+
+.#{$prefix}Direction--rotary--first-right {
+    &:before {
+        content: $th-Direction--rotary--first-right;
+    }
+}
+
+.#{$prefix}Direction--rotary--right--filled {
+    &:before {
+        content: $th-Direction--rotary--right--filled;
+    }
+}
+
+.#{$prefix}Direction--rotary--right {
+    &:before {
+        content: $th-Direction--rotary--right;
+    }
+}
+
+.#{$prefix}Direction--rotary--straight--filled {
+    &:before {
+        content: $th-Direction--rotary--straight--filled;
+    }
+}
+
+.#{$prefix}Direction--rotary--straight {
+    &:before {
+        content: $th-Direction--rotary--straight;
+    }
+}
+
+.#{$prefix}Direction--sharp-turn--filled {
+    &:before {
+        content: $th-Direction--sharp-turn--filled;
+    }
+}
+
+.#{$prefix}Direction--sharp-turn {
+    &:before {
+        content: $th-Direction--sharp-turn;
+    }
+}
+
+.#{$prefix}Direction--straight--filled {
+    &:before {
+        content: $th-Direction--straight--filled;
+    }
+}
+
+.#{$prefix}Direction--straight--right--filled {
+    &:before {
+        content: $th-Direction--straight--right--filled;
+    }
+}
+
+.#{$prefix}Direction--straight--right {
+    &:before {
+        content: $th-Direction--straight--right;
+    }
+}
+
+.#{$prefix}Direction--straight {
+    &:before {
+        content: $th-Direction--straight;
+    }
+}
+
+.#{$prefix}Direction--u-turn--filled {
+    &:before {
+        content: $th-Direction--u-turn--filled;
+    }
+}
+
+.#{$prefix}Direction--u-turn {
+    &:before {
+        content: $th-Direction--u-turn;
+    }
+}
+
+.#{$prefix}Directory-domain {
+    &:before {
+        content: $th-Directory-domain;
+    }
+}
+
+.#{$prefix}Distribute--horizontal-center {
+    &:before {
+        content: $th-Distribute--horizontal-center;
+    }
+}
+
+.#{$prefix}Distribute--horizontal-left {
+    &:before {
+        content: $th-Distribute--horizontal-left;
+    }
+}
+
+.#{$prefix}Distribute--horizontal-right {
+    &:before {
+        content: $th-Distribute--horizontal-right;
+    }
+}
+
+.#{$prefix}Distribute--vertical-bottom {
+    &:before {
+        content: $th-Distribute--vertical-bottom;
+    }
+}
+
+.#{$prefix}Distribute--vertical-center {
+    &:before {
+        content: $th-Distribute--vertical-center;
+    }
+}
+
+.#{$prefix}Distribute--vertical-top {
+    &:before {
+        content: $th-Distribute--vertical-top;
+    }
+}
+
+.#{$prefix}Dna {
+    &:before {
+        content: $th-Dna;
+    }
+}
+
+.#{$prefix}Dns-services {
+    &:before {
+        content: $th-Dns-services;
+    }
+}
+
+.#{$prefix}Doc {
+    &:before {
+        content: $th-Doc;
+    }
+}
+
+.#{$prefix}Document--add {
+    &:before {
+        content: $th-Document--add;
+    }
+}
+
+.#{$prefix}Document--attachment {
+    &:before {
+        content: $th-Document--attachment;
+    }
+}
+
+.#{$prefix}Document--audio {
+    &:before {
+        content: $th-Document--audio;
+    }
+}
+
+.#{$prefix}Document--blank {
+    &:before {
+        content: $th-Document--blank;
+    }
+}
+
+.#{$prefix}Document--download {
+    &:before {
+        content: $th-Document--download;
+    }
+}
+
+.#{$prefix}Document--epdf {
+    &:before {
+        content: $th-Document--epdf;
+    }
+}
+
+.#{$prefix}Document--export {
+    &:before {
+        content: $th-Document--export;
+    }
+}
+
+.#{$prefix}Document--horizontal {
+    &:before {
+        content: $th-Document--horizontal;
+    }
+}
+
+.#{$prefix}Document--import {
+    &:before {
+        content: $th-Document--import;
+    }
+}
+
+.#{$prefix}Document--pdf {
+    &:before {
+        content: $th-Document--pdf;
+    }
+}
+
+.#{$prefix}Document--preliminary {
+    &:before {
+        content: $th-Document--preliminary;
+    }
+}
+
+.#{$prefix}Document--protected {
+    &:before {
+        content: $th-Document--protected;
+    }
+}
+
+.#{$prefix}Document--security {
+    &:before {
+        content: $th-Document--security;
+    }
+}
+
+.#{$prefix}Document--signed {
+    &:before {
+        content: $th-Document--signed;
+    }
+}
+
+.#{$prefix}Document--sketch {
+    &:before {
+        content: $th-Document--sketch;
+    }
+}
+
+.#{$prefix}Document--subtract {
+    &:before {
+        content: $th-Document--subtract;
+    }
+}
+
+.#{$prefix}Document--tasks {
+    &:before {
+        content: $th-Document--tasks;
+    }
+}
+
+.#{$prefix}Document--unknown {
+    &:before {
+        content: $th-Document--unknown;
+    }
+}
+
+.#{$prefix}Document--unprotected {
+    &:before {
+        content: $th-Document--unprotected;
+    }
+}
+
+.#{$prefix}Document--vertical {
+    &:before {
+        content: $th-Document--vertical;
+    }
+}
+
+.#{$prefix}Document--video {
+    &:before {
+        content: $th-Document--video;
+    }
+}
+
+.#{$prefix}Document--view {
+    &:before {
+        content: $th-Document--view;
+    }
+}
+
+.#{$prefix}Document--word-processor--reference {
+    &:before {
+        content: $th-Document--word-processor--reference;
+    }
+}
+
+.#{$prefix}Document--word-processor {
+    &:before {
+        content: $th-Document--word-processor;
+    }
+}
+
+.#{$prefix}Document-sentiment {
+    &:before {
+        content: $th-Document-sentiment;
+    }
+}
+
+.#{$prefix}Document {
+    &:before {
+        content: $th-Document;
+    }
+}
+
+.#{$prefix}Dog-walker {
+    &:before {
+        content: $th-Dog-walker;
+    }
+}
+
+.#{$prefix}Dot-mark {
+    &:before {
+        content: $th-Dot-mark;
+    }
+}
+
+.#{$prefix}Double-integer {
+    &:before {
+        content: $th-Double-integer;
+    }
+}
+
+.#{$prefix}Down-to-bottom {
+    &:before {
+        content: $th-Down-to-bottom;
+    }
+}
+
+.#{$prefix}Download-study {
+    &:before {
+        content: $th-Download-study;
+    }
+}
+
+.#{$prefix}Download {
+    &:before {
+        content: $th-Download;
+    }
+}
+
+.#{$prefix}Drag--horizontal {
+    &:before {
+        content: $th-Drag--horizontal;
+    }
+}
+
+.#{$prefix}Drag--vertical {
+    &:before {
+        content: $th-Drag--vertical;
+    }
+}
+
+.#{$prefix}Draggable {
+    &:before {
+        content: $th-Draggable;
+    }
+}
+
+.#{$prefix}Draw {
+    &:before {
+        content: $th-Draw;
+    }
+}
+
+.#{$prefix}Drill-back {
+    &:before {
+        content: $th-Drill-back;
+    }
+}
+
+.#{$prefix}Drill-down {
+    &:before {
+        content: $th-Drill-down;
+    }
+}
+
+.#{$prefix}Drill-through {
+    &:before {
+        content: $th-Drill-through;
+    }
+}
+
+.#{$prefix}Driver-analysis {
+    &:before {
+        content: $th-Driver-analysis;
+    }
+}
+
+.#{$prefix}Drone--delivery {
+    &:before {
+        content: $th-Drone--delivery;
+    }
+}
+
+.#{$prefix}Drone--front {
+    &:before {
+        content: $th-Drone--front;
+    }
+}
+
+.#{$prefix}Drone--video {
+    &:before {
+        content: $th-Drone--video;
+    }
+}
+
+.#{$prefix}Drone {
+    &:before {
+        content: $th-Drone;
+    }
+}
+
+.#{$prefix}Drop-photo--filled {
+    &:before {
+        content: $th-Drop-photo--filled;
+    }
+}
+
+.#{$prefix}Drop-photo {
+    &:before {
+        content: $th-Drop-photo;
+    }
+}
+
+.#{$prefix}Drought {
+    &:before {
+        content: $th-Drought;
+    }
+}
+
+.#{$prefix}Dvr {
+    &:before {
+        content: $th-Dvr;
+    }
+}
+
+.#{$prefix}Earth--americas--filled {
+    &:before {
+        content: $th-Earth--americas--filled;
+    }
+}
+
+.#{$prefix}Earth--americas {
+    &:before {
+        content: $th-Earth--americas;
+    }
+}
+
+.#{$prefix}Earth--europe-africa--filled {
+    &:before {
+        content: $th-Earth--europe-africa--filled;
+    }
+}
+
+.#{$prefix}Earth--europe-africa {
+    &:before {
+        content: $th-Earth--europe-africa;
+    }
+}
+
+.#{$prefix}Earth--filled {
+    &:before {
+        content: $th-Earth--filled;
+    }
+}
+
+.#{$prefix}Earth--southeast-asia--filled {
+    &:before {
+        content: $th-Earth--southeast-asia--filled;
+    }
+}
+
+.#{$prefix}Earth--southeast-asia {
+    &:before {
+        content: $th-Earth--southeast-asia;
+    }
+}
+
+.#{$prefix}Earth {
+    &:before {
+        content: $th-Earth;
+    }
+}
+
+.#{$prefix}Earthquake {
+    &:before {
+        content: $th-Earthquake;
+    }
+}
+
+.#{$prefix}Edge-cluster {
+    &:before {
+        content: $th-Edge-cluster;
+    }
+}
+
+.#{$prefix}Edge-device {
+    &:before {
+        content: $th-Edge-device;
+    }
+}
+
+.#{$prefix}Edge-enhancement--01 {
+    &:before {
+        content: $th-Edge-enhancement--01;
+    }
+}
+
+.#{$prefix}Edge-enhancement--02 {
+    &:before {
+        content: $th-Edge-enhancement--02;
+    }
+}
+
+.#{$prefix}Edge-enhancement--03 {
+    &:before {
+        content: $th-Edge-enhancement--03;
+    }
+}
+
+.#{$prefix}Edge-enhancement {
+    &:before {
+        content: $th-Edge-enhancement;
+    }
+}
+
+.#{$prefix}Edge-node--alt {
+    &:before {
+        content: $th-Edge-node--alt;
+    }
+}
+
+.#{$prefix}Edge-node {
+    &:before {
+        content: $th-Edge-node;
+    }
+}
+
+.#{$prefix}Edge-service {
+    &:before {
+        content: $th-Edge-service;
+    }
+}
+
+.#{$prefix}Edit--off {
+    &:before {
+        content: $th-Edit--off;
+    }
+}
+
+.#{$prefix}Edit {
+    &:before {
+        content: $th-Edit;
+    }
+}
+
+.#{$prefix}Edt-loop {
+    &:before {
+        content: $th-Edt-loop;
+    }
+}
+
+.#{$prefix}Education {
+    &:before {
+        content: $th-Education;
+    }
+}
+
+.#{$prefix}Email--new {
+    &:before {
+        content: $th-Email--new;
+    }
+}
+
+.#{$prefix}Email {
+    &:before {
+        content: $th-Email;
+    }
+}
+
+.#{$prefix}Encryption {
+    &:before {
+        content: $th-Encryption;
+    }
+}
+
+.#{$prefix}Energy--renewable {
+    &:before {
+        content: $th-Energy--renewable;
+    }
+}
+
+.#{$prefix}Enterprise {
+    &:before {
+        content: $th-Enterprise;
+    }
+}
+
+.#{$prefix}Equalizer {
+    &:before {
+        content: $th-Equalizer;
+    }
+}
+
+.#{$prefix}Erase--3d {
+    &:before {
+        content: $th-Erase--3d;
+    }
+}
+
+.#{$prefix}Erase {
+    &:before {
+        content: $th-Erase;
+    }
+}
+
+.#{$prefix}Error--filled {
+    &:before {
+        content: $th-Error--filled;
+    }
+}
+
+.#{$prefix}Error--outline {
+    &:before {
+        content: $th-Error--outline;
+    }
+}
+
+.#{$prefix}Error {
+    &:before {
+        content: $th-Error;
+    }
+}
+
+.#{$prefix}Event--schedule {
+    &:before {
+        content: $th-Event--schedule;
+    }
+}
+
+.#{$prefix}Event {
+    &:before {
+        content: $th-Event;
+    }
+}
+
+.#{$prefix}Events--alt {
+    &:before {
+        content: $th-Events--alt;
+    }
+}
+
+.#{$prefix}Events {
+    &:before {
+        content: $th-Events;
+    }
+}
+
+.#{$prefix}Exam-mode {
+    &:before {
+        content: $th-Exam-mode;
+    }
+}
+
+.#{$prefix}Exit {
+    &:before {
+        content: $th-Exit;
+    }
+}
+
+.#{$prefix}Expand-all {
+    &:before {
+        content: $th-Expand-all;
+    }
+}
+
+.#{$prefix}Expand-categories {
+    &:before {
+        content: $th-Expand-categories;
+    }
+}
+
+.#{$prefix}Explore {
+    &:before {
+        content: $th-Explore;
+    }
+}
+
+.#{$prefix}Export {
+    &:before {
+        content: $th-Export;
+    }
+}
+
+.#{$prefix}Eyedropper {
+    &:before {
+        content: $th-Eyedropper;
+    }
+}
+
+.#{$prefix}Face--activated--add {
+    &:before {
+        content: $th-Face--activated--add;
+    }
+}
+
+.#{$prefix}Face--activated--filled {
+    &:before {
+        content: $th-Face--activated--filled;
+    }
+}
+
+.#{$prefix}Face--activated {
+    &:before {
+        content: $th-Face--activated;
+    }
+}
+
+.#{$prefix}Face--add {
+    &:before {
+        content: $th-Face--add;
+    }
+}
+
+.#{$prefix}Face--cool {
+    &:before {
+        content: $th-Face--cool;
+    }
+}
+
+.#{$prefix}Face--dissatisfied--filled {
+    &:before {
+        content: $th-Face--dissatisfied--filled;
+    }
+}
+
+.#{$prefix}Face--dissatisfied {
+    &:before {
+        content: $th-Face--dissatisfied;
+    }
+}
+
+.#{$prefix}Face--dizzy--filled {
+    &:before {
+        content: $th-Face--dizzy--filled;
+    }
+}
+
+.#{$prefix}Face--dizzy {
+    &:before {
+        content: $th-Face--dizzy;
+    }
+}
+
+.#{$prefix}Face--mask {
+    &:before {
+        content: $th-Face--mask;
+    }
+}
+
+.#{$prefix}Face--neutral--filled {
+    &:before {
+        content: $th-Face--neutral--filled;
+    }
+}
+
+.#{$prefix}Face--neutral {
+    &:before {
+        content: $th-Face--neutral;
+    }
+}
+
+.#{$prefix}Face--pending--filled {
+    &:before {
+        content: $th-Face--pending--filled;
+    }
+}
+
+.#{$prefix}Face--pending {
+    &:before {
+        content: $th-Face--pending;
+    }
+}
+
+.#{$prefix}Face--satisfied--filled {
+    &:before {
+        content: $th-Face--satisfied--filled;
+    }
+}
+
+.#{$prefix}Face--satisfied {
+    &:before {
+        content: $th-Face--satisfied;
+    }
+}
+
+.#{$prefix}Face--wink--filled {
+    &:before {
+        content: $th-Face--wink--filled;
+    }
+}
+
+.#{$prefix}Face--wink {
+    &:before {
+        content: $th-Face--wink;
+    }
+}
+
+.#{$prefix}Factor {
+    &:before {
+        content: $th-Factor;
+    }
+}
+
+.#{$prefix}Fade {
+    &:before {
+        content: $th-Fade;
+    }
+}
+
+.#{$prefix}Favorite--filled {
+    &:before {
+        content: $th-Favorite--filled;
+    }
+}
+
+.#{$prefix}Favorite--half {
+    &:before {
+        content: $th-Favorite--half;
+    }
+}
+
+.#{$prefix}Favorite {
+    &:before {
+        content: $th-Favorite;
+    }
+}
+
+.#{$prefix}Fetch-upload--cloud {
+    &:before {
+        content: $th-Fetch-upload--cloud;
+    }
+}
+
+.#{$prefix}Fetch-upload {
+    &:before {
+        content: $th-Fetch-upload;
+    }
+}
+
+.#{$prefix}File-storage {
+    &:before {
+        content: $th-File-storage;
+    }
+}
+
+.#{$prefix}Filter--edit {
+    &:before {
+        content: $th-Filter--edit;
+    }
+}
+
+.#{$prefix}Filter--remove {
+    &:before {
+        content: $th-Filter--remove;
+    }
+}
+
+.#{$prefix}Filter--reset {
+    &:before {
+        content: $th-Filter--reset;
+    }
+}
+
+.#{$prefix}Filter {
+    &:before {
+        content: $th-Filter;
+    }
+}
+
+.#{$prefix}Finance {
+    &:before {
+        content: $th-Finance;
+    }
+}
+
+.#{$prefix}Fingerprint-recognition {
+    &:before {
+        content: $th-Fingerprint-recognition;
+    }
+}
+
+.#{$prefix}Fire {
+    &:before {
+        content: $th-Fire;
+    }
+}
+
+.#{$prefix}Firewall--classic {
+    &:before {
+        content: $th-Firewall--classic;
+    }
+}
+
+.#{$prefix}Firewall {
+    &:before {
+        content: $th-Firewall;
+    }
+}
+
+.#{$prefix}Fish--multiple {
+    &:before {
+        content: $th-Fish--multiple;
+    }
+}
+
+.#{$prefix}Fish {
+    &:before {
+        content: $th-Fish;
+    }
+}
+
+.#{$prefix}Fit-to-height {
+    &:before {
+        content: $th-Fit-to-height;
+    }
+}
+
+.#{$prefix}Fit-to-screen {
+    &:before {
+        content: $th-Fit-to-screen;
+    }
+}
+
+.#{$prefix}Fit-to-width1 {
+    &:before {
+        content: $th-Fit-to-width1;
+    }
+}
+
+.#{$prefix}Flag--filled {
+    &:before {
+        content: $th-Flag--filled;
+    }
+}
+
+.#{$prefix}Flag {
+    &:before {
+        content: $th-Flag;
+    }
+}
+
+.#{$prefix}Flagging-taxi {
+    &:before {
+        content: $th-Flagging-taxi;
+    }
+}
+
+.#{$prefix}Flash--filled {
+    &:before {
+        content: $th-Flash--filled;
+    }
+}
+
+.#{$prefix}Flash--off--filled {
+    &:before {
+        content: $th-Flash--off--filled;
+    }
+}
+
+.#{$prefix}Flash--off {
+    &:before {
+        content: $th-Flash--off;
+    }
+}
+
+.#{$prefix}Flash {
+    &:before {
+        content: $th-Flash;
+    }
+}
+
+.#{$prefix}Flight--international {
+    &:before {
+        content: $th-Flight--international;
+    }
+}
+
+.#{$prefix}Flight--roster {
+    &:before {
+        content: $th-Flight--roster;
+    }
+}
+
+.#{$prefix}Flight--schedule {
+    &:before {
+        content: $th-Flight--schedule;
+    }
+}
+
+.#{$prefix}Floating-ip {
+    &:before {
+        content: $th-Floating-ip;
+    }
+}
+
+.#{$prefix}Flood--warning {
+    &:before {
+        content: $th-Flood--warning;
+    }
+}
+
+.#{$prefix}Flood {
+    &:before {
+        content: $th-Flood;
+    }
+}
+
+.#{$prefix}Floorplan {
+    &:before {
+        content: $th-Floorplan;
+    }
+}
+
+.#{$prefix}Flow--connection {
+    &:before {
+        content: $th-Flow--connection;
+    }
+}
+
+.#{$prefix}Flow--data {
+    &:before {
+        content: $th-Flow--data;
+    }
+}
+
+.#{$prefix}Flow--modeler {
+    &:before {
+        content: $th-Flow--modeler;
+    }
+}
+
+.#{$prefix}Flow--stream--reference {
+    &:before {
+        content: $th-Flow--stream--reference;
+    }
+}
+
+.#{$prefix}Flow--stream {
+    &:before {
+        content: $th-Flow--stream;
+    }
+}
+
+.#{$prefix}Flow-logs-vpc {
+    &:before {
+        content: $th-Flow-logs-vpc;
+    }
+}
+
+.#{$prefix}Flow {
+    &:before {
+        content: $th-Flow;
+    }
+}
+
+.#{$prefix}Fog {
+    &:before {
+        content: $th-Fog;
+    }
+}
+
+.#{$prefix}Folder--add {
+    &:before {
+        content: $th-Folder--add;
+    }
+}
+
+.#{$prefix}Folder--details--reference {
+    &:before {
+        content: $th-Folder--details--reference;
+    }
+}
+
+.#{$prefix}Folder--details {
+    &:before {
+        content: $th-Folder--details;
+    }
+}
+
+.#{$prefix}Folder--move-to {
+    &:before {
+        content: $th-Folder--move-to;
+    }
+}
+
+.#{$prefix}Folder--off {
+    &:before {
+        content: $th-Folder--off;
+    }
+}
+
+.#{$prefix}Folder--open {
+    &:before {
+        content: $th-Folder--open;
+    }
+}
+
+.#{$prefix}Folder--parent {
+    &:before {
+        content: $th-Folder--parent;
+    }
+}
+
+.#{$prefix}Folder--shared {
+    &:before {
+        content: $th-Folder--shared;
+    }
+}
+
+.#{$prefix}Folder {
+    &:before {
+        content: $th-Folder;
+    }
+}
+
+.#{$prefix}Folders {
+    &:before {
+        content: $th-Folders;
+    }
+}
+
+.#{$prefix}Forecast--hail-30 {
+    &:before {
+        content: $th-Forecast--hail-30;
+    }
+}
+
+.#{$prefix}Forecast--hail {
+    &:before {
+        content: $th-Forecast--hail;
+    }
+}
+
+.#{$prefix}Forecast--lightning-30 {
+    &:before {
+        content: $th-Forecast--lightning-30;
+    }
+}
+
+.#{$prefix}Forecast--lightning {
+    &:before {
+        content: $th-Forecast--lightning;
+    }
+}
+
+.#{$prefix}Fork {
+    &:before {
+        content: $th-Fork;
+    }
+}
+
+.#{$prefix}Forum {
+    &:before {
+        content: $th-Forum;
+    }
+}
+
+.#{$prefix}Forward--5 {
+    &:before {
+        content: $th-Forward--5;
+    }
+}
+
+.#{$prefix}Forward--10 {
+    &:before {
+        content: $th-Forward--10;
+    }
+}
+
+.#{$prefix}Forward--30 {
+    &:before {
+        content: $th-Forward--30;
+    }
+}
+
+.#{$prefix}Fragile {
+    &:before {
+        content: $th-Fragile;
+    }
+}
+
+.#{$prefix}Friendship {
+    &:before {
+        content: $th-Friendship;
+    }
+}
+
+.#{$prefix}Fruit-bowl {
+    &:before {
+        content: $th-Fruit-bowl;
+    }
+}
+
+.#{$prefix}Function-math {
+    &:before {
+        content: $th-Function-math;
+    }
+}
+
+.#{$prefix}Function {
+    &:before {
+        content: $th-Function;
+    }
+}
+
+.#{$prefix}Fusion-blender {
+    &:before {
+        content: $th-Fusion-blender;
+    }
+}
+
+.#{$prefix}Game--console {
+    &:before {
+        content: $th-Game--console;
+    }
+}
+
+.#{$prefix}Game--wireless {
+    &:before {
+        content: $th-Game--wireless;
+    }
+}
+
+.#{$prefix}Gamification {
+    &:before {
+        content: $th-Gamification;
+    }
+}
+
+.#{$prefix}Gas-station--filled {
+    &:before {
+        content: $th-Gas-station--filled;
+    }
+}
+
+.#{$prefix}Gas-station {
+    &:before {
+        content: $th-Gas-station;
+    }
+}
+
+.#{$prefix}Gateway--api {
+    &:before {
+        content: $th-Gateway--api;
+    }
+}
+
+.#{$prefix}Gateway--mail {
+    &:before {
+        content: $th-Gateway--mail;
+    }
+}
+
+.#{$prefix}Gateway--public {
+    &:before {
+        content: $th-Gateway--public;
+    }
+}
+
+.#{$prefix}Gateway--security {
+    &:before {
+        content: $th-Gateway--security;
+    }
+}
+
+.#{$prefix}Gateway--user-access {
+    &:before {
+        content: $th-Gateway--user-access;
+    }
+}
+
+.#{$prefix}Gateway--vpn {
+    &:before {
+        content: $th-Gateway--vpn;
+    }
+}
+
+.#{$prefix}Gateway {
+    &:before {
+        content: $th-Gateway;
+    }
+}
+
+.#{$prefix}Gender--female {
+    &:before {
+        content: $th-Gender--female;
+    }
+}
+
+.#{$prefix}Gender--male {
+    &:before {
+        content: $th-Gender--male;
+    }
+}
+
+.#{$prefix}Generate-pdf {
+    &:before {
+        content: $th-Generate-pdf;
+    }
+}
+
+.#{$prefix}Gif {
+    &:before {
+        content: $th-Gif;
+    }
+}
+
+.#{$prefix}Gift {
+    &:before {
+        content: $th-Gift;
+    }
+}
+
+.#{$prefix}Globe {
+    &:before {
+        content: $th-Globe;
+    }
+}
+
+.#{$prefix}Gradient {
+    &:before {
+        content: $th-Gradient;
+    }
+}
+
+.#{$prefix}Graphical-data-flow {
+    &:before {
+        content: $th-Graphical-data-flow;
+    }
+}
+
+.#{$prefix}Grid {
+    &:before {
+        content: $th-Grid;
+    }
+}
+
+.#{$prefix}Group--access {
+    &:before {
+        content: $th-Group--access;
+    }
+}
+
+.#{$prefix}Group--account {
+    &:before {
+        content: $th-Group--account;
+    }
+}
+
+.#{$prefix}Group--presentation {
+    &:before {
+        content: $th-Group--presentation;
+    }
+}
+
+.#{$prefix}Group--resource {
+    &:before {
+        content: $th-Group--resource;
+    }
+}
+
+.#{$prefix}Group--security {
+    &:before {
+        content: $th-Group--security;
+    }
+}
+
+.#{$prefix}Group-objects--new {
+    &:before {
+        content: $th-Group-objects--new;
+    }
+}
+
+.#{$prefix}Group-objects--save {
+    &:before {
+        content: $th-Group-objects--save;
+    }
+}
+
+.#{$prefix}Group-objects {
+    &:before {
+        content: $th-Group-objects;
+    }
+}
+
+.#{$prefix}Group {
+    &:before {
+        content: $th-Group;
+    }
+}
+
+.#{$prefix}Growth {
+    &:before {
+        content: $th-Growth;
+    }
+}
+
+.#{$prefix}Gui--management {
+    &:before {
+        content: $th-Gui--management;
+    }
+}
+
+.#{$prefix}Gui {
+    &:before {
+        content: $th-Gui;
+    }
+}
+
+.#{$prefix}H {
+    &:before {
+        content: $th-H;
+    }
+}
+
+.#{$prefix}Hail {
+    &:before {
+        content: $th-Hail;
+    }
+}
+
+.#{$prefix}Hanging-protocol {
+    &:before {
+        content: $th-Hanging-protocol;
+    }
+}
+
+.#{$prefix}Harbor {
+    &:before {
+        content: $th-Harbor;
+    }
+}
+
+.#{$prefix}Hardware-security-module {
+    &:before {
+        content: $th-Hardware-security-module;
+    }
+}
+
+.#{$prefix}Hashtag {
+    &:before {
+        content: $th-Hashtag;
+    }
+}
+
+.#{$prefix}Haze--night {
+    &:before {
+        content: $th-Haze--night;
+    }
+}
+
+.#{$prefix}Haze {
+    &:before {
+        content: $th-Haze;
+    }
+}
+
+.#{$prefix}Hd--filled {
+    &:before {
+        content: $th-Hd--filled;
+    }
+}
+
+.#{$prefix}Hd {
+    &:before {
+        content: $th-Hd;
+    }
+}
+
+.#{$prefix}Hdr {
+    &:before {
+        content: $th-Hdr;
+    }
+}
+
+.#{$prefix}Headphones {
+    &:before {
+        content: $th-Headphones;
+    }
+}
+
+.#{$prefix}Headset {
+    &:before {
+        content: $th-Headset;
+    }
+}
+
+.#{$prefix}Health-cross {
+    &:before {
+        content: $th-Health-cross;
+    }
+}
+
+.#{$prefix}Hearing {
+    &:before {
+        content: $th-Hearing;
+    }
+}
+
+.#{$prefix}Heat-map--02 {
+    &:before {
+        content: $th-Heat-map--02;
+    }
+}
+
+.#{$prefix}Heat-map--03 {
+    &:before {
+        content: $th-Heat-map--03;
+    }
+}
+
+.#{$prefix}Heat-map--stocks {
+    &:before {
+        content: $th-Heat-map--stocks;
+    }
+}
+
+.#{$prefix}Heat-map {
+    &:before {
+        content: $th-Heat-map;
+    }
+}
+
+.#{$prefix}Helicopter {
+    &:before {
+        content: $th-Helicopter;
+    }
+}
+
+.#{$prefix}Help--filled {
+    &:before {
+        content: $th-Help--filled;
+    }
+}
+
+.#{$prefix}Help-desk {
+    &:before {
+        content: $th-Help-desk;
+    }
+}
+
+.#{$prefix}Help {
+    &:before {
+        content: $th-Help;
+    }
+}
+
+.#{$prefix}Hinton-plot {
+    &:before {
+        content: $th-Hinton-plot;
+    }
+}
+
+.#{$prefix}HL7-attributes {
+    &:before {
+        content: $th-HL7-attributes;
+    }
+}
+
+.#{$prefix}Hole-filling--cursor {
+    &:before {
+        content: $th-Hole-filling--cursor;
+    }
+}
+
+.#{$prefix}Hole-filling {
+    &:before {
+        content: $th-Hole-filling;
+    }
+}
+
+.#{$prefix}Home {
+    &:before {
+        content: $th-Home;
+    }
+}
+
+.#{$prefix}Horizontal-view {
+    &:before {
+        content: $th-Horizontal-view;
+    }
+}
+
+.#{$prefix}Hospital-bed {
+    &:before {
+        content: $th-Hospital-bed;
+    }
+}
+
+.#{$prefix}Hospital {
+    &:before {
+        content: $th-Hospital;
+    }
+}
+
+.#{$prefix}Hotel {
+    &:before {
+        content: $th-Hotel;
+    }
+}
+
+.#{$prefix}Hourglass {
+    &:before {
+        content: $th-Hourglass;
+    }
+}
+
+.#{$prefix}Html--reference {
+    &:before {
+        content: $th-Html--reference;
+    }
+}
+
+.#{$prefix}Html {
+    &:before {
+        content: $th-Html;
+    }
+}
+
+.#{$prefix}Http {
+    &:before {
+        content: $th-Http;
+    }
+}
+
+.#{$prefix}Humidity--alt {
+    &:before {
+        content: $th-Humidity--alt;
+    }
+}
+
+.#{$prefix}Humidity {
+    &:before {
+        content: $th-Humidity;
+    }
+}
+
+.#{$prefix}Hurricane {
+    &:before {
+        content: $th-Hurricane;
+    }
+}
+
+.#{$prefix}Hybrid-networking--alt {
+    &:before {
+        content: $th-Hybrid-networking--alt;
+    }
+}
+
+.#{$prefix}Hybrid-networking {
+    &:before {
+        content: $th-Hybrid-networking;
+    }
+}
+
+.#{$prefix}IBM--data-replication {
+    &:before {
+        content: $th-IBM--data-replication;
+    }
+}
+
+.#{$prefix}IBM--match-360 {
+    &:before {
+        content: $th-IBM--match-360;
+    }
+}
+
+.#{$prefix}IBM--open-enterprise-languages {
+    &:before {
+        content: $th-IBM--open-enterprise-languages;
+    }
+}
+
+.#{$prefix}IBM-cloud--dedicated-host {
+    &:before {
+        content: $th-IBM-cloud--dedicated-host;
+    }
+}
+
+.#{$prefix}IBM-cloud--internet-services {
+    &:before {
+        content: $th-IBM-cloud--internet-services;
+    }
+}
+
+.#{$prefix}IBM-cloud--kubernetes-service {
+    &:before {
+        content: $th-IBM-cloud--kubernetes-service;
+    }
+}
+
+.#{$prefix}IBM-cloud--security-compliance-center {
+    &:before {
+        content: $th-IBM-cloud--security-compliance-center;
+    }
+}
+
+.#{$prefix}IBM-cloud--subnets {
+    &:before {
+        content: $th-IBM-cloud--subnets;
+    }
+}
+
+.#{$prefix}IBM-cloud--transit-gateway {
+    &:before {
+        content: $th-IBM-cloud--transit-gateway;
+    }
+}
+
+.#{$prefix}IBM-cloud--vpc-endpoints {
+    &:before {
+        content: $th-IBM-cloud--vpc-endpoints;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--applications {
+    &:before {
+        content: $th-IBM-cloud-pak--applications;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--business-automation {
+    &:before {
+        content: $th-IBM-cloud-pak--business-automation;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--data {
+    &:before {
+        content: $th-IBM-cloud-pak--data;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--integration {
+    &:before {
+        content: $th-IBM-cloud-pak--integration;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--MANTA-automated-data-lineage {
+    &:before {
+        content: $th-IBM-cloud-pak--MANTA-automated-data-lineage;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--multicloud-mgmt {
+    &:before {
+        content: $th-IBM-cloud-pak--multicloud-mgmt;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--network-automation {
+    &:before {
+        content: $th-IBM-cloud-pak--network-automation;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--security {
+    &:before {
+        content: $th-IBM-cloud-pak--security;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--system {
+    &:before {
+        content: $th-IBM-cloud-pak--system;
+    }
+}
+
+.#{$prefix}IBM-cloud-pak--watson-aiops {
+    &:before {
+        content: $th-IBM-cloud-pak--watson-aiops;
+    }
+}
+
+.#{$prefix}IBM-cloud {
+    &:before {
+        content: $th-IBM-cloud;
+    }
+}
+
+.#{$prefix}IBM-security--services {
+    &:before {
+        content: $th-IBM-security--services;
+    }
+}
+
+.#{$prefix}IBM-security {
+    &:before {
+        content: $th-IBM-security;
+    }
+}
+
+.#{$prefix}IBM-watson--orders {
+    &:before {
+        content: $th-IBM-watson--orders;
+    }
+}
+
+.#{$prefix}IBM-z--cloud-mod-stack {
+    &:before {
+        content: $th-IBM-z--cloud-mod-stack;
+    }
+}
+
+.#{$prefix}IBM-z-cloud--provisioning {
+    &:before {
+        content: $th-IBM-z-cloud--provisioning;
+    }
+}
+
+.#{$prefix}IBM-z-os--package-manager {
+    &:before {
+        content: $th-IBM-z-os--package-manager;
+    }
+}
+
+.#{$prefix}Ica-2d {
+    &:before {
+        content: $th-Ica-2d;
+    }
+}
+
+.#{$prefix}Ice--accretion {
+    &:before {
+        content: $th-Ice--accretion;
+    }
+}
+
+.#{$prefix}Ice--vision {
+    &:before {
+        content: $th-Ice--vision;
+    }
+}
+
+.#{$prefix}Id-management {
+    &:before {
+        content: $th-Id-management;
+    }
+}
+
+.#{$prefix}Id {
+    &:before {
+        content: $th-Id;
+    }
+}
+
+.#{$prefix}Idea {
+    &:before {
+        content: $th-Idea;
+    }
+}
+
+.#{$prefix}Identification {
+    &:before {
+        content: $th-Identification;
+    }
+}
+
+.#{$prefix}Image--copy {
+    &:before {
+        content: $th-Image--copy;
+    }
+}
+
+.#{$prefix}Image--medical {
+    &:before {
+        content: $th-Image--medical;
+    }
+}
+
+.#{$prefix}Image--reference {
+    &:before {
+        content: $th-Image--reference;
+    }
+}
+
+.#{$prefix}Image--search--alt {
+    &:before {
+        content: $th-Image--search--alt;
+    }
+}
+
+.#{$prefix}Image--search {
+    &:before {
+        content: $th-Image--search;
+    }
+}
+
+.#{$prefix}Image-service {
+    &:before {
+        content: $th-Image-service;
+    }
+}
+
+.#{$prefix}Image {
+    &:before {
+        content: $th-Image;
+    }
+}
+
+.#{$prefix}Import-export {
+    &:before {
+        content: $th-Import-export;
+    }
+}
+
+.#{$prefix}Improve-relevance {
+    &:before {
+        content: $th-Improve-relevance;
+    }
+}
+
+.#{$prefix}In-progress--error {
+    &:before {
+        content: $th-In-progress--error;
+    }
+}
+
+.#{$prefix}In-progress--warning {
+    &:before {
+        content: $th-In-progress--warning;
+    }
+}
+
+.#{$prefix}In-progress {
+    &:before {
+        content: $th-In-progress;
+    }
+}
+
+.#{$prefix}Incomplete--cancel {
+    &:before {
+        content: $th-Incomplete--cancel;
+    }
+}
+
+.#{$prefix}Incomplete--error {
+    &:before {
+        content: $th-Incomplete--error;
+    }
+}
+
+.#{$prefix}Incomplete--warning {
+    &:before {
+        content: $th-Incomplete--warning;
+    }
+}
+
+.#{$prefix}Incomplete {
+    &:before {
+        content: $th-Incomplete;
+    }
+}
+
+.#{$prefix}Increase-level {
+    &:before {
+        content: $th-Increase-level;
+    }
+}
+
+.#{$prefix}Industry {
+    &:before {
+        content: $th-Industry;
+    }
+}
+
+.#{$prefix}Information--disabled {
+    &:before {
+        content: $th-Information--disabled;
+    }
+}
+
+.#{$prefix}Information--filled {
+    &:before {
+        content: $th-Information--filled;
+    }
+}
+
+.#{$prefix}Information--square--filled {
+    &:before {
+        content: $th-Information--square--filled;
+    }
+}
+
+.#{$prefix}Information--square {
+    &:before {
+        content: $th-Information--square;
+    }
+}
+
+.#{$prefix}Information {
+    &:before {
+        content: $th-Information;
+    }
+}
+
+.#{$prefix}Infrastructure--classic {
+    &:before {
+        content: $th-Infrastructure--classic;
+    }
+}
+
+.#{$prefix}Insert--page {
+    &:before {
+        content: $th-Insert--page;
+    }
+}
+
+.#{$prefix}Insert-syntax {
+    &:before {
+        content: $th-Insert-syntax;
+    }
+}
+
+.#{$prefix}Insert {
+    &:before {
+        content: $th-Insert;
+    }
+}
+
+.#{$prefix}Inspection {
+    &:before {
+        content: $th-Inspection;
+    }
+}
+
+.#{$prefix}Instance--bx {
+    &:before {
+        content: $th-Instance--bx;
+    }
+}
+
+.#{$prefix}Instance--classic {
+    &:before {
+        content: $th-Instance--classic;
+    }
+}
+
+.#{$prefix}Instance--cx {
+    &:before {
+        content: $th-Instance--cx;
+    }
+}
+
+.#{$prefix}Instance--mx {
+    &:before {
+        content: $th-Instance--mx;
+    }
+}
+
+.#{$prefix}Instance--virtual {
+    &:before {
+        content: $th-Instance--virtual;
+    }
+}
+
+.#{$prefix}Integration {
+    &:before {
+        content: $th-Integration;
+    }
+}
+
+.#{$prefix}Intent-request--active {
+    &:before {
+        content: $th-Intent-request--active;
+    }
+}
+
+.#{$prefix}Intent-request--create {
+    &:before {
+        content: $th-Intent-request--create;
+    }
+}
+
+.#{$prefix}Intent-request--heal {
+    &:before {
+        content: $th-Intent-request--heal;
+    }
+}
+
+.#{$prefix}Intent-request--inactive {
+    &:before {
+        content: $th-Intent-request--inactive;
+    }
+}
+
+.#{$prefix}Intent-request--scale-in {
+    &:before {
+        content: $th-Intent-request--scale-in;
+    }
+}
+
+.#{$prefix}Intent-request--scale-out {
+    &:before {
+        content: $th-Intent-request--scale-out;
+    }
+}
+
+.#{$prefix}Intent-request--uninstall {
+    &:before {
+        content: $th-Intent-request--uninstall;
+    }
+}
+
+.#{$prefix}Interactions {
+    &:before {
+        content: $th-Interactions;
+    }
+}
+
+.#{$prefix}Interactive-segmentation-cursor {
+    &:before {
+        content: $th-Interactive-segmentation-cursor;
+    }
+}
+
+.#{$prefix}Intersect {
+    &:before {
+        content: $th-Intersect;
+    }
+}
+
+.#{$prefix}Intrusion-prevention {
+    &:before {
+        content: $th-Intrusion-prevention;
+    }
+}
+
+.#{$prefix}Inventory-management {
+    &:before {
+        content: $th-Inventory-management;
+    }
+}
+
+.#{$prefix}Iot--connect {
+    &:before {
+        content: $th-Iot--connect;
+    }
+}
+
+.#{$prefix}Iot--platform {
+    &:before {
+        content: $th-Iot--platform;
+    }
+}
+
+.#{$prefix}Iso--filled {
+    &:before {
+        content: $th-Iso--filled;
+    }
+}
+
+.#{$prefix}Iso--outline {
+    &:before {
+        content: $th-Iso--outline;
+    }
+}
+
+.#{$prefix}Iso {
+    &:before {
+        content: $th-Iso;
+    }
+}
+
+.#{$prefix}Join--full {
+    &:before {
+        content: $th-Join--full;
+    }
+}
+
+.#{$prefix}Join--inner {
+    &:before {
+        content: $th-Join--inner;
+    }
+}
+
+.#{$prefix}Join--left {
+    &:before {
+        content: $th-Join--left;
+    }
+}
+
+.#{$prefix}Join--outer {
+    &:before {
+        content: $th-Join--outer;
+    }
+}
+
+.#{$prefix}Join--right {
+    &:before {
+        content: $th-Join--right;
+    }
+}
+
+.#{$prefix}Jpg {
+    &:before {
+        content: $th-Jpg;
+    }
+}
+
+.#{$prefix}Json--reference {
+    &:before {
+        content: $th-Json--reference;
+    }
+}
+
+.#{$prefix}Json {
+    &:before {
+        content: $th-Json;
+    }
+}
+
+.#{$prefix}Jump-link {
+    &:before {
+        content: $th-Jump-link;
+    }
+}
+
+.#{$prefix}Keep-dry {
+    &:before {
+        content: $th-Keep-dry;
+    }
+}
+
+.#{$prefix}Keyboard {
+    &:before {
+        content: $th-Keyboard;
+    }
+}
+
+.#{$prefix}Kubernetes {
+    &:before {
+        content: $th-Kubernetes;
+    }
+}
+
+.#{$prefix}Label {
+    &:before {
+        content: $th-Label;
+    }
+}
+
+.#{$prefix}Language {
+    &:before {
+        content: $th-Language;
+    }
+}
+
+.#{$prefix}Laptop {
+    &:before {
+        content: $th-Laptop;
+    }
+}
+
+.#{$prefix}Lasso--polygon {
+    &:before {
+        content: $th-Lasso--polygon;
+    }
+}
+
+.#{$prefix}Lasso {
+    &:before {
+        content: $th-Lasso;
+    }
+}
+
+.#{$prefix}Launch-study--1 {
+    &:before {
+        content: $th-Launch-study--1;
+    }
+}
+
+.#{$prefix}Launch-study--2 {
+    &:before {
+        content: $th-Launch-study--2;
+    }
+}
+
+.#{$prefix}Launch-study--3 {
+    &:before {
+        content: $th-Launch-study--3;
+    }
+}
+
+.#{$prefix}Launch {
+    &:before {
+        content: $th-Launch;
+    }
+}
+
+.#{$prefix}Layers {
+    &:before {
+        content: $th-Layers;
+    }
+}
+
+.#{$prefix}Legend {
+    &:before {
+        content: $th-Legend;
+    }
+}
+
+.#{$prefix}Letter--aa {
+    &:before {
+        content: $th-Letter--aa;
+    }
+}
+
+.#{$prefix}Letter--bb {
+    &:before {
+        content: $th-Letter--bb;
+    }
+}
+
+.#{$prefix}Letter--cc {
+    &:before {
+        content: $th-Letter--cc;
+    }
+}
+
+.#{$prefix}Letter--dd {
+    &:before {
+        content: $th-Letter--dd;
+    }
+}
+
+.#{$prefix}Letter--ee {
+    &:before {
+        content: $th-Letter--ee;
+    }
+}
+
+.#{$prefix}Letter--ff {
+    &:before {
+        content: $th-Letter--ff;
+    }
+}
+
+.#{$prefix}Letter--gg {
+    &:before {
+        content: $th-Letter--gg;
+    }
+}
+
+.#{$prefix}Letter--hh {
+    &:before {
+        content: $th-Letter--hh;
+    }
+}
+
+.#{$prefix}Letter--ii {
+    &:before {
+        content: $th-Letter--ii;
+    }
+}
+
+.#{$prefix}Letter--jj {
+    &:before {
+        content: $th-Letter--jj;
+    }
+}
+
+.#{$prefix}Letter--kk {
+    &:before {
+        content: $th-Letter--kk;
+    }
+}
+
+.#{$prefix}Letter--ll {
+    &:before {
+        content: $th-Letter--ll;
+    }
+}
+
+.#{$prefix}Letter--mm {
+    &:before {
+        content: $th-Letter--mm;
+    }
+}
+
+.#{$prefix}Letter--nn {
+    &:before {
+        content: $th-Letter--nn;
+    }
+}
+
+.#{$prefix}Letter--oo {
+    &:before {
+        content: $th-Letter--oo;
+    }
+}
+
+.#{$prefix}Letter--pp {
+    &:before {
+        content: $th-Letter--pp;
+    }
+}
+
+.#{$prefix}Letter--qq {
+    &:before {
+        content: $th-Letter--qq;
+    }
+}
+
+.#{$prefix}Letter--rr {
+    &:before {
+        content: $th-Letter--rr;
+    }
+}
+
+.#{$prefix}Letter--ss {
+    &:before {
+        content: $th-Letter--ss;
+    }
+}
+
+.#{$prefix}Letter--tt {
+    &:before {
+        content: $th-Letter--tt;
+    }
+}
+
+.#{$prefix}Letter--uu {
+    &:before {
+        content: $th-Letter--uu;
+    }
+}
+
+.#{$prefix}Letter--vv {
+    &:before {
+        content: $th-Letter--vv;
+    }
+}
+
+.#{$prefix}Letter--ww {
+    &:before {
+        content: $th-Letter--ww;
+    }
+}
+
+.#{$prefix}Letter--xx {
+    &:before {
+        content: $th-Letter--xx;
+    }
+}
+
+.#{$prefix}Letter--yy {
+    &:before {
+        content: $th-Letter--yy;
+    }
+}
+
+.#{$prefix}Letter--zz {
+    &:before {
+        content: $th-Letter--zz;
+    }
+}
+
+.#{$prefix}License--draft {
+    &:before {
+        content: $th-License--draft;
+    }
+}
+
+.#{$prefix}License--global {
+    &:before {
+        content: $th-License--global;
+    }
+}
+
+.#{$prefix}License--maintenance-draft {
+    &:before {
+        content: $th-License--maintenance-draft;
+    }
+}
+
+.#{$prefix}License--maintenance {
+    &:before {
+        content: $th-License--maintenance;
+    }
+}
+
+.#{$prefix}License--third-party-draft {
+    &:before {
+        content: $th-License--third-party-draft;
+    }
+}
+
+.#{$prefix}License--third-party {
+    &:before {
+        content: $th-License--third-party;
+    }
+}
+
+.#{$prefix}License {
+    &:before {
+        content: $th-License;
+    }
+}
+
+.#{$prefix}Lifesaver {
+    &:before {
+        content: $th-Lifesaver;
+    }
+}
+
+.#{$prefix}Light--filled {
+    &:before {
+        content: $th-Light--filled;
+    }
+}
+
+.#{$prefix}Light {
+    &:before {
+        content: $th-Light;
+    }
+}
+
+.#{$prefix}Lightning {
+    &:before {
+        content: $th-Lightning;
+    }
+}
+
+.#{$prefix}Link {
+    &:before {
+        content: $th-Link;
+    }
+}
+
+.#{$prefix}Linux--alt {
+    &:before {
+        content: $th-Linux--alt;
+    }
+}
+
+.#{$prefix}Linux {
+    &:before {
+        content: $th-Linux;
+    }
+}
+
+.#{$prefix}List--boxes {
+    &:before {
+        content: $th-List--boxes;
+    }
+}
+
+.#{$prefix}List--bulleted {
+    &:before {
+        content: $th-List--bulleted;
+    }
+}
+
+.#{$prefix}List--checked {
+    &:before {
+        content: $th-List--checked;
+    }
+}
+
+.#{$prefix}List--dropdown {
+    &:before {
+        content: $th-List--dropdown;
+    }
+}
+
+.#{$prefix}List--numbered {
+    &:before {
+        content: $th-List--numbered;
+    }
+}
+
+.#{$prefix}List {
+    &:before {
+        content: $th-List;
+    }
+}
+
+.#{$prefix}Load-balancer--application {
+    &:before {
+        content: $th-Load-balancer--application;
+    }
+}
+
+.#{$prefix}Load-balancer--classic {
+    &:before {
+        content: $th-Load-balancer--classic;
+    }
+}
+
+.#{$prefix}Load-balancer--global {
+    &:before {
+        content: $th-Load-balancer--global;
+    }
+}
+
+.#{$prefix}Load-balancer--listener {
+    &:before {
+        content: $th-Load-balancer--listener;
+    }
+}
+
+.#{$prefix}Load-balancer--local {
+    &:before {
+        content: $th-Load-balancer--local;
+    }
+}
+
+.#{$prefix}Load-balancer--network {
+    &:before {
+        content: $th-Load-balancer--network;
+    }
+}
+
+.#{$prefix}Load-balancer--pool {
+    &:before {
+        content: $th-Load-balancer--pool;
+    }
+}
+
+.#{$prefix}Load-balancer--vpc {
+    &:before {
+        content: $th-Load-balancer--vpc;
+    }
+}
+
+.#{$prefix}Loading-16 {
+    &:before {
+        content: $th-Loading-16;
+        color: #7a7a7a;
+    }
+}
+
+.#{$prefix}Location--company--filled {
+    &:before {
+        content: $th-Location--company--filled;
+    }
+}
+
+.#{$prefix}Location--company {
+    &:before {
+        content: $th-Location--company;
+    }
+}
+
+.#{$prefix}Location--current {
+    &:before {
+        content: $th-Location--current;
+    }
+}
+
+.#{$prefix}Location--filled {
+    &:before {
+        content: $th-Location--filled;
+    }
+}
+
+.#{$prefix}Location--hazard--filled {
+    &:before {
+        content: $th-Location--hazard--filled;
+    }
+}
+
+.#{$prefix}Location--hazard {
+    &:before {
+        content: $th-Location--hazard;
+    }
+}
+
+.#{$prefix}Location--heart--filled {
+    &:before {
+        content: $th-Location--heart--filled;
+    }
+}
+
+.#{$prefix}Location--heart {
+    &:before {
+        content: $th-Location--heart;
+    }
+}
+
+.#{$prefix}Location--person--filled {
+    &:before {
+        content: $th-Location--person--filled;
+    }
+}
+
+.#{$prefix}Location--person {
+    &:before {
+        content: $th-Location--person;
+    }
+}
+
+.#{$prefix}Location--save {
+    &:before {
+        content: $th-Location--save;
+    }
+}
+
+.#{$prefix}Location--star--filled {
+    &:before {
+        content: $th-Location--star--filled;
+    }
+}
+
+.#{$prefix}Location--star {
+    &:before {
+        content: $th-Location--star;
+    }
+}
+
+.#{$prefix}Location {
+    &:before {
+        content: $th-Location;
+    }
+}
+
+.#{$prefix}Locked {
+    &:before {
+        content: $th-Locked;
+    }
+}
+
+.#{$prefix}Logical-partition {
+    &:before {
+        content: $th-Logical-partition;
+    }
+}
+
+.#{$prefix}Login {
+    &:before {
+        content: $th-Login;
+    }
+}
+
+.#{$prefix}Logo--digg {
+    &:before {
+        content: $th-Logo--digg;
+    }
+}
+
+.#{$prefix}Logo--discord {
+    &:before {
+        content: $th-Logo--discord;
+    }
+}
+
+.#{$prefix}Logo--facebook {
+    &:before {
+        content: $th-Logo--facebook;
+    }
+}
+
+.#{$prefix}Logo--flickr {
+    &:before {
+        content: $th-Logo--flickr;
+    }
+}
+
+.#{$prefix}Logo--github {
+    &:before {
+        content: $th-Logo--github;
+    }
+}
+
+.#{$prefix}Logo--glassdoor {
+    &:before {
+        content: $th-Logo--glassdoor;
+    }
+}
+
+.#{$prefix}Logo--instagram {
+    &:before {
+        content: $th-Logo--instagram;
+    }
+}
+
+.#{$prefix}Logo--jupyter {
+    &:before {
+        content: $th-Logo--jupyter;
+    }
+}
+
+.#{$prefix}Logo--keybase {
+    &:before {
+        content: $th-Logo--keybase;
+    }
+}
+
+.#{$prefix}Logo--kubernetes {
+    &:before {
+        content: $th-Logo--kubernetes;
+    }
+}
+
+.#{$prefix}Logo--linkedin {
+    &:before {
+        content: $th-Logo--linkedin;
+    }
+}
+
+.#{$prefix}Logo--livestream {
+    &:before {
+        content: $th-Logo--livestream;
+    }
+}
+
+.#{$prefix}Logo--medium {
+    &:before {
+        content: $th-Logo--medium;
+    }
+}
+
+.#{$prefix}Logo--openshift {
+    &:before {
+        content: $th-Logo--openshift;
+    }
+}
+
+.#{$prefix}Logo--pinterest {
+    &:before {
+        content: $th-Logo--pinterest;
+    }
+}
+
+.#{$prefix}Logo--python {
+    &:before {
+        content: $th-Logo--python;
+    }
+}
+
+.#{$prefix}Logo--quora {
+    &:before {
+        content: $th-Logo--quora;
+    }
+}
+
+.#{$prefix}Logo--r-script {
+    &:before {
+        content: $th-Logo--r-script;
+    }
+}
+
+.#{$prefix}Logo--skype {
+    &:before {
+        content: $th-Logo--skype;
+    }
+}
+
+.#{$prefix}Logo--slack {
+    &:before {
+        content: $th-Logo--slack;
+    }
+}
+
+.#{$prefix}Logo--snapchat {
+    &:before {
+        content: $th-Logo--snapchat;
+    }
+}
+
+.#{$prefix}Logo--tumblr {
+    &:before {
+        content: $th-Logo--tumblr;
+    }
+}
+
+.#{$prefix}Logo--twitter {
+    &:before {
+        content: $th-Logo--twitter;
+    }
+}
+
+.#{$prefix}Logo--vmware {
+    &:before {
+        content: $th-Logo--vmware;
+    }
+}
+
+.#{$prefix}Logo--wechat {
+    &:before {
+        content: $th-Logo--wechat;
+    }
+}
+
+.#{$prefix}Logo--xing {
+    &:before {
+        content: $th-Logo--xing;
+    }
+}
+
+.#{$prefix}Logo--yelp {
+    &:before {
+        content: $th-Logo--yelp;
+    }
+}
+
+.#{$prefix}Logo--youtube {
+    &:before {
+        content: $th-Logo--youtube;
+    }
+}
+
+.#{$prefix}Logout {
+    &:before {
+        content: $th-Logout;
+    }
+}
+
+.#{$prefix}Loop {
+    &:before {
+        content: $th-Loop;
+    }
+}
+
+.#{$prefix}Low-severity {
+    &:before {
+        content: $th-Low-severity;
+    }
+}
+
+.#{$prefix}Mac--command {
+    &:before {
+        content: $th-Mac--command;
+    }
+}
+
+.#{$prefix}Mac--option {
+    &:before {
+        content: $th-Mac--option;
+    }
+}
+
+.#{$prefix}Mac--shift {
+    &:before {
+        content: $th-Mac--shift;
+    }
+}
+
+.#{$prefix}Machine-learning-model {
+    &:before {
+        content: $th-Machine-learning-model;
+    }
+}
+
+.#{$prefix}Machine-learning {
+    &:before {
+        content: $th-Machine-learning;
+    }
+}
+
+.#{$prefix}Magic-wand--filled {
+    &:before {
+        content: $th-Magic-wand--filled;
+    }
+}
+
+.#{$prefix}Magic-wand {
+    &:before {
+        content: $th-Magic-wand;
+    }
+}
+
+.#{$prefix}Magnify {
+    &:before {
+        content: $th-Magnify;
+    }
+}
+
+.#{$prefix}Mail--all {
+    &:before {
+        content: $th-Mail--all;
+    }
+}
+
+.#{$prefix}Mail--reply {
+    &:before {
+        content: $th-Mail--reply;
+    }
+}
+
+.#{$prefix}Mammogram {
+    &:before {
+        content: $th-Mammogram;
+    }
+}
+
+.#{$prefix}Manage-protection {
+    &:before {
+        content: $th-Manage-protection;
+    }
+}
+
+.#{$prefix}Managed-solutions {
+    &:before {
+        content: $th-Managed-solutions;
+    }
+}
+
+.#{$prefix}Map--center {
+    &:before {
+        content: $th-Map--center;
+    }
+}
+
+.#{$prefix}Map--identify {
+    &:before {
+        content: $th-Map--identify;
+    }
+}
+
+.#{$prefix}Map-boundary--vegetation {
+    &:before {
+        content: $th-Map-boundary--vegetation;
+    }
+}
+
+.#{$prefix}Map-boundary {
+    &:before {
+        content: $th-Map-boundary;
+    }
+}
+
+.#{$prefix}Map {
+    &:before {
+        content: $th-Map;
+    }
+}
+
+.#{$prefix}Marine-warning {
+    &:before {
+        content: $th-Marine-warning;
+    }
+}
+
+.#{$prefix}Math-curve {
+    &:before {
+        content: $th-Math-curve;
+    }
+}
+
+.#{$prefix}Matrix {
+    &:before {
+        content: $th-Matrix;
+    }
+}
+
+.#{$prefix}Maximize {
+    &:before {
+        content: $th-Maximize;
+    }
+}
+
+.#{$prefix}Media--library--filled {
+    &:before {
+        content: $th-Media--library--filled;
+    }
+}
+
+.#{$prefix}Media--library {
+    &:before {
+        content: $th-Media--library;
+    }
+}
+
+.#{$prefix}Media-cast {
+    &:before {
+        content: $th-Media-cast;
+    }
+}
+
+.#{$prefix}Medication--alert {
+    &:before {
+        content: $th-Medication--alert;
+    }
+}
+
+.#{$prefix}Medication--reminder {
+    &:before {
+        content: $th-Medication--reminder;
+    }
+}
+
+.#{$prefix}Medication {
+    &:before {
+        content: $th-Medication;
+    }
+}
+
+.#{$prefix}Menu {
+    &:before {
+        content: $th-Menu;
+    }
+}
+
+.#{$prefix}Message-queue {
+    &:before {
+        content: $th-Message-queue;
+    }
+}
+
+.#{$prefix}Meter--alt {
+    &:before {
+        content: $th-Meter--alt;
+    }
+}
+
+.#{$prefix}Meter {
+    &:before {
+        content: $th-Meter;
+    }
+}
+
+.#{$prefix}Microphone--filled {
+    &:before {
+        content: $th-Microphone--filled;
+    }
+}
+
+.#{$prefix}Microphone--off--filled {
+    &:before {
+        content: $th-Microphone--off--filled;
+    }
+}
+
+.#{$prefix}Microphone--off {
+    &:before {
+        content: $th-Microphone--off;
+    }
+}
+
+.#{$prefix}Microphone {
+    &:before {
+        content: $th-Microphone;
+    }
+}
+
+.#{$prefix}Microscope {
+    &:before {
+        content: $th-Microscope;
+    }
+}
+
+.#{$prefix}Microservices--1 {
+    &:before {
+        content: $th-Microservices--1;
+    }
+}
+
+.#{$prefix}Microservices--2 {
+    &:before {
+        content: $th-Microservices--2;
+    }
+}
+
+.#{$prefix}Migrate--alt {
+    &:before {
+        content: $th-Migrate--alt;
+    }
+}
+
+.#{$prefix}Migrate {
+    &:before {
+        content: $th-Migrate;
+    }
+}
+
+.#{$prefix}Milestone {
+    &:before {
+        content: $th-Milestone;
+    }
+}
+
+.#{$prefix}Military-camp {
+    &:before {
+        content: $th-Military-camp;
+    }
+}
+
+.#{$prefix}Minimize {
+    &:before {
+        content: $th-Minimize;
+    }
+}
+
+.#{$prefix}Misuse--outline {
+    &:before {
+        content: $th-Misuse--outline;
+    }
+}
+
+.#{$prefix}Misuse {
+    &:before {
+        content: $th-Misuse;
+    }
+}
+
+.#{$prefix}Mixed-rain-hail {
+    &:before {
+        content: $th-Mixed-rain-hail;
+    }
+}
+
+.#{$prefix}Mobile--add {
+    &:before {
+        content: $th-Mobile--add;
+    }
+}
+
+.#{$prefix}Mobile--audio {
+    &:before {
+        content: $th-Mobile--audio;
+    }
+}
+
+.#{$prefix}Mobile--check {
+    &:before {
+        content: $th-Mobile--check;
+    }
+}
+
+.#{$prefix}Mobile--download {
+    &:before {
+        content: $th-Mobile--download;
+    }
+}
+
+.#{$prefix}Mobile--landscape {
+    &:before {
+        content: $th-Mobile--landscape;
+    }
+}
+
+.#{$prefix}Mobile {
+    &:before {
+        content: $th-Mobile;
+    }
+}
+
+.#{$prefix}Mobility--services {
+    &:before {
+        content: $th-Mobility--services;
+    }
+}
+
+.#{$prefix}Model--alt {
+    &:before {
+        content: $th-Model--alt;
+    }
+}
+
+.#{$prefix}Model--reference {
+    &:before {
+        content: $th-Model--reference;
+    }
+}
+
+.#{$prefix}Model-builder--reference {
+    &:before {
+        content: $th-Model-builder--reference;
+    }
+}
+
+.#{$prefix}Model-builder {
+    &:before {
+        content: $th-Model-builder;
+    }
+}
+
+.#{$prefix}Model {
+    &:before {
+        content: $th-Model;
+    }
+}
+
+.#{$prefix}Money {
+    &:before {
+        content: $th-Money;
+    }
+}
+
+.#{$prefix}Monster {
+    &:before {
+        content: $th-Monster;
+    }
+}
+
+.#{$prefix}Monument {
+    &:before {
+        content: $th-Monument;
+    }
+}
+
+.#{$prefix}Moon {
+    &:before {
+        content: $th-Moon;
+    }
+}
+
+.#{$prefix}Moonrise {
+    &:before {
+        content: $th-Moonrise;
+    }
+}
+
+.#{$prefix}Moonset {
+    &:before {
+        content: $th-Moonset;
+    }
+}
+
+.#{$prefix}Mostly-cloudy--night {
+    &:before {
+        content: $th-Mostly-cloudy--night;
+    }
+}
+
+.#{$prefix}Mostly-cloudy {
+    &:before {
+        content: $th-Mostly-cloudy;
+    }
+}
+
+.#{$prefix}Mountain {
+    &:before {
+        content: $th-Mountain;
+    }
+}
+
+.#{$prefix}Mov {
+    &:before {
+        content: $th-Mov;
+    }
+}
+
+.#{$prefix}Move {
+    &:before {
+        content: $th-Move;
+    }
+}
+
+.#{$prefix}Movement {
+    &:before {
+        content: $th-Movement;
+    }
+}
+
+.#{$prefix}Mp3 {
+    &:before {
+        content: $th-Mp3;
+    }
+}
+
+.#{$prefix}Mp4 {
+    &:before {
+        content: $th-Mp4;
+    }
+}
+
+.#{$prefix}Mpeg {
+    &:before {
+        content: $th-Mpeg;
+    }
+}
+
+.#{$prefix}Mpg2 {
+    &:before {
+        content: $th-Mpg2;
+    }
+}
+
+.#{$prefix}Music--add {
+    &:before {
+        content: $th-Music--add;
+    }
+}
+
+.#{$prefix}Music--remove {
+    &:before {
+        content: $th-Music--remove;
+    }
+}
+
+.#{$prefix}Music {
+    &:before {
+        content: $th-Music;
+    }
+}
+
+.#{$prefix}Name-space {
+    &:before {
+        content: $th-Name-space;
+    }
+}
+
+.#{$prefix}Navaid--civil {
+    &:before {
+        content: $th-Navaid--civil;
+    }
+}
+
+.#{$prefix}Navaid--dme {
+    &:before {
+        content: $th-Navaid--dme;
+    }
+}
+
+.#{$prefix}Navaid--helipad {
+    &:before {
+        content: $th-Navaid--helipad;
+    }
+}
+
+.#{$prefix}Navaid--military-civil {
+    &:before {
+        content: $th-Navaid--military-civil;
+    }
+}
+
+.#{$prefix}Navaid--military {
+    &:before {
+        content: $th-Navaid--military;
+    }
+}
+
+.#{$prefix}Navaid--ndb-dme {
+    &:before {
+        content: $th-Navaid--ndb-dme;
+    }
+}
+
+.#{$prefix}Navaid--ndb {
+    &:before {
+        content: $th-Navaid--ndb;
+    }
+}
+
+.#{$prefix}Navaid--private {
+    &:before {
+        content: $th-Navaid--private;
+    }
+}
+
+.#{$prefix}Navaid--seaplane {
+    &:before {
+        content: $th-Navaid--seaplane;
+    }
+}
+
+.#{$prefix}Navaid--tacan {
+    &:before {
+        content: $th-Navaid--tacan;
+    }
+}
+
+.#{$prefix}Navaid--vhfor {
+    &:before {
+        content: $th-Navaid--vhfor;
+    }
+}
+
+.#{$prefix}Navaid--vor {
+    &:before {
+        content: $th-Navaid--vor;
+    }
+}
+
+.#{$prefix}Navaid--vordme {
+    &:before {
+        content: $th-Navaid--vordme;
+    }
+}
+
+.#{$prefix}Navaid--vortac {
+    &:before {
+        content: $th-Navaid--vortac;
+    }
+}
+
+.#{$prefix}Need {
+    &:before {
+        content: $th-Need;
+    }
+}
+
+.#{$prefix}Network--1 {
+    &:before {
+        content: $th-Network--1;
+    }
+}
+
+.#{$prefix}Network--2 {
+    &:before {
+        content: $th-Network--2;
+    }
+}
+
+.#{$prefix}Network--3--reference {
+    &:before {
+        content: $th-Network--3--reference;
+    }
+}
+
+.#{$prefix}Network--3 {
+    &:before {
+        content: $th-Network--3;
+    }
+}
+
+.#{$prefix}Network--4--reference {
+    &:before {
+        content: $th-Network--4--reference;
+    }
+}
+
+.#{$prefix}Network--4 {
+    &:before {
+        content: $th-Network--4;
+    }
+}
+
+.#{$prefix}Network--admin-control {
+    &:before {
+        content: $th-Network--admin-control;
+    }
+}
+
+.#{$prefix}Network--enterprise {
+    &:before {
+        content: $th-Network--enterprise;
+    }
+}
+
+.#{$prefix}Network--overlay {
+    &:before {
+        content: $th-Network--overlay;
+    }
+}
+
+.#{$prefix}Network--public {
+    &:before {
+        content: $th-Network--public;
+    }
+}
+
+.#{$prefix}New-tab {
+    &:before {
+        content: $th-New-tab;
+    }
+}
+
+.#{$prefix}Next--filled {
+    &:before {
+        content: $th-Next--filled;
+    }
+}
+
+.#{$prefix}Next--outline {
+    &:before {
+        content: $th-Next--outline;
+    }
+}
+
+.#{$prefix}No-image {
+    &:before {
+        content: $th-No-image;
+    }
+}
+
+.#{$prefix}No-ticket {
+    &:before {
+        content: $th-No-ticket;
+    }
+}
+
+.#{$prefix}Nominal {
+    &:before {
+        content: $th-Nominal;
+    }
+}
+
+.#{$prefix}Nominate {
+    &:before {
+        content: $th-Nominate;
+    }
+}
+
+.#{$prefix}Non-certified {
+    &:before {
+        content: $th-Non-certified;
+    }
+}
+
+.#{$prefix}Noodle-bowl {
+    &:before {
+        content: $th-Noodle-bowl;
+    }
+}
+
+.#{$prefix}Not-available {
+    &:before {
+        content: $th-Not-available;
+    }
+}
+
+.#{$prefix}Not-sent--filled {
+    &:before {
+        content: $th-Not-sent--filled;
+    }
+}
+
+.#{$prefix}Not-sent {
+    &:before {
+        content: $th-Not-sent;
+    }
+}
+
+.#{$prefix}Notebook--reference {
+    &:before {
+        content: $th-Notebook--reference;
+    }
+}
+
+.#{$prefix}Notebook {
+    &:before {
+        content: $th-Notebook;
+    }
+}
+
+.#{$prefix}Notification--filled {
+    &:before {
+        content: $th-Notification--filled;
+    }
+}
+
+.#{$prefix}Notification--new {
+    &:before {
+        content: $th-Notification--new;
+    }
+}
+
+.#{$prefix}Notification--off--filled {
+    &:before {
+        content: $th-Notification--off--filled;
+    }
+}
+
+.#{$prefix}Notification--off {
+    &:before {
+        content: $th-Notification--off;
+    }
+}
+
+.#{$prefix}Notification {
+    &:before {
+        content: $th-Notification;
+    }
+}
+
+.#{$prefix}Number--0 {
+    &:before {
+        content: $th-Number--0;
+    }
+}
+
+.#{$prefix}Number--1 {
+    &:before {
+        content: $th-Number--1;
+    }
+}
+
+.#{$prefix}Number--2 {
+    &:before {
+        content: $th-Number--2;
+    }
+}
+
+.#{$prefix}Number--3 {
+    &:before {
+        content: $th-Number--3;
+    }
+}
+
+.#{$prefix}Number--4 {
+    &:before {
+        content: $th-Number--4;
+    }
+}
+
+.#{$prefix}Number--5 {
+    &:before {
+        content: $th-Number--5;
+    }
+}
+
+.#{$prefix}Number--6 {
+    &:before {
+        content: $th-Number--6;
+    }
+}
+
+.#{$prefix}Number--7 {
+    &:before {
+        content: $th-Number--7;
+    }
+}
+
+.#{$prefix}Number--8 {
+    &:before {
+        content: $th-Number--8;
+    }
+}
+
+.#{$prefix}Number--9 {
+    &:before {
+        content: $th-Number--9;
+    }
+}
+
+.#{$prefix}Number--small--0 {
+    &:before {
+        content: $th-Number--small--0;
+    }
+}
+
+.#{$prefix}Number--small--1 {
+    &:before {
+        content: $th-Number--small--1;
+    }
+}
+
+.#{$prefix}Number--small--2 {
+    &:before {
+        content: $th-Number--small--2;
+    }
+}
+
+.#{$prefix}Number--small--3 {
+    &:before {
+        content: $th-Number--small--3;
+    }
+}
+
+.#{$prefix}Number--small--4 {
+    &:before {
+        content: $th-Number--small--4;
+    }
+}
+
+.#{$prefix}Number--small--5 {
+    &:before {
+        content: $th-Number--small--5;
+    }
+}
+
+.#{$prefix}Number--small--6 {
+    &:before {
+        content: $th-Number--small--6;
+    }
+}
+
+.#{$prefix}Number--small--7 {
+    &:before {
+        content: $th-Number--small--7;
+    }
+}
+
+.#{$prefix}Number--small--8 {
+    &:before {
+        content: $th-Number--small--8;
+    }
+}
+
+.#{$prefix}Number--small--9 {
+    &:before {
+        content: $th-Number--small--9;
+    }
+}
+
+.#{$prefix}Object-storage--alt {
+    &:before {
+        content: $th-Object-storage--alt;
+    }
+}
+
+.#{$prefix}Object-storage-1 {
+    &:before {
+        content: $th-Object-storage-1;
+    }
+}
+
+.#{$prefix}Object-storage {
+    &:before {
+        content: $th-Object-storage;
+    }
+}
+
+.#{$prefix}Observed--hail {
+    &:before {
+        content: $th-Observed--hail;
+    }
+}
+
+.#{$prefix}Observed--lightning {
+    &:before {
+        content: $th-Observed--lightning;
+    }
+}
+
+.#{$prefix}Omega {
+    &:before {
+        content: $th-Omega;
+    }
+}
+
+.#{$prefix}Opacity {
+    &:before {
+        content: $th-Opacity;
+    }
+}
+
+.#{$prefix}Open-panel--bottom {
+    &:before {
+        content: $th-Open-panel--bottom;
+    }
+}
+
+.#{$prefix}Open-panel--filled--bottom {
+    &:before {
+        content: $th-Open-panel--filled--bottom;
+    }
+}
+
+.#{$prefix}Open-panel--filled--left {
+    &:before {
+        content: $th-Open-panel--filled--left;
+    }
+}
+
+.#{$prefix}Open-panel--filled--right {
+    &:before {
+        content: $th-Open-panel--filled--right;
+    }
+}
+
+.#{$prefix}Open-panel--filled--top {
+    &:before {
+        content: $th-Open-panel--filled--top;
+    }
+}
+
+.#{$prefix}Open-panel--left {
+    &:before {
+        content: $th-Open-panel--left;
+    }
+}
+
+.#{$prefix}Open-panel--right {
+    &:before {
+        content: $th-Open-panel--right;
+    }
+}
+
+.#{$prefix}Open-panel--top {
+    &:before {
+        content: $th-Open-panel--top;
+    }
+}
+
+.#{$prefix}Operation--gauge {
+    &:before {
+        content: $th-Operation--gauge;
+    }
+}
+
+.#{$prefix}Operation--if {
+    &:before {
+        content: $th-Operation--if;
+    }
+}
+
+.#{$prefix}Operation {
+    &:before {
+        content: $th-Operation;
+    }
+}
+
+.#{$prefix}Operations--field {
+    &:before {
+        content: $th-Operations--field;
+    }
+}
+
+.#{$prefix}Operations--record {
+    &:before {
+        content: $th-Operations--record;
+    }
+}
+
+.#{$prefix}Order-details {
+    &:before {
+        content: $th-Order-details;
+    }
+}
+
+.#{$prefix}Ordinal {
+    &:before {
+        content: $th-Ordinal;
+    }
+}
+
+.#{$prefix}Outage {
+    &:before {
+        content: $th-Outage;
+    }
+}
+
+.#{$prefix}Outlook-severe {
+    &:before {
+        content: $th-Outlook-severe;
+    }
+}
+
+.#{$prefix}Overflow-menu--horizontal {
+    &:before {
+        content: $th-Overflow-menu--horizontal;
+    }
+}
+
+.#{$prefix}Overflow-menu--vertical {
+    &:before {
+        content: $th-Overflow-menu--vertical;
+    }
+}
+
+.#{$prefix}Overlay {
+    &:before {
+        content: $th-Overlay;
+    }
+}
+
+.#{$prefix}Package {
+    &:before {
+        content: $th-Package;
+    }
+}
+
+.#{$prefix}Page--first {
+    &:before {
+        content: $th-Page--first;
+    }
+}
+
+.#{$prefix}Page--last {
+    &:before {
+        content: $th-Page--last;
+    }
+}
+
+.#{$prefix}Page-break {
+    &:before {
+        content: $th-Page-break;
+    }
+}
+
+.#{$prefix}Page-number {
+    &:before {
+        content: $th-Page-number;
+    }
+}
+
+.#{$prefix}Page-scroll {
+    &:before {
+        content: $th-Page-scroll;
+    }
+}
+
+.#{$prefix}Paint-brush--alt {
+    &:before {
+        content: $th-Paint-brush--alt;
+    }
+}
+
+.#{$prefix}Paint-brush {
+    &:before {
+        content: $th-Paint-brush;
+    }
+}
+
+.#{$prefix}Palm-tree {
+    &:before {
+        content: $th-Palm-tree;
+    }
+}
+
+.#{$prefix}Pan--horizontal {
+    &:before {
+        content: $th-Pan--horizontal;
+    }
+}
+
+.#{$prefix}Pan--vertical {
+    &:before {
+        content: $th-Pan--vertical;
+    }
+}
+
+.#{$prefix}Panel-expansion {
+    &:before {
+        content: $th-Panel-expansion;
+    }
+}
+
+.#{$prefix}Paragraph {
+    &:before {
+        content: $th-Paragraph;
+    }
+}
+
+.#{$prefix}Parameter {
+    &:before {
+        content: $th-Parameter;
+    }
+}
+
+.#{$prefix}Parent-child {
+    &:before {
+        content: $th-Parent-child;
+    }
+}
+
+.#{$prefix}Partly-cloudy--night {
+    &:before {
+        content: $th-Partly-cloudy--night;
+    }
+}
+
+.#{$prefix}Partly-cloudy {
+    &:before {
+        content: $th-Partly-cloudy;
+    }
+}
+
+.#{$prefix}Partnership {
+    &:before {
+        content: $th-Partnership;
+    }
+}
+
+.#{$prefix}Passenger--drinks {
+    &:before {
+        content: $th-Passenger--drinks;
+    }
+}
+
+.#{$prefix}Passenger--plus {
+    &:before {
+        content: $th-Passenger--plus;
+    }
+}
+
+.#{$prefix}Password {
+    &:before {
+        content: $th-Password;
+    }
+}
+
+.#{$prefix}Paste {
+    &:before {
+        content: $th-Paste;
+    }
+}
+
+.#{$prefix}Pause--filled {
+    &:before {
+        content: $th-Pause--filled;
+    }
+}
+
+.#{$prefix}Pause--outline--filled {
+    &:before {
+        content: $th-Pause--outline--filled;
+    }
+}
+
+.#{$prefix}Pause--outline {
+    &:before {
+        content: $th-Pause--outline;
+    }
+}
+
+.#{$prefix}Pause-future {
+    &:before {
+        content: $th-Pause-future;
+    }
+}
+
+.#{$prefix}Pause-past {
+    &:before {
+        content: $th-Pause-past;
+    }
+}
+
+.#{$prefix}Pause {
+    &:before {
+        content: $th-Pause;
+    }
+}
+
+.#{$prefix}Pcn--e-node {
+    &:before {
+        content: $th-Pcn--e-node;
+    }
+}
+
+.#{$prefix}Pcn--military {
+    &:before {
+        content: $th-Pcn--military;
+    }
+}
+
+.#{$prefix}Pcn--p-node {
+    &:before {
+        content: $th-Pcn--p-node;
+    }
+}
+
+.#{$prefix}Pcn--z-node {
+    &:before {
+        content: $th-Pcn--z-node;
+    }
+}
+
+.#{$prefix}Pdf--reference {
+    &:before {
+        content: $th-Pdf--reference;
+    }
+}
+
+.#{$prefix}Pdf {
+    &:before {
+        content: $th-Pdf;
+    }
+}
+
+.#{$prefix}Pedestrian--family {
+    &:before {
+        content: $th-Pedestrian--family;
+    }
+}
+
+.#{$prefix}Pedestrian-child {
+    &:before {
+        content: $th-Pedestrian-child;
+    }
+}
+
+.#{$prefix}Pedestrian {
+    &:before {
+        content: $th-Pedestrian;
+    }
+}
+
+.#{$prefix}Pen--fountain {
+    &:before {
+        content: $th-Pen--fountain;
+    }
+}
+
+.#{$prefix}Pen {
+    &:before {
+        content: $th-Pen;
+    }
+}
+
+.#{$prefix}Pending--filled {
+    &:before {
+        content: $th-Pending--filled;
+    }
+}
+
+.#{$prefix}Pending {
+    &:before {
+        content: $th-Pending;
+    }
+}
+
+.#{$prefix}Percentage--filled {
+    &:before {
+        content: $th-Percentage--filled;
+    }
+}
+
+.#{$prefix}Percentage {
+    &:before {
+        content: $th-Percentage;
+    }
+}
+
+.#{$prefix}Person--favorite {
+    &:before {
+        content: $th-Person--favorite;
+    }
+}
+
+.#{$prefix}Person {
+    &:before {
+        content: $th-Person;
+    }
+}
+
+.#{$prefix}Pest {
+    &:before {
+        content: $th-Pest;
+    }
+}
+
+.#{$prefix}Pet-image--b {
+    &:before {
+        content: $th-Pet-image--b;
+    }
+}
+
+.#{$prefix}Pet-image--o {
+    &:before {
+        content: $th-Pet-image--o;
+    }
+}
+
+.#{$prefix}Phone--application {
+    &:before {
+        content: $th-Phone--application;
+    }
+}
+
+.#{$prefix}Phone--block--filled {
+    &:before {
+        content: $th-Phone--block--filled;
+    }
+}
+
+.#{$prefix}Phone--block {
+    &:before {
+        content: $th-Phone--block;
+    }
+}
+
+.#{$prefix}Phone--filled {
+    &:before {
+        content: $th-Phone--filled;
+    }
+}
+
+.#{$prefix}Phone--incoming--filled {
+    &:before {
+        content: $th-Phone--incoming--filled;
+    }
+}
+
+.#{$prefix}Phone--incoming {
+    &:before {
+        content: $th-Phone--incoming;
+    }
+}
+
+.#{$prefix}Phone--ip {
+    &:before {
+        content: $th-Phone--ip;
+    }
+}
+
+.#{$prefix}Phone--off--filled {
+    &:before {
+        content: $th-Phone--off--filled;
+    }
+}
+
+.#{$prefix}Phone--off {
+    &:before {
+        content: $th-Phone--off;
+    }
+}
+
+.#{$prefix}Phone--outgoing--filled {
+    &:before {
+        content: $th-Phone--outgoing--filled;
+    }
+}
+
+.#{$prefix}Phone--outgoing {
+    &:before {
+        content: $th-Phone--outgoing;
+    }
+}
+
+.#{$prefix}Phone--settings {
+    &:before {
+        content: $th-Phone--settings;
+    }
+}
+
+.#{$prefix}Phone--voice--filled {
+    &:before {
+        content: $th-Phone--voice--filled;
+    }
+}
+
+.#{$prefix}Phone--voice {
+    &:before {
+        content: $th-Phone--voice;
+    }
+}
+
+.#{$prefix}Phone {
+    &:before {
+        content: $th-Phone;
+    }
+}
+
+.#{$prefix}Phrase-sentiment {
+    &:before {
+        content: $th-Phrase-sentiment;
+    }
+}
+
+.#{$prefix}Picnic-area {
+    &:before {
+        content: $th-Picnic-area;
+    }
+}
+
+.#{$prefix}Piggy-bank--slot {
+    &:before {
+        content: $th-Piggy-bank--slot;
+    }
+}
+
+.#{$prefix}Piggy-bank {
+    &:before {
+        content: $th-Piggy-bank;
+    }
+}
+
+.#{$prefix}Pills--add {
+    &:before {
+        content: $th-Pills--add;
+    }
+}
+
+.#{$prefix}Pills--subtract {
+    &:before {
+        content: $th-Pills--subtract;
+    }
+}
+
+.#{$prefix}Pills {
+    &:before {
+        content: $th-Pills;
+    }
+}
+
+.#{$prefix}Pin--filled {
+    &:before {
+        content: $th-Pin--filled;
+    }
+}
+
+.#{$prefix}Pin {
+    &:before {
+        content: $th-Pin;
+    }
+}
+
+.#{$prefix}Plane--private {
+    &:before {
+        content: $th-Plane--private;
+    }
+}
+
+.#{$prefix}Plane--sea {
+    &:before {
+        content: $th-Plane--sea;
+    }
+}
+
+.#{$prefix}Plane {
+    &:before {
+        content: $th-Plane;
+    }
+}
+
+.#{$prefix}Play--filled--alt {
+    &:before {
+        content: $th-Play--filled--alt;
+    }
+}
+
+.#{$prefix}Play--filled {
+    &:before {
+        content: $th-Play--filled;
+    }
+}
+
+.#{$prefix}Play--outline--filled {
+    &:before {
+        content: $th-Play--outline--filled;
+    }
+}
+
+.#{$prefix}Play--outline {
+    &:before {
+        content: $th-Play--outline;
+    }
+}
+
+.#{$prefix}Play {
+    &:before {
+        content: $th-Play;
+    }
+}
+
+.#{$prefix}Playlist {
+    &:before {
+        content: $th-Playlist;
+    }
+}
+
+.#{$prefix}Plug--filled {
+    &:before {
+        content: $th-Plug--filled;
+    }
+}
+
+.#{$prefix}Plug {
+    &:before {
+        content: $th-Plug;
+    }
+}
+
+.#{$prefix}Png {
+    &:before {
+        content: $th-Png;
+    }
+}
+
+.#{$prefix}Point-of-presence {
+    &:before {
+        content: $th-Point-of-presence;
+    }
+}
+
+.#{$prefix}Pointer-text {
+    &:before {
+        content: $th-Pointer-text;
+    }
+}
+
+.#{$prefix}Police {
+    &:before {
+        content: $th-Police;
+    }
+}
+
+.#{$prefix}Policy {
+    &:before {
+        content: $th-Policy;
+    }
+}
+
+.#{$prefix}Popup {
+    &:before {
+        content: $th-Popup;
+    }
+}
+
+.#{$prefix}Portfolio {
+    &:before {
+        content: $th-Portfolio;
+    }
+}
+
+.#{$prefix}Power {
+    &:before {
+        content: $th-Power;
+    }
+}
+
+.#{$prefix}Ppt {
+    &:before {
+        content: $th-Ppt;
+    }
+}
+
+.#{$prefix}Presentation-file {
+    &:before {
+        content: $th-Presentation-file;
+    }
+}
+
+.#{$prefix}Pressure--filled {
+    &:before {
+        content: $th-Pressure--filled;
+    }
+}
+
+.#{$prefix}Pressure {
+    &:before {
+        content: $th-Pressure;
+    }
+}
+
+.#{$prefix}Previous--filled {
+    &:before {
+        content: $th-Previous--filled;
+    }
+}
+
+.#{$prefix}Previous--outline {
+    &:before {
+        content: $th-Previous--outline;
+    }
+}
+
+.#{$prefix}Printer {
+    &:before {
+        content: $th-Printer;
+    }
+}
+
+.#{$prefix}Product {
+    &:before {
+        content: $th-Product;
+    }
+}
+
+.#{$prefix}Progress-bar--round {
+    &:before {
+        content: $th-Progress-bar--round;
+    }
+}
+
+.#{$prefix}Progress-bar {
+    &:before {
+        content: $th-Progress-bar;
+    }
+}
+
+.#{$prefix}Property-relationship {
+    &:before {
+        content: $th-Property-relationship;
+    }
+}
+
+.#{$prefix}Purchase {
+    &:before {
+        content: $th-Purchase;
+    }
+}
+
+.#{$prefix}QC-launch {
+    &:before {
+        content: $th-QC-launch;
+    }
+}
+
+.#{$prefix}Qq-plot {
+    &:before {
+        content: $th-Qq-plot;
+    }
+}
+
+.#{$prefix}Qr-code {
+    &:before {
+        content: $th-Qr-code;
+    }
+}
+
+.#{$prefix}Quadrant-plot {
+    &:before {
+        content: $th-Quadrant-plot;
+    }
+}
+
+.#{$prefix}Query-queue {
+    &:before {
+        content: $th-Query-queue;
+    }
+}
+
+.#{$prefix}Query {
+    &:before {
+        content: $th-Query;
+    }
+}
+
+.#{$prefix}Queued {
+    &:before {
+        content: $th-Queued;
+    }
+}
+
+.#{$prefix}Quotes {
+    &:before {
+        content: $th-Quotes;
+    }
+}
+
+.#{$prefix}Radar--enhanced {
+    &:before {
+        content: $th-Radar--enhanced;
+    }
+}
+
+.#{$prefix}Radar--weather {
+    &:before {
+        content: $th-Radar--weather;
+    }
+}
+
+.#{$prefix}Radar {
+    &:before {
+        content: $th-Radar;
+    }
+}
+
+.#{$prefix}Radio--combat {
+    &:before {
+        content: $th-Radio--combat;
+    }
+}
+
+.#{$prefix}Radio--push-to-talk {
+    &:before {
+        content: $th-Radio--push-to-talk;
+    }
+}
+
+.#{$prefix}Radio-button--checked {
+    &:before {
+        content: $th-Radio-button--checked;
+    }
+}
+
+.#{$prefix}Radio-button {
+    &:before {
+        content: $th-Radio-button;
+    }
+}
+
+.#{$prefix}Radio {
+    &:before {
+        content: $th-Radio;
+    }
+}
+
+.#{$prefix}Rain--drizzle {
+    &:before {
+        content: $th-Rain--drizzle;
+    }
+}
+
+.#{$prefix}Rain--heavy {
+    &:before {
+        content: $th-Rain--heavy;
+    }
+}
+
+.#{$prefix}Rain--scattered--night {
+    &:before {
+        content: $th-Rain--scattered--night;
+    }
+}
+
+.#{$prefix}Rain--scattered {
+    &:before {
+        content: $th-Rain--scattered;
+    }
+}
+
+.#{$prefix}Rain-drop {
+    &:before {
+        content: $th-Rain-drop;
+    }
+}
+
+.#{$prefix}Rain {
+    &:before {
+        content: $th-Rain;
+    }
+}
+
+.#{$prefix}Raw {
+    &:before {
+        content: $th-Raw;
+    }
+}
+
+.#{$prefix}Receipt {
+    &:before {
+        content: $th-Receipt;
+    }
+}
+
+.#{$prefix}Recently-viewed {
+    &:before {
+        content: $th-Recently-viewed;
+    }
+}
+
+.#{$prefix}Recommend {
+    &:before {
+        content: $th-Recommend;
+    }
+}
+
+.#{$prefix}Recording--filled--alt {
+    &:before {
+        content: $th-Recording--filled--alt;
+    }
+}
+
+.#{$prefix}Recording--filled {
+    &:before {
+        content: $th-Recording--filled;
+    }
+}
+
+.#{$prefix}Recording {
+    &:before {
+        content: $th-Recording;
+    }
+}
+
+.#{$prefix}Redo {
+    &:before {
+        content: $th-Redo;
+    }
+}
+
+.#{$prefix}Ref-evapotranspiration {
+    &:before {
+        content: $th-Ref-evapotranspiration;
+    }
+}
+
+.#{$prefix}Reflect--horizontal {
+    &:before {
+        content: $th-Reflect--horizontal;
+    }
+}
+
+.#{$prefix}Reflect--vertical {
+    &:before {
+        content: $th-Reflect--vertical;
+    }
+}
+
+.#{$prefix}Region-analysis--area {
+    &:before {
+        content: $th-Region-analysis--area;
+    }
+}
+
+.#{$prefix}Region-analysis--volume {
+    &:before {
+        content: $th-Region-analysis--volume;
+    }
+}
+
+.#{$prefix}Registration {
+    &:before {
+        content: $th-Registration;
+    }
+}
+
+.#{$prefix}Reminder--medical {
+    &:before {
+        content: $th-Reminder--medical;
+    }
+}
+
+.#{$prefix}Reminder {
+    &:before {
+        content: $th-Reminder;
+    }
+}
+
+.#{$prefix}Renew {
+    &:before {
+        content: $th-Renew;
+    }
+}
+
+.#{$prefix}Repeat--one {
+    &:before {
+        content: $th-Repeat--one;
+    }
+}
+
+.#{$prefix}Repeat {
+    &:before {
+        content: $th-Repeat;
+    }
+}
+
+.#{$prefix}Replicate {
+    &:before {
+        content: $th-Replicate;
+    }
+}
+
+.#{$prefix}Reply--all {
+    &:before {
+        content: $th-Reply--all;
+    }
+}
+
+.#{$prefix}Reply {
+    &:before {
+        content: $th-Reply;
+    }
+}
+
+.#{$prefix}Report--data {
+    &:before {
+        content: $th-Report--data;
+    }
+}
+
+.#{$prefix}Report {
+    &:before {
+        content: $th-Report;
+    }
+}
+
+.#{$prefix}Request-quote {
+    &:before {
+        content: $th-Request-quote;
+    }
+}
+
+.#{$prefix}Reset--alt {
+    &:before {
+        content: $th-Reset--alt;
+    }
+}
+
+.#{$prefix}Reset {
+    &:before {
+        content: $th-Reset;
+    }
+}
+
+.#{$prefix}Restart {
+    &:before {
+        content: $th-Restart;
+    }
+}
+
+.#{$prefix}Restaurant--fine {
+    &:before {
+        content: $th-Restaurant--fine;
+    }
+}
+
+.#{$prefix}Restaurant {
+    &:before {
+        content: $th-Restaurant;
+    }
+}
+
+.#{$prefix}Result--new {
+    &:before {
+        content: $th-Result--new;
+    }
+}
+
+.#{$prefix}Result--old {
+    &:before {
+        content: $th-Result--old;
+    }
+}
+
+.#{$prefix}Result {
+    &:before {
+        content: $th-Result;
+    }
+}
+
+.#{$prefix}Retry--failed {
+    &:before {
+        content: $th-Retry--failed;
+    }
+}
+
+.#{$prefix}Review {
+    &:before {
+        content: $th-Review;
+    }
+}
+
+.#{$prefix}Rewind--5 {
+    &:before {
+        content: $th-Rewind--5;
+    }
+}
+
+.#{$prefix}Rewind--10 {
+    &:before {
+        content: $th-Rewind--10;
+    }
+}
+
+.#{$prefix}Rewind--30 {
+    &:before {
+        content: $th-Rewind--30;
+    }
+}
+
+.#{$prefix}Road--weather {
+    &:before {
+        content: $th-Road--weather;
+    }
+}
+
+.#{$prefix}Road {
+    &:before {
+        content: $th-Road;
+    }
+}
+
+.#{$prefix}Roadmap {
+    &:before {
+        content: $th-Roadmap;
+    }
+}
+
+.#{$prefix}Rocket {
+    &:before {
+        content: $th-Rocket;
+    }
+}
+
+.#{$prefix}Rotate--180 {
+    &:before {
+        content: $th-Rotate--180;
+    }
+}
+
+.#{$prefix}Rotate--360 {
+    &:before {
+        content: $th-Rotate--360;
+    }
+}
+
+.#{$prefix}Rotate--clockwise--alt--filled {
+    &:before {
+        content: $th-Rotate--clockwise--alt--filled;
+    }
+}
+
+.#{$prefix}Rotate--clockwise--alt {
+    &:before {
+        content: $th-Rotate--clockwise--alt;
+    }
+}
+
+.#{$prefix}Rotate--clockwise--filled {
+    &:before {
+        content: $th-Rotate--clockwise--filled;
+    }
+}
+
+.#{$prefix}Rotate--clockwise {
+    &:before {
+        content: $th-Rotate--clockwise;
+    }
+}
+
+.#{$prefix}Rotate--counterclockwise--alt--filled {
+    &:before {
+        content: $th-Rotate--counterclockwise--alt--filled;
+    }
+}
+
+.#{$prefix}Rotate--counterclockwise--alt {
+    &:before {
+        content: $th-Rotate--counterclockwise--alt;
+    }
+}
+
+.#{$prefix}Rotate--counterclockwise--filled {
+    &:before {
+        content: $th-Rotate--counterclockwise--filled;
+    }
+}
+
+.#{$prefix}Rotate--counterclockwise {
+    &:before {
+        content: $th-Rotate--counterclockwise;
+    }
+}
+
+.#{$prefix}Rotate {
+    &:before {
+        content: $th-Rotate;
+    }
+}
+
+.#{$prefix}Router--voice {
+    &:before {
+        content: $th-Router--voice;
+    }
+}
+
+.#{$prefix}Router--wifi {
+    &:before {
+        content: $th-Router--wifi;
+    }
+}
+
+.#{$prefix}Router {
+    &:before {
+        content: $th-Router;
+    }
+}
+
+.#{$prefix}Row--collapse {
+    &:before {
+        content: $th-Row--collapse;
+    }
+}
+
+.#{$prefix}Row--delete {
+    &:before {
+        content: $th-Row--delete;
+    }
+}
+
+.#{$prefix}Row--expand {
+    &:before {
+        content: $th-Row--expand;
+    }
+}
+
+.#{$prefix}Row--insert {
+    &:before {
+        content: $th-Row--insert;
+    }
+}
+
+.#{$prefix}Row {
+    &:before {
+        content: $th-Row;
+    }
+}
+
+.#{$prefix}Rss {
+    &:before {
+        content: $th-Rss;
+    }
+}
+
+.#{$prefix}Rule--cancelled {
+    &:before {
+        content: $th-Rule--cancelled;
+    }
+}
+
+.#{$prefix}Rule--data-quality {
+    &:before {
+        content: $th-Rule--data-quality;
+    }
+}
+
+.#{$prefix}Rule--draft {
+    &:before {
+        content: $th-Rule--draft;
+    }
+}
+
+.#{$prefix}Rule--filled {
+    &:before {
+        content: $th-Rule--filled;
+    }
+}
+
+.#{$prefix}Rule--test {
+    &:before {
+        content: $th-Rule--test;
+    }
+}
+
+.#{$prefix}Rule {
+    &:before {
+        content: $th-Rule;
+    }
+}
+
+.#{$prefix}Ruler--alt {
+    &:before {
+        content: $th-Ruler--alt;
+    }
+}
+
+.#{$prefix}Ruler {
+    &:before {
+        content: $th-Ruler;
+    }
+}
+
+.#{$prefix}Run {
+    &:before {
+        content: $th-Run;
+    }
+}
+
+.#{$prefix}S--alt {
+    &:before {
+        content: $th-S--alt;
+    }
+}
+
+.#{$prefix}S {
+    &:before {
+        content: $th-S;
+    }
+}
+
+.#{$prefix}Sailboat--coastal {
+    &:before {
+        content: $th-Sailboat--coastal;
+    }
+}
+
+.#{$prefix}Sailboat--offshore {
+    &:before {
+        content: $th-Sailboat--offshore;
+    }
+}
+
+.#{$prefix}Sankey-diagram--alt {
+    &:before {
+        content: $th-Sankey-diagram--alt;
+    }
+}
+
+.#{$prefix}Sankey-diagram {
+    &:before {
+        content: $th-Sankey-diagram;
+    }
+}
+
+.#{$prefix}Satellite--radar {
+    &:before {
+        content: $th-Satellite--radar;
+    }
+}
+
+.#{$prefix}Satellite--weather {
+    &:before {
+        content: $th-Satellite--weather;
+    }
+}
+
+.#{$prefix}Satellite {
+    &:before {
+        content: $th-Satellite;
+    }
+}
+
+.#{$prefix}Save--annotation {
+    &:before {
+        content: $th-Save--annotation;
+    }
+}
+
+.#{$prefix}Save--image {
+    &:before {
+        content: $th-Save--image;
+    }
+}
+
+.#{$prefix}Save--model {
+    &:before {
+        content: $th-Save--model;
+    }
+}
+
+.#{$prefix}Save--series {
+    &:before {
+        content: $th-Save--series;
+    }
+}
+
+.#{$prefix}Save {
+    &:before {
+        content: $th-Save;
+    }
+}
+
+.#{$prefix}Scale {
+    &:before {
+        content: $th-Scale;
+    }
+}
+
+.#{$prefix}Scales--tipped {
+    &:before {
+        content: $th-Scales--tipped;
+    }
+}
+
+.#{$prefix}Scales {
+    &:before {
+        content: $th-Scales;
+    }
+}
+
+.#{$prefix}Scalpel--cursor {
+    &:before {
+        content: $th-Scalpel--cursor;
+    }
+}
+
+.#{$prefix}Scalpel--lasso {
+    &:before {
+        content: $th-Scalpel--lasso;
+    }
+}
+
+.#{$prefix}Scalpel--select {
+    &:before {
+        content: $th-Scalpel--select;
+    }
+}
+
+.#{$prefix}Scalpel {
+    &:before {
+        content: $th-Scalpel;
+    }
+}
+
+.#{$prefix}Scan--alt {
+    &:before {
+        content: $th-Scan--alt;
+    }
+}
+
+.#{$prefix}Scan--disabled {
+    &:before {
+        content: $th-Scan--disabled;
+    }
+}
+
+.#{$prefix}Scan {
+    &:before {
+        content: $th-Scan;
+    }
+}
+
+.#{$prefix}Scatter-matrix {
+    &:before {
+        content: $th-Scatter-matrix;
+    }
+}
+
+.#{$prefix}Schematics {
+    &:before {
+        content: $th-Schematics;
+    }
+}
+
+.#{$prefix}Scis--control-tower {
+    &:before {
+        content: $th-Scis--control-tower;
+    }
+}
+
+.#{$prefix}Scis--transparent-supply {
+    &:before {
+        content: $th-Scis--transparent-supply;
+    }
+}
+
+.#{$prefix}Scooter--front {
+    &:before {
+        content: $th-Scooter--front;
+    }
+}
+
+.#{$prefix}Scooter {
+    &:before {
+        content: $th-Scooter;
+    }
+}
+
+.#{$prefix}Screen--off {
+    &:before {
+        content: $th-Screen--off;
+    }
+}
+
+.#{$prefix}Screen-1 {
+    &:before {
+        content: $th-Screen-1;
+    }
+}
+
+.#{$prefix}Screen {
+    &:before {
+        content: $th-Screen;
+    }
+}
+
+.#{$prefix}Script--reference {
+    &:before {
+        content: $th-Script--reference;
+    }
+}
+
+.#{$prefix}Script {
+    &:before {
+        content: $th-Script;
+    }
+}
+
+.#{$prefix}Sdk {
+    &:before {
+        content: $th-Sdk;
+    }
+}
+
+.#{$prefix}Search--advanced {
+    &:before {
+        content: $th-Search--advanced;
+    }
+}
+
+.#{$prefix}Search--locate {
+    &:before {
+        content: $th-Search--locate;
+    }
+}
+
+.#{$prefix}Search {
+    &:before {
+        content: $th-Search;
+    }
+}
+
+.#{$prefix}Security-services {
+    &:before {
+        content: $th-Security-services;
+    }
+}
+
+.#{$prefix}Security {
+    &:before {
+        content: $th-Security;
+    }
+}
+
+.#{$prefix}Select--01 {
+    &:before {
+        content: $th-Select--01;
+    }
+}
+
+.#{$prefix}Select--02 {
+    &:before {
+        content: $th-Select--02;
+    }
+}
+
+.#{$prefix}Select--window {
+    &:before {
+        content: $th-Select--window;
+    }
+}
+
+.#{$prefix}Send--alt--filled {
+    &:before {
+        content: $th-Send--alt--filled;
+    }
+}
+
+.#{$prefix}Send--alt {
+    &:before {
+        content: $th-Send--alt;
+    }
+}
+
+.#{$prefix}Send--filled {
+    &:before {
+        content: $th-Send--filled;
+    }
+}
+
+.#{$prefix}Send-backward {
+    &:before {
+        content: $th-Send-backward;
+    }
+}
+
+.#{$prefix}Send-to-back {
+    &:before {
+        content: $th-Send-to-back;
+    }
+}
+
+.#{$prefix}Send {
+    &:before {
+        content: $th-Send;
+    }
+}
+
+.#{$prefix}Server--dns {
+    &:before {
+        content: $th-Server--dns;
+    }
+}
+
+.#{$prefix}Server--proxy {
+    &:before {
+        content: $th-Server--proxy;
+    }
+}
+
+.#{$prefix}Server--time {
+    &:before {
+        content: $th-Server--time;
+    }
+}
+
+.#{$prefix}Service-desk {
+    &:before {
+        content: $th-Service-desk;
+    }
+}
+
+.#{$prefix}Service-id {
+    &:before {
+        content: $th-Service-id;
+    }
+}
+
+.#{$prefix}Session-border-control {
+    &:before {
+        content: $th-Session-border-control;
+    }
+}
+
+.#{$prefix}Settings--adjust {
+    &:before {
+        content: $th-Settings--adjust;
+    }
+}
+
+.#{$prefix}Settings--check {
+    &:before {
+        content: $th-Settings--check;
+    }
+}
+
+.#{$prefix}Settings--services {
+    &:before {
+        content: $th-Settings--services;
+    }
+}
+
+.#{$prefix}Settings--view {
+    &:before {
+        content: $th-Settings--view;
+    }
+}
+
+.#{$prefix}Settings {
+    &:before {
+        content: $th-Settings;
+    }
+}
+
+.#{$prefix}Shape--except {
+    &:before {
+        content: $th-Shape--except;
+    }
+}
+
+.#{$prefix}Shape--exclude {
+    &:before {
+        content: $th-Shape--exclude;
+    }
+}
+
+.#{$prefix}Shape--intersect {
+    &:before {
+        content: $th-Shape--intersect;
+    }
+}
+
+.#{$prefix}Shape--join {
+    &:before {
+        content: $th-Shape--join;
+    }
+}
+
+.#{$prefix}Shape--unite {
+    &:before {
+        content: $th-Shape--unite;
+    }
+}
+
+.#{$prefix}Share-knowledge {
+    &:before {
+        content: $th-Share-knowledge;
+    }
+}
+
+.#{$prefix}Share {
+    &:before {
+        content: $th-Share;
+    }
+}
+
+.#{$prefix}Shopping--bag {
+    &:before {
+        content: $th-Shopping--bag;
+    }
+}
+
+.#{$prefix}Shopping--cart--arrow-down {
+    &:before {
+        content: $th-Shopping--cart--arrow-down;
+    }
+}
+
+.#{$prefix}Shopping--cart--arrow-up {
+    &:before {
+        content: $th-Shopping--cart--arrow-up;
+    }
+}
+
+.#{$prefix}Shopping--cart--clear {
+    &:before {
+        content: $th-Shopping--cart--clear;
+    }
+}
+
+.#{$prefix}Shopping--cart--error {
+    &:before {
+        content: $th-Shopping--cart--error;
+    }
+}
+
+.#{$prefix}Shopping--cart--minus {
+    &:before {
+        content: $th-Shopping--cart--minus;
+    }
+}
+
+.#{$prefix}Shopping--cart--plus {
+    &:before {
+        content: $th-Shopping--cart--plus;
+    }
+}
+
+.#{$prefix}Shopping--cart {
+    &:before {
+        content: $th-Shopping--cart;
+    }
+}
+
+.#{$prefix}Shopping--catalog {
+    &:before {
+        content: $th-Shopping--catalog;
+    }
+}
+
+.#{$prefix}Show-data--cards {
+    &:before {
+        content: $th-Show-data--cards;
+    }
+}
+
+.#{$prefix}Shrink-screen--filled {
+    &:before {
+        content: $th-Shrink-screen--filled;
+    }
+}
+
+.#{$prefix}Shrink-screen {
+    &:before {
+        content: $th-Shrink-screen;
+    }
+}
+
+.#{$prefix}Shuffle {
+    &:before {
+        content: $th-Shuffle;
+    }
+}
+
+.#{$prefix}Shuttle {
+    &:before {
+        content: $th-Shuttle;
+    }
+}
+
+.#{$prefix}Sight {
+    &:before {
+        content: $th-Sight;
+    }
+}
+
+.#{$prefix}Sigma {
+    &:before {
+        content: $th-Sigma;
+    }
+}
+
+.#{$prefix}Signal-strength {
+    &:before {
+        content: $th-Signal-strength;
+    }
+}
+
+.#{$prefix}Sim-card {
+    &:before {
+        content: $th-Sim-card;
+    }
+}
+
+.#{$prefix}Skill-level--advanced {
+    &:before {
+        content: $th-Skill-level--advanced;
+    }
+}
+
+.#{$prefix}Skill-level--basic {
+    &:before {
+        content: $th-Skill-level--basic;
+    }
+}
+
+.#{$prefix}Skill-level--intermediate {
+    &:before {
+        content: $th-Skill-level--intermediate;
+    }
+}
+
+.#{$prefix}Skill-level {
+    &:before {
+        content: $th-Skill-level;
+    }
+}
+
+.#{$prefix}Skip--back--filled {
+    &:before {
+        content: $th-Skip--back--filled;
+    }
+}
+
+.#{$prefix}Skip--back--outline--filled {
+    &:before {
+        content: $th-Skip--back--outline--filled;
+    }
+}
+
+.#{$prefix}Skip--back--outline--solid {
+    &:before {
+        content: $th-Skip--back--outline--solid;
+    }
+}
+
+.#{$prefix}Skip--back--outline {
+    &:before {
+        content: $th-Skip--back--outline;
+    }
+}
+
+.#{$prefix}Skip--back--solid--filled {
+    &:before {
+        content: $th-Skip--back--solid--filled;
+    }
+}
+
+.#{$prefix}Skip--back {
+    &:before {
+        content: $th-Skip--back;
+    }
+}
+
+.#{$prefix}Skip--forward--filled {
+    &:before {
+        content: $th-Skip--forward--filled;
+    }
+}
+
+.#{$prefix}Skip--forward--outline--filled {
+    &:before {
+        content: $th-Skip--forward--outline--filled;
+    }
+}
+
+.#{$prefix}Skip--forward--outline--solid {
+    &:before {
+        content: $th-Skip--forward--outline--solid;
+    }
+}
+
+.#{$prefix}Skip--forward--outline {
+    &:before {
+        content: $th-Skip--forward--outline;
+    }
+}
+
+.#{$prefix}Skip--forward--solid--filled {
+    &:before {
+        content: $th-Skip--forward--solid--filled;
+    }
+}
+
+.#{$prefix}Skip--forward {
+    &:before {
+        content: $th-Skip--forward;
+    }
+}
+
+.#{$prefix}Sleet {
+    &:before {
+        content: $th-Sleet;
+    }
+}
+
+.#{$prefix}Slisor {
+    &:before {
+        content: $th-Slisor;
+    }
+}
+
+.#{$prefix}Smell {
+    &:before {
+        content: $th-Smell;
+    }
+}
+
+.#{$prefix}Smoke {
+    &:before {
+        content: $th-Smoke;
+    }
+}
+
+.#{$prefix}Smoothing--cursor {
+    &:before {
+        content: $th-Smoothing--cursor;
+    }
+}
+
+.#{$prefix}Smoothing {
+    &:before {
+        content: $th-Smoothing;
+    }
+}
+
+.#{$prefix}Snooze {
+    &:before {
+        content: $th-Snooze;
+    }
+}
+
+.#{$prefix}Snow--blizzard {
+    &:before {
+        content: $th-Snow--blizzard;
+    }
+}
+
+.#{$prefix}Snow--heavy {
+    &:before {
+        content: $th-Snow--heavy;
+    }
+}
+
+.#{$prefix}Snow--scattered--night {
+    &:before {
+        content: $th-Snow--scattered--night;
+    }
+}
+
+.#{$prefix}Snow--scattered {
+    &:before {
+        content: $th-Snow--scattered;
+    }
+}
+
+.#{$prefix}Snow-density {
+    &:before {
+        content: $th-Snow-density;
+    }
+}
+
+.#{$prefix}Snow {
+    &:before {
+        content: $th-Snow;
+    }
+}
+
+.#{$prefix}Snowflake {
+    &:before {
+        content: $th-Snowflake;
+    }
+}
+
+.#{$prefix}Soccer {
+    &:before {
+        content: $th-Soccer;
+    }
+}
+
+.#{$prefix}Software-resource--cluster {
+    &:before {
+        content: $th-Software-resource--cluster;
+    }
+}
+
+.#{$prefix}Software-resource--resource {
+    &:before {
+        content: $th-Software-resource--resource;
+    }
+}
+
+.#{$prefix}Software-resource {
+    &:before {
+        content: $th-Software-resource;
+    }
+}
+
+.#{$prefix}Soil-moisture--field {
+    &:before {
+        content: $th-Soil-moisture--field;
+    }
+}
+
+.#{$prefix}Soil-moisture--global {
+    &:before {
+        content: $th-Soil-moisture--global;
+    }
+}
+
+.#{$prefix}Soil-moisture {
+    &:before {
+        content: $th-Soil-moisture;
+    }
+}
+
+.#{$prefix}Soil-temperature--field {
+    &:before {
+        content: $th-Soil-temperature--field;
+    }
+}
+
+.#{$prefix}Soil-temperature--global {
+    &:before {
+        content: $th-Soil-temperature--global;
+    }
+}
+
+.#{$prefix}Soil-temperature {
+    &:before {
+        content: $th-Soil-temperature;
+    }
+}
+
+.#{$prefix}Solar-panel {
+    &:before {
+        content: $th-Solar-panel;
+    }
+}
+
+.#{$prefix}Sort--ascending {
+    &:before {
+        content: $th-Sort--ascending;
+    }
+}
+
+.#{$prefix}Sort--descending {
+    &:before {
+        content: $th-Sort--descending;
+    }
+}
+
+.#{$prefix}Sort--remove {
+    &:before {
+        content: $th-Sort--remove;
+    }
+}
+
+.#{$prefix}Spell-check {
+    &:before {
+        content: $th-Spell-check;
+    }
+}
+
+.#{$prefix}Spine-label {
+    &:before {
+        content: $th-Spine-label;
+    }
+}
+
+.#{$prefix}Split--discard {
+    &:before {
+        content: $th-Split--discard;
+    }
+}
+
+.#{$prefix}Split-screen {
+    &:before {
+        content: $th-Split-screen;
+    }
+}
+
+.#{$prefix}Split {
+    &:before {
+        content: $th-Split;
+    }
+}
+
+.#{$prefix}Spray-paint {
+    &:before {
+        content: $th-Spray-paint;
+    }
+}
+
+.#{$prefix}Sprout {
+    &:before {
+        content: $th-Sprout;
+    }
+}
+
+.#{$prefix}Sql {
+    &:before {
+        content: $th-Sql;
+    }
+}
+
+.#{$prefix}Stack-limitation {
+    &:before {
+        content: $th-Stack-limitation;
+    }
+}
+
+.#{$prefix}Stacked-move {
+    &:before {
+        content: $th-Stacked-move;
+    }
+}
+
+.#{$prefix}Stacked-scrolling--1 {
+    &:before {
+        content: $th-Stacked-scrolling--1;
+    }
+}
+
+.#{$prefix}Stacked-scrolling--2 {
+    &:before {
+        content: $th-Stacked-scrolling--2;
+    }
+}
+
+.#{$prefix}Stamp {
+    &:before {
+        content: $th-Stamp;
+    }
+}
+
+.#{$prefix}Star--filled {
+    &:before {
+        content: $th-Star--filled;
+    }
+}
+
+.#{$prefix}Star--half {
+    &:before {
+        content: $th-Star--half;
+    }
+}
+
+.#{$prefix}Star--review {
+    &:before {
+        content: $th-Star--review;
+    }
+}
+
+.#{$prefix}Star {
+    &:before {
+        content: $th-Star;
+    }
+}
+
+.#{$prefix}Status--acknowledge {
+    &:before {
+        content: $th-Status--acknowledge;
+    }
+}
+
+.#{$prefix}Status--partial-fail {
+    &:before {
+        content: $th-Status--partial-fail;
+    }
+}
+
+.#{$prefix}Status--resolved {
+    &:before {
+        content: $th-Status--resolved;
+    }
+}
+
+.#{$prefix}Stay-inside {
+    &:before {
+        content: $th-Stay-inside;
+    }
+}
+
+.#{$prefix}Stem-leaf-plot {
+    &:before {
+        content: $th-Stem-leaf-plot;
+    }
+}
+
+.#{$prefix}Stethoscope {
+    &:before {
+        content: $th-Stethoscope;
+    }
+}
+
+.#{$prefix}Stop--filled--alt {
+    &:before {
+        content: $th-Stop--filled--alt;
+    }
+}
+
+.#{$prefix}Stop--filled {
+    &:before {
+        content: $th-Stop--filled;
+    }
+}
+
+.#{$prefix}Stop--outline--filled {
+    &:before {
+        content: $th-Stop--outline--filled;
+    }
+}
+
+.#{$prefix}Stop--outline {
+    &:before {
+        content: $th-Stop--outline;
+    }
+}
+
+.#{$prefix}Stop-sign--filled {
+    &:before {
+        content: $th-Stop-sign--filled;
+    }
+}
+
+.#{$prefix}Stop-sign {
+    &:before {
+        content: $th-Stop-sign;
+    }
+}
+
+.#{$prefix}Stop {
+    &:before {
+        content: $th-Stop;
+    }
+}
+
+.#{$prefix}Storage-pool {
+    &:before {
+        content: $th-Storage-pool;
+    }
+}
+
+.#{$prefix}Storage-request {
+    &:before {
+        content: $th-Storage-request;
+    }
+}
+
+.#{$prefix}Store {
+    &:before {
+        content: $th-Store;
+    }
+}
+
+.#{$prefix}Storm-tracker {
+    &:before {
+        content: $th-Storm-tracker;
+    }
+}
+
+.#{$prefix}Strawberry {
+    &:before {
+        content: $th-Strawberry;
+    }
+}
+
+.#{$prefix}Stress-breath-editor {
+    &:before {
+        content: $th-Stress-breath-editor;
+    }
+}
+
+.#{$prefix}Study--next {
+    &:before {
+        content: $th-Study--next;
+    }
+}
+
+.#{$prefix}Study--previous {
+    &:before {
+        content: $th-Study--previous;
+    }
+}
+
+.#{$prefix}Study--read {
+    &:before {
+        content: $th-Study--read;
+    }
+}
+
+.#{$prefix}Study--skip {
+    &:before {
+        content: $th-Study--skip;
+    }
+}
+
+.#{$prefix}Study--transfer {
+    &:before {
+        content: $th-Study--transfer;
+    }
+}
+
+.#{$prefix}Study--unread {
+    &:before {
+        content: $th-Study--unread;
+    }
+}
+
+.#{$prefix}Study--view {
+    &:before {
+        content: $th-Study--view;
+    }
+}
+
+.#{$prefix}Sub-volume {
+    &:before {
+        content: $th-Sub-volume;
+    }
+}
+
+.#{$prefix}Subflow--local {
+    &:before {
+        content: $th-Subflow--local;
+    }
+}
+
+.#{$prefix}Subflow {
+    &:before {
+        content: $th-Subflow;
+    }
+}
+
+.#{$prefix}Subnet-acl-rules {
+    &:before {
+        content: $th-Subnet-acl-rules;
+    }
+}
+
+.#{$prefix}Subtract--alt {
+    &:before {
+        content: $th-Subtract--alt;
+    }
+}
+
+.#{$prefix}Subtract {
+    &:before {
+        content: $th-Subtract;
+    }
+}
+
+.#{$prefix}Summary--kpi {
+    &:before {
+        content: $th-Summary--kpi;
+    }
+}
+
+.#{$prefix}Sun {
+    &:before {
+        content: $th-Sun;
+    }
+}
+
+.#{$prefix}Sunrise {
+    &:before {
+        content: $th-Sunrise;
+    }
+}
+
+.#{$prefix}Sunset {
+    &:before {
+        content: $th-Sunset;
+    }
+}
+
+.#{$prefix}Svg {
+    &:before {
+        content: $th-Svg;
+    }
+}
+
+.#{$prefix}Swim {
+    &:before {
+        content: $th-Swim;
+    }
+}
+
+.#{$prefix}Switch-layer-2 {
+    &:before {
+        content: $th-Switch-layer-2;
+    }
+}
+
+.#{$prefix}Switch-layer-3 {
+    &:before {
+        content: $th-Switch-layer-3;
+    }
+}
+
+.#{$prefix}Switcher {
+    &:before {
+        content: $th-Switcher;
+    }
+}
+
+.#{$prefix}Sys-provision {
+    &:before {
+        content: $th-Sys-provision;
+    }
+}
+
+.#{$prefix}T--alt {
+    &:before {
+        content: $th-T--alt;
+    }
+}
+
+.#{$prefix}T {
+    &:before {
+        content: $th-T;
+    }
+}
+
+.#{$prefix}Table--alias {
+    &:before {
+        content: $th-Table--alias;
+    }
+}
+
+.#{$prefix}Table--built {
+    &:before {
+        content: $th-Table--built;
+    }
+}
+
+.#{$prefix}Table--shortcut {
+    &:before {
+        content: $th-Table--shortcut;
+    }
+}
+
+.#{$prefix}Table--split {
+    &:before {
+        content: $th-Table--split;
+    }
+}
+
+.#{$prefix}Table-of-contents {
+    &:before {
+        content: $th-Table-of-contents;
+    }
+}
+
+.#{$prefix}Table {
+    &:before {
+        content: $th-Table;
+    }
+}
+
+.#{$prefix}Tablet--landscape {
+    &:before {
+        content: $th-Tablet--landscape;
+    }
+}
+
+.#{$prefix}Tablet {
+    &:before {
+        content: $th-Tablet;
+    }
+}
+
+.#{$prefix}Tag--edit {
+    &:before {
+        content: $th-Tag--edit;
+    }
+}
+
+.#{$prefix}Tag--export {
+    &:before {
+        content: $th-Tag--export;
+    }
+}
+
+.#{$prefix}Tag--group {
+    &:before {
+        content: $th-Tag--group;
+    }
+}
+
+.#{$prefix}Tag--import {
+    &:before {
+        content: $th-Tag--import;
+    }
+}
+
+.#{$prefix}Tag--none {
+    &:before {
+        content: $th-Tag--none;
+    }
+}
+
+.#{$prefix}Tag {
+    &:before {
+        content: $th-Tag;
+    }
+}
+
+.#{$prefix}Tank {
+    &:before {
+        content: $th-Tank;
+    }
+}
+
+.#{$prefix}Task--add {
+    &:before {
+        content: $th-Task--add;
+    }
+}
+
+.#{$prefix}Task--approved {
+    &:before {
+        content: $th-Task--approved;
+    }
+}
+
+.#{$prefix}Task--asset-view {
+    &:before {
+        content: $th-Task--asset-view;
+    }
+}
+
+.#{$prefix}Task--complete {
+    &:before {
+        content: $th-Task--complete;
+    }
+}
+
+.#{$prefix}Task--location {
+    &:before {
+        content: $th-Task--location;
+    }
+}
+
+.#{$prefix}Task--remove {
+    &:before {
+        content: $th-Task--remove;
+    }
+}
+
+.#{$prefix}Task--settings {
+    &:before {
+        content: $th-Task--settings;
+    }
+}
+
+.#{$prefix}Task--star {
+    &:before {
+        content: $th-Task--star;
+    }
+}
+
+.#{$prefix}Task--tools {
+    &:before {
+        content: $th-Task--tools;
+    }
+}
+
+.#{$prefix}Task--view {
+    &:before {
+        content: $th-Task--view;
+    }
+}
+
+.#{$prefix}Task {
+    &:before {
+        content: $th-Task;
+    }
+}
+
+.#{$prefix}Taste {
+    &:before {
+        content: $th-Taste;
+    }
+}
+
+.#{$prefix}Taxi {
+    &:before {
+        content: $th-Taxi;
+    }
+}
+
+.#{$prefix}Temperature--celsius--alt {
+    &:before {
+        content: $th-Temperature--celsius--alt;
+    }
+}
+
+.#{$prefix}Temperature--celsius {
+    &:before {
+        content: $th-Temperature--celsius;
+    }
+}
+
+.#{$prefix}Temperature--fahrenheit--alt {
+    &:before {
+        content: $th-Temperature--fahrenheit--alt;
+    }
+}
+
+.#{$prefix}Temperature--fahrenheit {
+    &:before {
+        content: $th-Temperature--fahrenheit;
+    }
+}
+
+.#{$prefix}Temperature--feels-like {
+    &:before {
+        content: $th-Temperature--feels-like;
+    }
+}
+
+.#{$prefix}Temperature--frigid {
+    &:before {
+        content: $th-Temperature--frigid;
+    }
+}
+
+.#{$prefix}Temperature--hot {
+    &:before {
+        content: $th-Temperature--hot;
+    }
+}
+
+.#{$prefix}Temperature--inversion {
+    &:before {
+        content: $th-Temperature--inversion;
+    }
+}
+
+.#{$prefix}Temperature--max {
+    &:before {
+        content: $th-Temperature--max;
+    }
+}
+
+.#{$prefix}Temperature--min {
+    &:before {
+        content: $th-Temperature--min;
+    }
+}
+
+.#{$prefix}Temperature--water {
+    &:before {
+        content: $th-Temperature--water;
+    }
+}
+
+.#{$prefix}Temperature {
+    &:before {
+        content: $th-Temperature;
+    }
+}
+
+.#{$prefix}Template {
+    &:before {
+        content: $th-Template;
+    }
+}
+
+.#{$prefix}Tennis-ball {
+    &:before {
+        content: $th-Tennis-ball;
+    }
+}
+
+.#{$prefix}Tennis {
+    &:before {
+        content: $th-Tennis;
+    }
+}
+
+.#{$prefix}Term {
+    &:before {
+        content: $th-Term;
+    }
+}
+
+.#{$prefix}Terminal--3270 {
+    &:before {
+        content: $th-Terminal--3270;
+    }
+}
+
+.#{$prefix}Terminal {
+    &:before {
+        content: $th-Terminal;
+    }
+}
+
+.#{$prefix}Text--align--center {
+    &:before {
+        content: $th-Text--align--center;
+    }
+}
+
+.#{$prefix}Text--align--justify {
+    &:before {
+        content: $th-Text--align--justify;
+    }
+}
+
+.#{$prefix}Text--align--left {
+    &:before {
+        content: $th-Text--align--left;
+    }
+}
+
+.#{$prefix}Text--align--mixed {
+    &:before {
+        content: $th-Text--align--mixed;
+    }
+}
+
+.#{$prefix}Text--align--right {
+    &:before {
+        content: $th-Text--align--right;
+    }
+}
+
+.#{$prefix}Text--all-caps {
+    &:before {
+        content: $th-Text--all-caps;
+    }
+}
+
+.#{$prefix}Text--bold {
+    &:before {
+        content: $th-Text--bold;
+    }
+}
+
+.#{$prefix}Text--clear-format {
+    &:before {
+        content: $th-Text--clear-format;
+    }
+}
+
+.#{$prefix}Text--color {
+    &:before {
+        content: $th-Text--color;
+    }
+}
+
+.#{$prefix}Text--creation {
+    &:before {
+        content: $th-Text--creation;
+    }
+}
+
+.#{$prefix}Text--fill {
+    &:before {
+        content: $th-Text--fill;
+    }
+}
+
+.#{$prefix}Text--font {
+    &:before {
+        content: $th-Text--font;
+    }
+}
+
+.#{$prefix}Text--footnote {
+    &:before {
+        content: $th-Text--footnote;
+    }
+}
+
+.#{$prefix}Text--highlight {
+    &:before {
+        content: $th-Text--highlight;
+    }
+}
+
+.#{$prefix}Text--indent--less {
+    &:before {
+        content: $th-Text--indent--less;
+    }
+}
+
+.#{$prefix}Text--indent--more {
+    &:before {
+        content: $th-Text--indent--more;
+    }
+}
+
+.#{$prefix}Text--indent {
+    &:before {
+        content: $th-Text--indent;
+    }
+}
+
+.#{$prefix}Text--italic {
+    &:before {
+        content: $th-Text--italic;
+    }
+}
+
+.#{$prefix}Text--kerning {
+    &:before {
+        content: $th-Text--kerning;
+    }
+}
+
+.#{$prefix}Text--leading {
+    &:before {
+        content: $th-Text--leading;
+    }
+}
+
+.#{$prefix}Text--line-spacing {
+    &:before {
+        content: $th-Text--line-spacing;
+    }
+}
+
+.#{$prefix}Text--new-line {
+    &:before {
+        content: $th-Text--new-line;
+    }
+}
+
+.#{$prefix}Text--scale {
+    &:before {
+        content: $th-Text--scale;
+    }
+}
+
+.#{$prefix}Text--selection {
+    &:before {
+        content: $th-Text--selection;
+    }
+}
+
+.#{$prefix}Text--small-caps {
+    &:before {
+        content: $th-Text--small-caps;
+    }
+}
+
+.#{$prefix}Text--strikethrough {
+    &:before {
+        content: $th-Text--strikethrough;
+    }
+}
+
+.#{$prefix}Text--subscript {
+    &:before {
+        content: $th-Text--subscript;
+    }
+}
+
+.#{$prefix}Text--superscript {
+    &:before {
+        content: $th-Text--superscript;
+    }
+}
+
+.#{$prefix}Text--tracking {
+    &:before {
+        content: $th-Text--tracking;
+    }
+}
+
+.#{$prefix}Text--underline {
+    &:before {
+        content: $th-Text--underline;
+    }
+}
+
+.#{$prefix}Text--vertical-alignment {
+    &:before {
+        content: $th-Text--vertical-alignment;
+    }
+}
+
+.#{$prefix}Text--wrap {
+    &:before {
+        content: $th-Text--wrap;
+    }
+}
+
+.#{$prefix}Text-annotation-toggle {
+    &:before {
+        content: $th-Text-annotation-toggle;
+    }
+}
+
+.#{$prefix}Text-link--analysis {
+    &:before {
+        content: $th-Text-link--analysis;
+    }
+}
+
+.#{$prefix}Text-link {
+    &:before {
+        content: $th-Text-link;
+    }
+}
+
+.#{$prefix}Text-mining--applier {
+    &:before {
+        content: $th-Text-mining--applier;
+    }
+}
+
+.#{$prefix}Text-mining {
+    &:before {
+        content: $th-Text-mining;
+    }
+}
+
+.#{$prefix}Theater {
+    &:before {
+        content: $th-Theater;
+    }
+}
+
+.#{$prefix}This-side-up {
+    &:before {
+        content: $th-This-side-up;
+    }
+}
+
+.#{$prefix}Threshold {
+    &:before {
+        content: $th-Threshold;
+    }
+}
+
+.#{$prefix}Thumbnail--1 {
+    &:before {
+        content: $th-Thumbnail--1;
+    }
+}
+
+.#{$prefix}Thumbnail--2 {
+    &:before {
+        content: $th-Thumbnail--2;
+    }
+}
+
+.#{$prefix}Thumbnail-preview {
+    &:before {
+        content: $th-Thumbnail-preview;
+    }
+}
+
+.#{$prefix}Thumbs-down--filled {
+    &:before {
+        content: $th-Thumbs-down--filled;
+    }
+}
+
+.#{$prefix}Thumbs-down {
+    &:before {
+        content: $th-Thumbs-down;
+    }
+}
+
+.#{$prefix}Thumbs-up--filled {
+    &:before {
+        content: $th-Thumbs-up--filled;
+    }
+}
+
+.#{$prefix}Thumbs-up {
+    &:before {
+        content: $th-Thumbs-up;
+    }
+}
+
+.#{$prefix}Thunderstorm--scattered--night {
+    &:before {
+        content: $th-Thunderstorm--scattered--night;
+    }
+}
+
+.#{$prefix}Thunderstorm--scattered {
+    &:before {
+        content: $th-Thunderstorm--scattered;
+    }
+}
+
+.#{$prefix}Thunderstorm--severe {
+    &:before {
+        content: $th-Thunderstorm--severe;
+    }
+}
+
+.#{$prefix}Thunderstorm--strong {
+    &:before {
+        content: $th-Thunderstorm--strong;
+    }
+}
+
+.#{$prefix}Thunderstorm {
+    &:before {
+        content: $th-Thunderstorm;
+    }
+}
+
+.#{$prefix}Ticket {
+    &:before {
+        content: $th-Ticket;
+    }
+}
+
+.#{$prefix}Tides {
+    &:before {
+        content: $th-Tides;
+    }
+}
+
+.#{$prefix}Tif {
+    &:before {
+        content: $th-Tif;
+    }
+}
+
+.#{$prefix}Time-plot {
+    &:before {
+        content: $th-Time-plot;
+    }
+}
+
+.#{$prefix}Time {
+    &:before {
+        content: $th-Time;
+    }
+}
+
+.#{$prefix}Timer {
+    &:before {
+        content: $th-Timer;
+    }
+}
+
+.#{$prefix}Tool-box {
+    &:before {
+        content: $th-Tool-box;
+    }
+}
+
+.#{$prefix}Tool-kit {
+    &:before {
+        content: $th-Tool-kit;
+    }
+}
+
+.#{$prefix}Tools--alt {
+    &:before {
+        content: $th-Tools--alt;
+    }
+}
+
+.#{$prefix}Tools {
+    &:before {
+        content: $th-Tools;
+    }
+}
+
+.#{$prefix}Tornado-warning {
+    &:before {
+        content: $th-Tornado-warning;
+    }
+}
+
+.#{$prefix}Tornado {
+    &:before {
+        content: $th-Tornado;
+    }
+}
+
+.#{$prefix}Touch--1--filled {
+    &:before {
+        content: $th-Touch--1--filled;
+    }
+}
+
+.#{$prefix}Touch--1-down--filled {
+    &:before {
+        content: $th-Touch--1-down--filled;
+    }
+}
+
+.#{$prefix}Touch--1-down {
+    &:before {
+        content: $th-Touch--1-down;
+    }
+}
+
+.#{$prefix}Touch--1 {
+    &:before {
+        content: $th-Touch--1;
+    }
+}
+
+.#{$prefix}Touch--2--filled {
+    &:before {
+        content: $th-Touch--2--filled;
+    }
+}
+
+.#{$prefix}Touch--2 {
+    &:before {
+        content: $th-Touch--2;
+    }
+}
+
+.#{$prefix}Touch--interaction {
+    &:before {
+        content: $th-Touch--interaction;
+    }
+}
+
+.#{$prefix}Traffic--event {
+    &:before {
+        content: $th-Traffic--event;
+    }
+}
+
+.#{$prefix}Traffic--flow-incident {
+    &:before {
+        content: $th-Traffic--flow-incident;
+    }
+}
+
+.#{$prefix}Traffic--flow {
+    &:before {
+        content: $th-Traffic--flow;
+    }
+}
+
+.#{$prefix}Traffic--incident {
+    &:before {
+        content: $th-Traffic--incident;
+    }
+}
+
+.#{$prefix}Traffic--weather-incident {
+    &:before {
+        content: $th-Traffic--weather-incident;
+    }
+}
+
+.#{$prefix}Traffic-cone {
+    &:before {
+        content: $th-Traffic-cone;
+    }
+}
+
+.#{$prefix}Train--heart {
+    &:before {
+        content: $th-Train--heart;
+    }
+}
+
+.#{$prefix}Train--profile {
+    &:before {
+        content: $th-Train--profile;
+    }
+}
+
+.#{$prefix}Train--speed {
+    &:before {
+        content: $th-Train--speed;
+    }
+}
+
+.#{$prefix}Train--ticket {
+    &:before {
+        content: $th-Train--ticket;
+    }
+}
+
+.#{$prefix}Train--time {
+    &:before {
+        content: $th-Train--time;
+    }
+}
+
+.#{$prefix}Train {
+    &:before {
+        content: $th-Train;
+    }
+}
+
+.#{$prefix}Tram {
+    &:before {
+        content: $th-Tram;
+    }
+}
+
+.#{$prefix}Transgender {
+    &:before {
+        content: $th-Transgender;
+    }
+}
+
+.#{$prefix}Translate {
+    &:before {
+        content: $th-Translate;
+    }
+}
+
+.#{$prefix}Transmission-lte {
+    &:before {
+        content: $th-Transmission-lte;
+    }
+}
+
+.#{$prefix}Transpose {
+    &:before {
+        content: $th-Transpose;
+    }
+}
+
+.#{$prefix}Trash-can {
+    &:before {
+        content: $th-Trash-can;
+    }
+}
+
+.#{$prefix}Tree--fall-risk {
+    &:before {
+        content: $th-Tree--fall-risk;
+    }
+}
+
+.#{$prefix}Tree-view--alt {
+    &:before {
+        content: $th-Tree-view--alt;
+    }
+}
+
+.#{$prefix}Tree-view {
+    &:before {
+        content: $th-Tree-view;
+    }
+}
+
+.#{$prefix}Tree {
+    &:before {
+        content: $th-Tree;
+    }
+}
+
+.#{$prefix}Trophy--filled {
+    &:before {
+        content: $th-Trophy--filled;
+    }
+}
+
+.#{$prefix}Trophy {
+    &:before {
+        content: $th-Trophy;
+    }
+}
+
+.#{$prefix}Tropical-storm--model-tracks {
+    &:before {
+        content: $th-Tropical-storm--model-tracks;
+    }
+}
+
+.#{$prefix}Tropical-storm--tracks {
+    &:before {
+        content: $th-Tropical-storm--tracks;
+    }
+}
+
+.#{$prefix}Tropical-storm {
+    &:before {
+        content: $th-Tropical-storm;
+    }
+}
+
+.#{$prefix}Tropical-warning {
+    &:before {
+        content: $th-Tropical-warning;
+    }
+}
+
+.#{$prefix}Tsunami {
+    &:before {
+        content: $th-Tsunami;
+    }
+}
+
+.#{$prefix}Tsv {
+    &:before {
+        content: $th-Tsv;
+    }
+}
+
+.#{$prefix}Two-factor-authentication {
+    &:before {
+        content: $th-Two-factor-authentication;
+    }
+}
+
+.#{$prefix}Two-person-lift {
+    &:before {
+        content: $th-Two-person-lift;
+    }
+}
+
+.#{$prefix}Txt--reference {
+    &:before {
+        content: $th-Txt--reference;
+    }
+}
+
+.#{$prefix}Txt {
+    &:before {
+        content: $th-Txt;
+    }
+}
+
+.#{$prefix}Type-pattern {
+    &:before {
+        content: $th-Type-pattern;
+    }
+}
+
+.#{$prefix}Types {
+    &:before {
+        content: $th-Types;
+    }
+}
+
+.#{$prefix}U1 {
+    &:before {
+        content: $th-U1;
+    }
+}
+
+.#{$prefix}U2 {
+    &:before {
+        content: $th-U2;
+    }
+}
+
+.#{$prefix}U3 {
+    &:before {
+        content: $th-U3;
+    }
+}
+
+.#{$prefix}Umbrella {
+    &:before {
+        content: $th-Umbrella;
+    }
+}
+
+.#{$prefix}Undefined--filled {
+    &:before {
+        content: $th-Undefined--filled;
+    }
+}
+
+.#{$prefix}Undefined {
+    &:before {
+        content: $th-Undefined;
+    }
+}
+
+.#{$prefix}Undo {
+    &:before {
+        content: $th-Undo;
+    }
+}
+
+.#{$prefix}Ungroup-objects {
+    &:before {
+        content: $th-Ungroup-objects;
+    }
+}
+
+.#{$prefix}Unknown--filled {
+    &:before {
+        content: $th-Unknown--filled;
+    }
+}
+
+.#{$prefix}Unknown {
+    &:before {
+        content: $th-Unknown;
+    }
+}
+
+.#{$prefix}Unlink {
+    &:before {
+        content: $th-Unlink;
+    }
+}
+
+.#{$prefix}Unlocked {
+    &:before {
+        content: $th-Unlocked;
+    }
+}
+
+.#{$prefix}Up-to-top {
+    &:before {
+        content: $th-Up-to-top;
+    }
+}
+
+.#{$prefix}Update-now {
+    &:before {
+        content: $th-Update-now;
+    }
+}
+
+.#{$prefix}Upgrade {
+    &:before {
+        content: $th-Upgrade;
+    }
+}
+
+.#{$prefix}Upload {
+    &:before {
+        content: $th-Upload;
+    }
+}
+
+.#{$prefix}Usb {
+    &:before {
+        content: $th-Usb;
+    }
+}
+
+.#{$prefix}User--access {
+    &:before {
+        content: $th-User--access;
+    }
+}
+
+.#{$prefix}User--activity {
+    &:before {
+        content: $th-User--activity;
+    }
+}
+
+.#{$prefix}User--admin {
+    &:before {
+        content: $th-User--admin;
+    }
+}
+
+.#{$prefix}User--avatar--filled--alt {
+    &:before {
+        content: $th-User--avatar--filled--alt;
+    }
+}
+
+.#{$prefix}User--avatar--filled {
+    &:before {
+        content: $th-User--avatar--filled;
+    }
+}
+
+.#{$prefix}User--avatar {
+    &:before {
+        content: $th-User--avatar;
+    }
+}
+
+.#{$prefix}User--certification {
+    &:before {
+        content: $th-User--certification;
+    }
+}
+
+.#{$prefix}User--data {
+    &:before {
+        content: $th-User--data;
+    }
+}
+
+.#{$prefix}User--favorite--alt--filled {
+    &:before {
+        content: $th-User--favorite--alt--filled;
+    }
+}
+
+.#{$prefix}User--favorite--alt {
+    &:before {
+        content: $th-User--favorite--alt;
+    }
+}
+
+.#{$prefix}User--favorite {
+    &:before {
+        content: $th-User--favorite;
+    }
+}
+
+.#{$prefix}User--filled {
+    &:before {
+        content: $th-User--filled;
+    }
+}
+
+.#{$prefix}User--follow {
+    &:before {
+        content: $th-User--follow;
+    }
+}
+
+.#{$prefix}User--identification {
+    &:before {
+        content: $th-User--identification;
+    }
+}
+
+.#{$prefix}User--military {
+    &:before {
+        content: $th-User--military;
+    }
+}
+
+.#{$prefix}User--multiple {
+    &:before {
+        content: $th-User--multiple;
+    }
+}
+
+.#{$prefix}User--online {
+    &:before {
+        content: $th-User--online;
+    }
+}
+
+.#{$prefix}User--profile {
+    &:before {
+        content: $th-User--profile;
+    }
+}
+
+.#{$prefix}User--role {
+    &:before {
+        content: $th-User--role;
+    }
+}
+
+.#{$prefix}User--service-desk {
+    &:before {
+        content: $th-User--service-desk;
+    }
+}
+
+.#{$prefix}User--settings {
+    &:before {
+        content: $th-User--settings;
+    }
+}
+
+.#{$prefix}User--simulation {
+    &:before {
+        content: $th-User--simulation;
+    }
+}
+
+.#{$prefix}User--speaker {
+    &:before {
+        content: $th-User--speaker;
+    }
+}
+
+.#{$prefix}User--x-ray {
+    &:before {
+        content: $th-User--x-ray;
+    }
+}
+
+.#{$prefix}User-profile--alt {
+    &:before {
+        content: $th-User-profile--alt;
+    }
+}
+
+.#{$prefix}User {
+    &:before {
+        content: $th-User;
+    }
+}
+
+.#{$prefix}Uv-index--alt {
+    &:before {
+        content: $th-Uv-index--alt;
+    }
+}
+
+.#{$prefix}Uv-index--filled {
+    &:before {
+        content: $th-Uv-index--filled;
+    }
+}
+
+.#{$prefix}Uv-index {
+    &:before {
+        content: $th-Uv-index;
+    }
+}
+
+.#{$prefix}Value--variable {
+    &:before {
+        content: $th-Value--variable;
+    }
+}
+
+.#{$prefix}Van {
+    &:before {
+        content: $th-Van;
+    }
+}
+
+.#{$prefix}Vegetation--asset {
+    &:before {
+        content: $th-Vegetation--asset;
+    }
+}
+
+.#{$prefix}Vehicle--api {
+    &:before {
+        content: $th-Vehicle--api;
+    }
+}
+
+.#{$prefix}Vehicle--connected {
+    &:before {
+        content: $th-Vehicle--connected;
+    }
+}
+
+.#{$prefix}Vehicle--insights {
+    &:before {
+        content: $th-Vehicle--insights;
+    }
+}
+
+.#{$prefix}Vehicle--services {
+    &:before {
+        content: $th-Vehicle--services;
+    }
+}
+
+.#{$prefix}Version {
+    &:before {
+        content: $th-Version;
+    }
+}
+
+.#{$prefix}Vertical-view {
+    &:before {
+        content: $th-Vertical-view;
+    }
+}
+
+.#{$prefix}Video--add {
+    &:before {
+        content: $th-Video--add;
+    }
+}
+
+.#{$prefix}Video--chat {
+    &:before {
+        content: $th-Video--chat;
+    }
+}
+
+.#{$prefix}Video--filled {
+    &:before {
+        content: $th-Video--filled;
+    }
+}
+
+.#{$prefix}Video--off--filled {
+    &:before {
+        content: $th-Video--off--filled;
+    }
+}
+
+.#{$prefix}Video--off {
+    &:before {
+        content: $th-Video--off;
+    }
+}
+
+.#{$prefix}Video {
+    &:before {
+        content: $th-Video;
+    }
+}
+
+.#{$prefix}View--filled {
+    &:before {
+        content: $th-View--filled;
+    }
+}
+
+.#{$prefix}View--mode-1 {
+    &:before {
+        content: $th-View--mode-1;
+    }
+}
+
+.#{$prefix}View--mode-2 {
+    &:before {
+        content: $th-View--mode-2;
+    }
+}
+
+.#{$prefix}View--off--filled {
+    &:before {
+        content: $th-View--off--filled;
+    }
+}
+
+.#{$prefix}View--off {
+    &:before {
+        content: $th-View--off;
+    }
+}
+
+.#{$prefix}View-next {
+    &:before {
+        content: $th-View-next;
+    }
+}
+
+.#{$prefix}View {
+    &:before {
+        content: $th-View;
+    }
+}
+
+.#{$prefix}Virtual-column--key {
+    &:before {
+        content: $th-Virtual-column--key;
+    }
+}
+
+.#{$prefix}Virtual-column {
+    &:before {
+        content: $th-Virtual-column;
+    }
+}
+
+.#{$prefix}Virtual-desktop {
+    &:before {
+        content: $th-Virtual-desktop;
+    }
+}
+
+.#{$prefix}Virtual-machine {
+    &:before {
+        content: $th-Virtual-machine;
+    }
+}
+
+.#{$prefix}Virtual-private-cloud--alt {
+    &:before {
+        content: $th-Virtual-private-cloud--alt;
+    }
+}
+
+.#{$prefix}Virtual-private-cloud {
+    &:before {
+        content: $th-Virtual-private-cloud;
+    }
+}
+
+.#{$prefix}Visual-recognition {
+    &:before {
+        content: $th-Visual-recognition;
+    }
+}
+
+.#{$prefix}Vlan--IBM {
+    &:before {
+        content: $th-Vlan--IBM;
+    }
+}
+
+.#{$prefix}Vlan {
+    &:before {
+        content: $th-Vlan;
+    }
+}
+
+.#{$prefix}Vmdk-disk {
+    &:before {
+        content: $th-Vmdk-disk;
+    }
+}
+
+.#{$prefix}Voice-activate {
+    &:before {
+        content: $th-Voice-activate;
+    }
+}
+
+.#{$prefix}Voicemail {
+    &:before {
+        content: $th-Voicemail;
+    }
+}
+
+.#{$prefix}Volume--block-storage {
+    &:before {
+        content: $th-Volume--block-storage;
+    }
+}
+
+.#{$prefix}Volume--down--alt {
+    &:before {
+        content: $th-Volume--down--alt;
+    }
+}
+
+.#{$prefix}Volume--down--filled--alt {
+    &:before {
+        content: $th-Volume--down--filled--alt;
+    }
+}
+
+.#{$prefix}Volume--down--filled {
+    &:before {
+        content: $th-Volume--down--filled;
+    }
+}
+
+.#{$prefix}Volume--down {
+    &:before {
+        content: $th-Volume--down;
+    }
+}
+
+.#{$prefix}Volume--file-storage {
+    &:before {
+        content: $th-Volume--file-storage;
+    }
+}
+
+.#{$prefix}Volume--mute--filled {
+    &:before {
+        content: $th-Volume--mute--filled;
+    }
+}
+
+.#{$prefix}Volume--mute {
+    &:before {
+        content: $th-Volume--mute;
+    }
+}
+
+.#{$prefix}Volume--object-storage {
+    &:before {
+        content: $th-Volume--object-storage;
+    }
+}
+
+.#{$prefix}Volume--up--alt {
+    &:before {
+        content: $th-Volume--up--alt;
+    }
+}
+
+.#{$prefix}Volume--up--filled--alt {
+    &:before {
+        content: $th-Volume--up--filled--alt;
+    }
+}
+
+.#{$prefix}Volume--up--filled {
+    &:before {
+        content: $th-Volume--up--filled;
+    }
+}
+
+.#{$prefix}Volume--up {
+    &:before {
+        content: $th-Volume--up;
+    }
+}
+
+.#{$prefix}Vpn--connection {
+    &:before {
+        content: $th-Vpn--connection;
+    }
+}
+
+.#{$prefix}Vpn--policy {
+    &:before {
+        content: $th-Vpn--policy;
+    }
+}
+
+.#{$prefix}Vpn {
+    &:before {
+        content: $th-Vpn;
+    }
+}
+
+.#{$prefix}Wallet {
+    &:before {
+        content: $th-Wallet;
+    }
+}
+
+.#{$prefix}Warning--alt--filled {
+    &:before {
+        content: $th-Warning--alt--filled;
+    }
+}
+
+.#{$prefix}Warning--alt-inverted--filled {
+    &:before {
+        content: $th-Warning--alt-inverted--filled;
+    }
+}
+
+.#{$prefix}Warning--alt-inverted {
+    &:before {
+        content: $th-Warning--alt-inverted;
+    }
+}
+
+.#{$prefix}Warning--alt {
+    &:before {
+        content: $th-Warning--alt;
+    }
+}
+
+.#{$prefix}Warning--filled {
+    &:before {
+        content: $th-Warning--filled;
+    }
+}
+
+.#{$prefix}Warning--hex--filled {
+    &:before {
+        content: $th-Warning--hex--filled;
+    }
+}
+
+.#{$prefix}Warning--hex {
+    &:before {
+        content: $th-Warning--hex;
+    }
+}
+
+.#{$prefix}Warning--other {
+    &:before {
+        content: $th-Warning--other;
+    }
+}
+
+.#{$prefix}Warning-square--filled {
+    &:before {
+        content: $th-Warning-square--filled;
+    }
+}
+
+.#{$prefix}Warning-square {
+    &:before {
+        content: $th-Warning-square;
+    }
+}
+
+.#{$prefix}Warning {
+    &:before {
+        content: $th-Warning;
+    }
+}
+
+.#{$prefix}Watch {
+    &:before {
+        content: $th-Watch;
+    }
+}
+
+.#{$prefix}Watson--machine-learning {
+    &:before {
+        content: $th-Watson--machine-learning;
+    }
+}
+
+.#{$prefix}Watson {
+    &:before {
+        content: $th-Watson;
+    }
+}
+
+.#{$prefix}Wave-direction {
+    &:before {
+        content: $th-Wave-direction;
+    }
+}
+
+.#{$prefix}Wave-height {
+    &:before {
+        content: $th-Wave-height;
+    }
+}
+
+.#{$prefix}Wave-period {
+    &:before {
+        content: $th-Wave-period;
+    }
+}
+
+.#{$prefix}Weather-front--cold {
+    &:before {
+        content: $th-Weather-front--cold;
+    }
+}
+
+.#{$prefix}Weather-front--stationary {
+    &:before {
+        content: $th-Weather-front--stationary;
+    }
+}
+
+.#{$prefix}Weather-front--warm {
+    &:before {
+        content: $th-Weather-front--warm;
+    }
+}
+
+.#{$prefix}Weather-station {
+    &:before {
+        content: $th-Weather-station;
+    }
+}
+
+.#{$prefix}Webhook {
+    &:before {
+        content: $th-Webhook;
+    }
+}
+
+.#{$prefix}Websheet {
+    &:before {
+        content: $th-Websheet;
+    }
+}
+
+.#{$prefix}Wheat {
+    &:before {
+        content: $th-Wheat;
+    }
+}
+
+.#{$prefix}Wifi--controller {
+    &:before {
+        content: $th-Wifi--controller;
+    }
+}
+
+.#{$prefix}Wifi--not-secure {
+    &:before {
+        content: $th-Wifi--not-secure;
+    }
+}
+
+.#{$prefix}Wifi--off {
+    &:before {
+        content: $th-Wifi--off;
+    }
+}
+
+.#{$prefix}Wifi--secure {
+    &:before {
+        content: $th-Wifi--secure;
+    }
+}
+
+.#{$prefix}Wifi-bridge--alt {
+    &:before {
+        content: $th-Wifi-bridge--alt;
+    }
+}
+
+.#{$prefix}Wifi-bridge {
+    &:before {
+        content: $th-Wifi-bridge;
+    }
+}
+
+.#{$prefix}Wifi {
+    &:before {
+        content: $th-Wifi;
+    }
+}
+
+.#{$prefix}Wikis {
+    &:before {
+        content: $th-Wikis;
+    }
+}
+
+.#{$prefix}Wind-gusts {
+    &:before {
+        content: $th-Wind-gusts;
+    }
+}
+
+.#{$prefix}Wind-power {
+    &:before {
+        content: $th-Wind-power;
+    }
+}
+
+.#{$prefix}Wind-stream {
+    &:before {
+        content: $th-Wind-stream;
+    }
+}
+
+.#{$prefix}Window--auto {
+    &:before {
+        content: $th-Window--auto;
+    }
+}
+
+.#{$prefix}Window--base {
+    &:before {
+        content: $th-Window--base;
+    }
+}
+
+.#{$prefix}Window--black-saturation {
+    &:before {
+        content: $th-Window--black-saturation;
+    }
+}
+
+.#{$prefix}Window--overlay {
+    &:before {
+        content: $th-Window--overlay;
+    }
+}
+
+.#{$prefix}Window--preset {
+    &:before {
+        content: $th-Window--preset;
+    }
+}
+
+.#{$prefix}Windy--dust {
+    &:before {
+        content: $th-Windy--dust;
+    }
+}
+
+.#{$prefix}Windy--snow {
+    &:before {
+        content: $th-Windy--snow;
+    }
+}
+
+.#{$prefix}Windy--strong {
+    &:before {
+        content: $th-Windy--strong;
+    }
+}
+
+.#{$prefix}Windy {
+    &:before {
+        content: $th-Windy;
+    }
+}
+
+.#{$prefix}Winter-warning {
+    &:before {
+        content: $th-Winter-warning;
+    }
+}
+
+.#{$prefix}Wintry-mix {
+    &:before {
+        content: $th-Wintry-mix;
+    }
+}
+
+.#{$prefix}Wireless-checkout {
+    &:before {
+        content: $th-Wireless-checkout;
+    }
+}
+
+.#{$prefix}Wmv {
+    &:before {
+        content: $th-Wmv;
+    }
+}
+
+.#{$prefix}Word-cloud {
+    &:before {
+        content: $th-Word-cloud;
+    }
+}
+
+.#{$prefix}Workflow-automation {
+    &:before {
+        content: $th-Workflow-automation;
+    }
+}
+
+.#{$prefix}Workspace--import {
+    &:before {
+        content: $th-Workspace--import;
+    }
+}
+
+.#{$prefix}Workspace {
+    &:before {
+        content: $th-Workspace;
+    }
+}
+
+.#{$prefix}Worship--christian {
+    &:before {
+        content: $th-Worship--christian;
+    }
+}
+
+.#{$prefix}Worship--jewish {
+    &:before {
+        content: $th-Worship--jewish;
+    }
+}
+
+.#{$prefix}Worship--muslim {
+    &:before {
+        content: $th-Worship--muslim;
+    }
+}
+
+.#{$prefix}Worship {
+    &:before {
+        content: $th-Worship;
+    }
+}
+
+.#{$prefix}X-axis {
+    &:before {
+        content: $th-X-axis;
+    }
+}
+
+.#{$prefix}X {
+    &:before {
+        content: $th-X;
+    }
+}
+
+.#{$prefix}Xls {
+    &:before {
+        content: $th-Xls;
+    }
+}
+
+.#{$prefix}Xml {
+    &:before {
+        content: $th-Xml;
+    }
+}
+
+.#{$prefix}Y-axis {
+    &:before {
+        content: $th-Y-axis;
+    }
+}
+
+.#{$prefix}Y {
+    &:before {
+        content: $th-Y;
+    }
+}
+
+.#{$prefix}Z-axis {
+    &:before {
+        content: $th-Z-axis;
+    }
+}
+
+.#{$prefix}Z {
+    &:before {
+        content: $th-Z;
+    }
+}
+
+.#{$prefix}Zip--reference {
+    &:before {
+        content: $th-Zip--reference;
+    }
+}
+
+.#{$prefix}Zip {
+    &:before {
+        content: $th-Zip;
+    }
+}
+
+.#{$prefix}Zoom--area {
+    &:before {
+        content: $th-Zoom--area;
+    }
+}
+
+.#{$prefix}Zoom--fit {
+    &:before {
+        content: $th-Zoom--fit;
+    }
+}
+
+.#{$prefix}Zoom--in-area {
+    &:before {
+        content: $th-Zoom--in-area;
+    }
+}
+
+.#{$prefix}Zoom--in {
+    &:before {
+        content: $th-Zoom--in;
+    }
+}
+
+.#{$prefix}Zoom--out-area {
+    &:before {
+        content: $th-Zoom--out-area;
+    }
+}
+
+.#{$prefix}Zoom--out {
+    &:before {
+        content: $th-Zoom--out;
+    }
+}
+
+.#{$prefix}Zoom--reset {
+    &:before {
+        content: $th-Zoom--reset;
+    }
+}
+
+.#{$prefix}Zoom-pan {
+    &:before {
+        content: $th-Zoom-pan;
+    }
+}
+
+.#{$prefix}Checkmark--filled---green .path1 {
+    &:before {
+        content: $th-Checkmark--filled---green-path1;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.#{$prefix}Checkmark--filled---green .path2 {
+    &:before {
+        content: $th-Checkmark--filled---green-path2;
+        margin-left: -1.5em;
+        color: rgb(107, 183, 0);
+    }
+}
+
+.#{$prefix}Checkmark--filled---blue .path1 {
+    &:before {
+        content: $th-Checkmark--filled---blue-path1;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.#{$prefix}Checkmark--filled---blue .path2 {
+    &:before {
+        content: $th-Checkmark--filled---blue-path2;
+        margin-left: -1.5em;
+        color: rgb(0, 120, 212);
+    }
+}
+
+.#{$prefix}Error--red .path1 {
+    &:before {
+        content: $th-Error--red-path1;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.#{$prefix}Error--red .path2 {
+    &:before {
+        content: $th-Error--red-path2;
+        margin-left: -1.5em;
+        color: rgb(197, 15, 31);
     }
 }

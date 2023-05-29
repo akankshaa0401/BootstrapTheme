@@ -74,6 +74,8 @@
     }
 
     &-menu {
+        max-height: inRem(250px);
+        overflow: auto;
         box-shadow: var(--#{$prefix}dropdown-box-shadow);
     }
 

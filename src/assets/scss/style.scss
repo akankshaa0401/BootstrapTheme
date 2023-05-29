@@ -1,6 +1,7 @@
 @import 'utils/functions';
 @import 'utils/variables';
 @import 'base/colors';
+@import 'base/font';
 
 // Bootstrap
 @import './base/overrides';
@@ -9,7 +10,6 @@
 @import 'utils/mixins';
 
 @import 'base/reset';
-@import 'base/font';
 @import 'base/typography';
 
 // Component
@@ -32,6 +32,7 @@
 @import './component/table';
 @import './component/chips';
 @import './component/border';
+@import './component/loader';
 
 // Layout
 

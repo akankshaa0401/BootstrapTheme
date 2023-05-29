@@ -1,0 +1,8 @@
+.#{$prefix}spinner{
+    &-border{
+        border-top-color: $primary;
+        border-left-color: $primary;
+        border-bottom-color: $gray-border;
+        border-right-color: $gray-border;
+    }
+}

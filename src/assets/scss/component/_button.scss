@@ -65,14 +65,14 @@
             background-color: $transparent;
             border-color: $gray-deactivate;
 
-            path {
-                fill: $black;
+            .#{$prefix}icon {
+                color: $black;
             }
         }
 
         &:active {
-            path {
-                fill: $black;
+            .#{$prefix}icon {
+                color: $black;
             }
         }
     }
@@ -94,13 +94,19 @@
         @include flex(center, center, $inline: true);
 
         &-hover {
+            color: $gray-deactivate;
             &:hover {
-                @include path($black);
+                @include icon($black);
             }
 
             &:active {
-                @include path($primary);
+                @include icon($primary);
             }
+        }
+
+        &-only{
+            font-size: 0;
+            line-height: 0;
         }
     }
 }

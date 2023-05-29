@@ -52,6 +52,10 @@ $font-sizes: (
     7: $font-size * 1.5,
     8: $font-size * 1.75,
     9: $font-size * 2,
+    19:1.1875rem,
+    22:1.375rem,
+    33:2.0625rem,
+    55:3.4375rem
 );
 
 $utilities: (
@@ -224,3 +228,8 @@ $table-cell-padding-x: 1rem;
 $table-cell-vertical-align: middle;
 $table-border-color: $gray-border;
 $table-hover-bg: $gray-hover;
+
+// Code
+
+$code-font-size: 1rem;
+$code-color: $primary;
